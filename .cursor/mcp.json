@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "zapier": {
+      "//": [
+        "Template MCP server entry for Zapier.",
+        "",
+        "You must replace the command/args/env below with the exact Zapier MCP server instructions",
+        "from Zapier (or your Zapier MCP package). Different Zapier MCP offerings use different env vars.",
+        "",
+        "After editing this file, restart Cursor (or reload MCP servers) so the server appears."
+      ],
+      "command": "npx",
+      "args": ["-y", "<zapier-mcp-package>", "--stdio"],
+      "env": {
+        "ZAPIER_API_KEY": "<paste-token-or-leave-empty-if-oauth>"
+      }
+    }
+  }
+}
+
