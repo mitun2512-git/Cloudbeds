@@ -34,7 +34,6 @@ services:
   - type: web
     name: hennessey-estate
     runtime: static
-    region: oregon
     plan: free
     rootDir: booking-engine/client
     buildCommand: npm install && npm run build
