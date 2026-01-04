@@ -1,7 +1,8 @@
 const axios = require('axios');
 const https = require('https');
+require('dotenv').config();
 
-const TOKEN = 'cbat_XIvn71EZDUjAA0orkmFpxpTf5XxOa3ph';
+const TOKEN = process.env.CLOUDBEDS_ACCESS_TOKEN;
 const BASE_URL = 'https://hotels.cloudbeds.com/api/v1.2';
 
 const agent = new https.Agent({  

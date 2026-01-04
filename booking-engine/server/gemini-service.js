@@ -7,7 +7,7 @@
 const axios = require('axios');
 
 // Gemini API Configuration - Using Gemini 3 Pro Preview (latest preview with advanced reasoning)
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY || 'AIzaSyCr4cGjVS8z0pSBfplnKT7cEXnLTSHbums';
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GEMINI_MODEL = 'gemini-3-pro-preview';
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
 

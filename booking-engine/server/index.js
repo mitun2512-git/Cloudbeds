@@ -3540,7 +3540,7 @@ app.get('/api/email/unsubscribe', (req, res) => {
 // ============================================================================
 
 // Gemini API Configuration for Email Creatives
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY || 'AIzaSyCr4cGjVS8z0pSBfplnKT7cEXnLTSHbums';
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GEMINI_MODEL = 'gemini-2.0-flash';
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
 

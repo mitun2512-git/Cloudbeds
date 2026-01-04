@@ -1,0 +1,26 @@
+{
+  "name": "cloudbeds-zapier-integration",
+  "version": "1.0.0",
+  "description": "Zapier integration for Cloudbeds API",
+  "main": "index.js",
+  "scripts": {
+    "test": "zapier test",
+    "validate": "zapier validate"
+  },
+  "keywords": [
+    "zapier",
+    "cloudbeds",
+    "integration",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "zapier-platform-core": "15.0.0"
+  },
+  "devDependencies": {
+    "zapier-platform-cli": "^15.0.0"
+  }
+}
+
+

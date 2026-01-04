@@ -47,9 +47,9 @@ git push -u origin main
    | Key | Value |
    |-----|-------|
    | `NODE_ENV` | `production` |
-   | `CLOUDBEDS_ACCESS_TOKEN` | `cbat_XIvn71EZDUjAA0orkmFpxpTf5XxOa3ph` |
-   | `CLOUDBEDS_PROPERTY_ID` | `49705993547975` |
-   | `GEMINI_API_KEY` | `your_gemini_key` |
+   | `CLOUDBEDS_ACCESS_TOKEN` | `(your Cloudbeds API token)` |
+   | `CLOUDBEDS_PROPERTY_ID` | `(your Cloudbeds property ID)` |
+   | `GEMINI_API_KEY` | `(your Gemini API key)` |
    | `CORS_ORIGIN` | `https://hennesseyestate.com` |
 
 5. Click **Create Web Service**

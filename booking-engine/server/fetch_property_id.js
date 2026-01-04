@@ -1,7 +1,8 @@
 const axios = require('axios');
 const https = require('https');
+require('dotenv').config();
 
-const token = 'cbat_XIvn71EZDUjAA0orkmFpxpTf5XxOa3ph';
+const token = process.env.CLOUDBEDS_ACCESS_TOKEN;
 
 // Bypass SSL validation for dev environment
 const agent = new https.Agent({  
