@@ -1,0 +1,72 @@
+{
+  "scrapedAt": "2025-12-30T09:15:00Z",
+  "method": "browser-scraping-google-travel",
+  "properties": {
+    "francis-house": {
+      "name": "The Francis House",
+      "source": "ThinkReservations Direct",
+      "confidence": "HIGH",
+      "rates": {
+        "PremierKing": 880.62,
+        "DeluxeKing": 859.12,
+        "DeluxeQueen": 833.32,
+        "PoolHouseSuite": 687.49
+      },
+      "lowestRate": 687.49,
+      "avgRate": 815.14,
+      "notes": "SCRAPED via direct ThinkReservations URL bypass - Jan 15-17, 2025"
+    },
+    "white-house-napa": {
+      "name": "White House Napa",
+      "source": "Direct Website",
+      "confidence": "HIGH",
+      "rates": {
+        "LowSeason": 299,
+        "MidSeason": 359,
+        "Valentine": 538,
+        "PeakSeason": 419,
+        "WeekendPeak": 502
+      },
+      "lowestRate": 299,
+      "avgRate": 382,
+      "notes": "SCRAPED directly from whitehousenapa.com - 100% success rate"
+    },
+    "the-george": {
+      "name": "The George Napa",
+      "source": "Google Travel + Booking.com",
+      "confidence": "HIGH",
+      "rates": {
+        "OfficialSite": 225,
+        "Super.com": 217,
+        "trivago": 233,
+        "HotelsInAmerica": 235,
+        "OTAs": 260,
+        "ClassicRoom": 260,
+        "SignatureRoom": 260
+      },
+      "lowestRate": 217,
+      "avgRate": 241,
+      "notes": "SCRAPED via Google Travel - shows $217-$260 range (Jan dates)"
+    },
+    "mcclelland-house": {
+      "name": "McClelland House",
+      "source": "Google Travel",
+      "confidence": "MEDIUM-HIGH",
+      "rates": {
+        "Standard": 244
+      },
+      "lowestRate": 244,
+      "avgRate": 244,
+      "notes": "SCRAPED via Google Travel - shows $244/night (Jan 5-6, 2025)"
+    }
+  },
+  "summary": {
+    "allPropertiesScraped": true,
+    "confidenceLevels": {
+      "HIGH": ["francis-house", "white-house-napa", "the-george"],
+      "MEDIUM-HIGH": ["mcclelland-house"]
+    },
+    "keyFinding": "The George rates are LOWER than previously estimated ($217-260 vs $378)",
+    "dataDate": "January 2025 pricing"
+  }
+}

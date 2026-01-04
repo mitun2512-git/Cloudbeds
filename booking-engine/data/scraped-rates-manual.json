@@ -1,0 +1,79 @@
+{
+  "scrapedAt": "2025-12-30T08:58:00Z",
+  "method": "manual-browser-scraping",
+  "properties": {
+    "francis-house": {
+      "name": "The Francis House",
+      "source": "ThinkReservations Direct",
+      "confidence": "HIGH",
+      "roomRates": {
+        "Premier King": 880.62,
+        "Deluxe King": 859.12,
+        "Deluxe Queen": 833.32,
+        "Pool House Suite": 687.49
+      },
+      "lowestRate": 687.49,
+      "avgRate": 815.14,
+      "dateScraped": "Jan 15-17, 2025 (Midweek)",
+      "notes": "Rates confirmed via direct ThinkReservations URL bypass"
+    },
+    "white-house-napa": {
+      "name": "White House Napa",
+      "source": "Direct Website",
+      "confidence": "HIGH",
+      "roomRates": {
+        "Jan (Low)": 299,
+        "Jan (Weekend)": 359,
+        "Feb (Valentine)": 538,
+        "May (Peak)": 419,
+        "May (Weekend Peak)": 502
+      },
+      "lowestRate": 299,
+      "avgRate": 382,
+      "dateScraped": "52 dates Jan-Jun 2025",
+      "notes": "Most reliable - 100% direct scrape success"
+    },
+    "the-george": {
+      "name": "The George Napa",
+      "source": "Booking.com Fallback",
+      "confidence": "MEDIUM",
+      "roomRates": {
+        "Standard King": 350,
+        "Superior King": 450,
+        "Executive Suite": 650,
+        "Estimated Peak": 700
+      },
+      "lowestRate": 350,
+      "avgRate": 537,
+      "dateScraped": "Estimated with seasonal adjustments",
+      "notes": "Direct site blocked by Cloudflare - Booking.com requires clicks to reveal prices"
+    },
+    "mcclelland-house": {
+      "name": "McClelland House",
+      "source": "Estimated",
+      "confidence": "LOW",
+      "roomRates": {
+        "Standard Room (Low)": 350,
+        "Standard Room (Peak)": 550,
+        "Carriage House (Low)": 450,
+        "Carriage House (Peak)": 650
+      },
+      "lowestRate": 350,
+      "avgRate": 510,
+      "dateScraped": "Estimated based on market positioning",
+      "notes": "Calendar blocked by overlay elements - Stay Wanderful iframe issue"
+    }
+  },
+  "summary": {
+    "totalProperties": 4,
+    "highConfidence": ["francis-house", "white-house-napa"],
+    "mediumConfidence": ["the-george"],
+    "lowConfidence": ["mcclelland-house"],
+    "recommendations": [
+      "Francis House: Use ThinkReservations direct URL for reliable data",
+      "White House: Continue using direct website",
+      "The George: Consider manual Booking.com scraping or Puppeteer stealth",
+      "McClelland: Need API access or manual verification"
+    ]
+  }
+}

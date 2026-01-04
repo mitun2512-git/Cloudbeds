@@ -1,0 +1,407 @@
+📋 [2025-12-29T21:05:41.891Z] ============================================================
+📋 [2025-12-29T21:05:41.893Z] Competitor Rate Scraping Script
+📋 [2025-12-29T21:05:41.893Z] ============================================================
+📋 [2025-12-29T21:05:41.893Z] Generated 52 date pairs (Jan-Jun 2025)
+🔄 [2025-12-29T21:05:41.893Z] Launching browser...
+📋 [2025-12-29T21:05:43.028Z] 
+========================================
+📋 [2025-12-29T21:05:43.028Z] Processing: White House Napa
+📋 [2025-12-29T21:05:43.028Z] ========================================
+📋 [2025-12-29T21:05:43.546Z] Starting scrape for White House Napa (52 dates)
+🔄 [2025-12-29T21:05:43.546Z] White House Napa: Scraping 2025-01-03 (1/52)
+✅ [2025-12-29T21:05:48.185Z] White House Napa 2025-01-03: $299 (direct)
+🔄 [2025-12-29T21:05:52.167Z] White House Napa: Scraping 2025-01-06 (2/52)
+✅ [2025-12-29T21:05:55.923Z] White House Napa 2025-01-06: $359 (direct)
+🔄 [2025-12-29T21:05:59.366Z] White House Napa: Scraping 2025-01-10 (3/52)
+✅ [2025-12-29T21:06:03.019Z] White House Napa 2025-01-10: $299 (direct)
+🔄 [2025-12-29T21:06:06.629Z] White House Napa: Scraping 2025-01-13 (4/52)
+✅ [2025-12-29T21:06:10.394Z] White House Napa 2025-01-13: $359 (direct)
+🔄 [2025-12-29T21:06:13.598Z] White House Napa: Scraping 2025-01-17 (5/52)
+✅ [2025-12-29T21:06:17.272Z] White House Napa 2025-01-17: $299 (direct)
+🔄 [2025-12-29T21:06:20.114Z] White House Napa: Scraping 2025-01-20 (6/52)
+✅ [2025-12-29T21:06:23.775Z] White House Napa 2025-01-20: $359 (direct)
+🔄 [2025-12-29T21:06:26.124Z] White House Napa: Scraping 2025-01-24 (7/52)
+✅ [2025-12-29T21:06:29.883Z] White House Napa 2025-01-24: $299 (direct)
+🔄 [2025-12-29T21:06:33.365Z] White House Napa: Scraping 2025-01-27 (8/52)
+✅ [2025-12-29T21:06:37.065Z] White House Napa 2025-01-27: $359 (direct)
+🔄 [2025-12-29T21:06:39.230Z] White House Napa: Scraping 2025-01-31 (9/52)
+✅ [2025-12-29T21:06:42.957Z] White House Napa 2025-01-31: $299 (direct)
+🔄 [2025-12-29T21:06:46.654Z] White House Napa: Scraping 2025-02-03 (10/52)
+✅ [2025-12-29T21:06:50.795Z] White House Napa 2025-02-03: $359 (direct)
+🔄 [2025-12-29T21:06:54.442Z] White House Napa: Scraping 2025-02-07 (11/52)
+✅ [2025-12-29T21:06:58.225Z] White House Napa 2025-02-07: $299 (direct)
+🔄 [2025-12-29T21:07:01.507Z] White House Napa: Scraping 2025-02-10 (12/52)
+✅ [2025-12-29T21:07:05.221Z] White House Napa 2025-02-10: $359 (direct)
+🔄 [2025-12-29T21:07:08.660Z] White House Napa: Scraping 2025-02-14 (13/52)
+✅ [2025-12-29T21:07:12.401Z] White House Napa 2025-02-14: $538 (direct)
+🔄 [2025-12-29T21:07:15.567Z] White House Napa: Scraping 2025-02-17 (14/52)
+✅ [2025-12-29T21:07:19.554Z] White House Napa 2025-02-17: $646 (direct)
+🔄 [2025-12-29T21:07:22.763Z] White House Napa: Scraping 2025-02-21 (15/52)
+✅ [2025-12-29T21:07:26.517Z] White House Napa 2025-02-21: $299 (direct)
+🔄 [2025-12-29T21:07:28.536Z] White House Napa: Scraping 2025-02-24 (16/52)
+✅ [2025-12-29T21:07:32.253Z] White House Napa 2025-02-24: $359 (direct)
+🔄 [2025-12-29T21:07:34.389Z] White House Napa: Scraping 2025-02-28 (17/52)
+✅ [2025-12-29T21:07:38.021Z] White House Napa 2025-02-28: $299 (direct)
+🔄 [2025-12-29T21:07:41.152Z] White House Napa: Scraping 2025-03-03 (18/52)
+✅ [2025-12-29T21:07:44.693Z] White House Napa 2025-03-03: $359 (direct)
+🔄 [2025-12-29T21:07:47.956Z] White House Napa: Scraping 2025-03-07 (19/52)
+✅ [2025-12-29T21:07:52.238Z] White House Napa 2025-03-07: $299 (direct)
+🔄 [2025-12-29T21:07:55.851Z] White House Napa: Scraping 2025-03-09 (20/52)
+✅ [2025-12-29T21:07:59.603Z] White House Napa 2025-03-09: $359 (direct)
+🔄 [2025-12-29T21:08:02.320Z] White House Napa: Scraping 2025-03-13 (21/52)
+✅ [2025-12-29T21:08:06.106Z] White House Napa 2025-03-13: $299 (direct)
+🔄 [2025-12-29T21:08:08.965Z] White House Napa: Scraping 2025-03-16 (22/52)
+✅ [2025-12-29T21:08:12.674Z] White House Napa 2025-03-16: $359 (direct)
+🔄 [2025-12-29T21:08:16.178Z] White House Napa: Scraping 2025-03-20 (23/52)
+✅ [2025-12-29T21:08:19.902Z] White House Napa 2025-03-20: $299 (direct)
+🔄 [2025-12-29T21:08:23.097Z] White House Napa: Scraping 2025-03-23 (24/52)
+✅ [2025-12-29T21:08:26.940Z] White House Napa 2025-03-23: $359 (direct)
+🔄 [2025-12-29T21:08:29.704Z] White House Napa: Scraping 2025-03-27 (25/52)
+✅ [2025-12-29T21:08:33.473Z] White House Napa 2025-03-27: $299 (direct)
+🔄 [2025-12-29T21:08:35.648Z] White House Napa: Scraping 2025-03-30 (26/52)
+✅ [2025-12-29T21:08:39.431Z] White House Napa 2025-03-30: $359 (direct)
+🔄 [2025-12-29T21:08:41.898Z] White House Napa: Scraping 2025-04-03 (27/52)
+✅ [2025-12-29T21:08:45.672Z] White House Napa 2025-04-03: $299 (direct)
+🔄 [2025-12-29T21:08:49.455Z] White House Napa: Scraping 2025-04-06 (28/52)
+✅ [2025-12-29T21:08:53.453Z] White House Napa 2025-04-06: $359 (direct)
+🔄 [2025-12-29T21:08:57.222Z] White House Napa: Scraping 2025-04-10 (29/52)
+✅ [2025-12-29T21:09:00.940Z] White House Napa 2025-04-10: $299 (direct)
+🔄 [2025-12-29T21:09:03.383Z] White House Napa: Scraping 2025-04-13 (30/52)
+✅ [2025-12-29T21:09:07.134Z] White House Napa 2025-04-13: $359 (direct)
+🔄 [2025-12-29T21:09:09.154Z] White House Napa: Scraping 2025-04-17 (31/52)
+✅ [2025-12-29T21:09:13.088Z] White House Napa 2025-04-17: $299 (direct)
+🔄 [2025-12-29T21:09:15.602Z] White House Napa: Scraping 2025-04-20 (32/52)
+✅ [2025-12-29T21:09:19.436Z] White House Napa 2025-04-20: $359 (direct)
+🔄 [2025-12-29T21:09:21.621Z] White House Napa: Scraping 2025-04-24 (33/52)
+✅ [2025-12-29T21:09:25.391Z] White House Napa 2025-04-24: $299 (direct)
+🔄 [2025-12-29T21:09:28.059Z] White House Napa: Scraping 2025-04-27 (34/52)
+✅ [2025-12-29T21:09:31.812Z] White House Napa 2025-04-27: $359 (direct)
+🔄 [2025-12-29T21:09:34.899Z] White House Napa: Scraping 2025-05-01 (35/52)
+✅ [2025-12-29T21:09:38.724Z] White House Napa 2025-05-01: $299 (direct)
+🔄 [2025-12-29T21:09:41.466Z] White House Napa: Scraping 2025-05-04 (36/52)
+✅ [2025-12-29T21:09:45.153Z] White House Napa 2025-05-04: $502 (direct)
+🔄 [2025-12-29T21:09:48.964Z] White House Napa: Scraping 2025-05-08 (37/52)
+✅ [2025-12-29T21:09:52.959Z] White House Napa 2025-05-08: $419 (direct)
+🔄 [2025-12-29T21:09:56.077Z] White House Napa: Scraping 2025-05-11 (38/52)
+✅ [2025-12-29T21:09:59.873Z] White House Napa 2025-05-11: $502 (direct)
+🔄 [2025-12-29T21:10:02.268Z] White House Napa: Scraping 2025-05-15 (39/52)
+✅ [2025-12-29T21:10:05.974Z] White House Napa 2025-05-15: $419 (direct)
+🔄 [2025-12-29T21:10:09.079Z] White House Napa: Scraping 2025-05-18 (40/52)
+✅ [2025-12-29T21:10:12.800Z] White House Napa 2025-05-18: $502 (direct)
+🔄 [2025-12-29T21:10:16.005Z] White House Napa: Scraping 2025-05-22 (41/52)
+✅ [2025-12-29T21:10:19.672Z] White House Napa 2025-05-22: $419 (direct)
+🔄 [2025-12-29T21:10:22.141Z] White House Napa: Scraping 2025-05-25 (42/52)
+✅ [2025-12-29T21:10:25.817Z] White House Napa 2025-05-25: $502 (direct)
+🔄 [2025-12-29T21:10:28.426Z] White House Napa: Scraping 2025-05-29 (43/52)
+✅ [2025-12-29T21:10:32.146Z] White House Napa 2025-05-29: $419 (direct)
+🔄 [2025-12-29T21:10:35.232Z] White House Napa: Scraping 2025-06-01 (44/52)
+✅ [2025-12-29T21:10:38.942Z] White House Napa 2025-06-01: $502 (direct)
+🔄 [2025-12-29T21:10:42.047Z] White House Napa: Scraping 2025-06-05 (45/52)
+✅ [2025-12-29T21:10:45.696Z] White House Napa 2025-06-05: $419 (direct)
+🔄 [2025-12-29T21:10:49.401Z] White House Napa: Scraping 2025-06-08 (46/52)
+✅ [2025-12-29T21:10:53.242Z] White House Napa 2025-06-08: $502 (direct)
+🔄 [2025-12-29T21:10:56.291Z] White House Napa: Scraping 2025-06-12 (47/52)
+✅ [2025-12-29T21:11:00.026Z] White House Napa 2025-06-12: $419 (direct)
+🔄 [2025-12-29T21:11:02.063Z] White House Napa: Scraping 2025-06-15 (48/52)
+✅ [2025-12-29T21:11:05.775Z] White House Napa 2025-06-15: $502 (direct)
+🔄 [2025-12-29T21:11:08.497Z] White House Napa: Scraping 2025-06-19 (49/52)
+✅ [2025-12-29T21:11:12.203Z] White House Napa 2025-06-19: $419 (direct)
+🔄 [2025-12-29T21:11:14.978Z] White House Napa: Scraping 2025-06-22 (50/52)
+✅ [2025-12-29T21:11:19.513Z] White House Napa 2025-06-22: $502 (direct)
+🔄 [2025-12-29T21:11:22.734Z] White House Napa: Scraping 2025-06-26 (51/52)
+✅ [2025-12-29T21:11:26.462Z] White House Napa 2025-06-26: $419 (direct)
+🔄 [2025-12-29T21:11:30.236Z] White House Napa: Scraping 2025-06-29 (52/52)
+✅ [2025-12-29T21:11:33.895Z] White House Napa 2025-06-29: $502 (direct)
+✅ [2025-12-29T21:11:37.227Z] Saved 52 results to /Users/mitun/Cloudbeds/booking-engine/data/competitor-rates-batch2.json
+🔄 [2025-12-29T21:11:37.227Z] Waiting 5s before next property...
+📋 [2025-12-29T21:11:42.227Z] 
+========================================
+📋 [2025-12-29T21:11:42.227Z] Processing: The George Napa
+📋 [2025-12-29T21:11:42.227Z] ========================================
+📋 [2025-12-29T21:11:42.761Z] Starting scrape for The George Napa (52 dates)
+🔄 [2025-12-29T21:11:42.761Z] The George Napa: Scraping 2025-01-03 (1/52)
+✅ [2025-12-29T21:11:45.928Z] The George Napa 2025-01-03: $350 (estimated)
+🔄 [2025-12-29T21:11:48.301Z] The George Napa: Scraping 2025-01-06 (2/52)
+⚠️ [2025-12-29T21:11:50.570Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:11:58.622Z] The George Napa 2025-01-06: $402 (estimated)
+🔄 [2025-12-29T21:12:02.090Z] The George Napa: Scraping 2025-01-10 (3/52)
+⚠️ [2025-12-29T21:12:04.320Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:12:12.375Z] The George Napa 2025-01-10: $350 (estimated)
+🔄 [2025-12-29T21:12:14.566Z] The George Napa: Scraping 2025-01-13 (4/52)
+⚠️ [2025-12-29T21:12:16.776Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:12:24.830Z] The George Napa 2025-01-13: $402 (estimated)
+🔄 [2025-12-29T21:12:27.983Z] The George Napa: Scraping 2025-01-17 (5/52)
+⚠️ [2025-12-29T21:12:30.195Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:12:38.249Z] The George Napa 2025-01-17: $350 (estimated)
+🔄 [2025-12-29T21:12:42.224Z] The George Napa: Scraping 2025-01-20 (6/52)
+⚠️ [2025-12-29T21:12:44.451Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:12:52.505Z] The George Napa 2025-01-20: $402 (estimated)
+🔄 [2025-12-29T21:12:55.871Z] The George Napa: Scraping 2025-01-24 (7/52)
+⚠️ [2025-12-29T21:12:58.083Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:13:06.137Z] The George Napa 2025-01-24: $350 (estimated)
+🔄 [2025-12-29T21:13:08.194Z] The George Napa: Scraping 2025-01-27 (8/52)
+⚠️ [2025-12-29T21:13:10.416Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:13:18.472Z] The George Napa 2025-01-27: $402 (estimated)
+🔄 [2025-12-29T21:13:21.979Z] The George Napa: Scraping 2025-01-31 (9/52)
+⚠️ [2025-12-29T21:13:24.187Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:13:32.241Z] The George Napa 2025-01-31: $350 (estimated)
+🔄 [2025-12-29T21:13:35.356Z] The George Napa: Scraping 2025-02-03 (10/52)
+⚠️ [2025-12-29T21:13:37.566Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:13:45.619Z] The George Napa 2025-02-03: $402 (estimated)
+🔄 [2025-12-29T21:13:47.839Z] The George Napa: Scraping 2025-02-07 (11/52)
+⚠️ [2025-12-29T21:13:50.041Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:13:58.099Z] The George Napa 2025-02-07: $350 (estimated)
+🔄 [2025-12-29T21:14:01.355Z] The George Napa: Scraping 2025-02-10 (12/52)
+⚠️ [2025-12-29T21:14:03.577Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:14:11.631Z] The George Napa 2025-02-10: $402 (estimated)
+🔄 [2025-12-29T21:14:14.680Z] The George Napa: Scraping 2025-02-14 (13/52)
+⚠️ [2025-12-29T21:14:16.901Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:14:24.960Z] The George Napa 2025-02-14: $350 (estimated)
+🔄 [2025-12-29T21:14:28.629Z] The George Napa: Scraping 2025-02-17 (14/52)
+⚠️ [2025-12-29T21:14:30.832Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:14:38.887Z] The George Napa 2025-02-17: $402 (estimated)
+🔄 [2025-12-29T21:14:42.358Z] The George Napa: Scraping 2025-02-21 (15/52)
+⚠️ [2025-12-29T21:14:44.563Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:14:52.617Z] The George Napa 2025-02-21: $350 (estimated)
+🔄 [2025-12-29T21:14:56.261Z] The George Napa: Scraping 2025-02-24 (16/52)
+⚠️ [2025-12-29T21:14:58.475Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:15:06.528Z] The George Napa 2025-02-24: $402 (estimated)
+🔄 [2025-12-29T21:15:10.145Z] The George Napa: Scraping 2025-02-28 (17/52)
+⚠️ [2025-12-29T21:15:12.352Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:15:20.407Z] The George Napa 2025-02-28: $350 (estimated)
+🔄 [2025-12-29T21:15:23.273Z] The George Napa: Scraping 2025-03-03 (18/52)
+⚠️ [2025-12-29T21:15:25.489Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:15:33.543Z] The George Napa 2025-03-03: $402 (estimated)
+🔄 [2025-12-29T21:15:35.744Z] The George Napa: Scraping 2025-03-07 (19/52)
+⚠️ [2025-12-29T21:15:37.960Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:15:46.013Z] The George Napa 2025-03-07: $350 (estimated)
+🔄 [2025-12-29T21:15:48.114Z] The George Napa: Scraping 2025-03-09 (20/52)
+⚠️ [2025-12-29T21:15:50.316Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:15:58.411Z] The George Napa 2025-03-09: $402 (estimated)
+🔄 [2025-12-29T21:16:00.801Z] The George Napa: Scraping 2025-03-13 (21/52)
+⚠️ [2025-12-29T21:16:03.087Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:16:11.149Z] The George Napa 2025-03-13: $350 (estimated)
+🔄 [2025-12-29T21:16:15.104Z] The George Napa: Scraping 2025-03-16 (22/52)
+⚠️ [2025-12-29T21:16:17.352Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:16:25.407Z] The George Napa 2025-03-16: $402 (estimated)
+🔄 [2025-12-29T21:16:27.823Z] The George Napa: Scraping 2025-03-20 (23/52)
+⚠️ [2025-12-29T21:16:30.025Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:16:38.078Z] The George Napa 2025-03-20: $350 (estimated)
+🔄 [2025-12-29T21:16:40.582Z] The George Napa: Scraping 2025-03-23 (24/52)
+⚠️ [2025-12-29T21:16:42.800Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:16:50.854Z] The George Napa 2025-03-23: $402 (estimated)
+🔄 [2025-12-29T21:16:54.065Z] The George Napa: Scraping 2025-03-27 (25/52)
+⚠️ [2025-12-29T21:16:56.284Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:17:04.338Z] The George Napa 2025-03-27: $350 (estimated)
+🔄 [2025-12-29T21:17:08.256Z] The George Napa: Scraping 2025-03-30 (26/52)
+⚠️ [2025-12-29T21:17:10.468Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:17:18.523Z] The George Napa 2025-03-30: $402 (estimated)
+🔄 [2025-12-29T21:17:20.872Z] The George Napa: Scraping 2025-04-03 (27/52)
+⚠️ [2025-12-29T21:17:23.072Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:17:31.125Z] The George Napa 2025-04-03: $550 (estimated)
+🔄 [2025-12-29T21:17:34.008Z] The George Napa: Scraping 2025-04-06 (28/52)
+⚠️ [2025-12-29T21:17:36.249Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:17:44.308Z] The George Napa 2025-04-06: $633 (estimated)
+🔄 [2025-12-29T21:17:46.592Z] The George Napa: Scraping 2025-04-10 (29/52)
+⚠️ [2025-12-29T21:17:48.803Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:17:56.857Z] The George Napa 2025-04-10: $550 (estimated)
+🔄 [2025-12-29T21:17:59.280Z] The George Napa: Scraping 2025-04-13 (30/52)
+⚠️ [2025-12-29T21:18:01.508Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:18:09.560Z] The George Napa 2025-04-13: $633 (estimated)
+🔄 [2025-12-29T21:18:11.794Z] The George Napa: Scraping 2025-04-17 (31/52)
+⚠️ [2025-12-29T21:18:13.996Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:18:22.049Z] The George Napa 2025-04-17: $550 (estimated)
+🔄 [2025-12-29T21:18:24.917Z] The George Napa: Scraping 2025-04-20 (32/52)
+⚠️ [2025-12-29T21:18:27.127Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:18:35.181Z] The George Napa 2025-04-20: $633 (estimated)
+🔄 [2025-12-29T21:18:38.642Z] The George Napa: Scraping 2025-04-24 (33/52)
+⚠️ [2025-12-29T21:18:40.982Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:18:49.034Z] The George Napa 2025-04-24: $550 (estimated)
+🔄 [2025-12-29T21:18:51.786Z] The George Napa: Scraping 2025-04-27 (34/52)
+⚠️ [2025-12-29T21:18:54.008Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:19:02.063Z] The George Napa 2025-04-27: $633 (estimated)
+🔄 [2025-12-29T21:19:05.978Z] The George Napa: Scraping 2025-05-01 (35/52)
+⚠️ [2025-12-29T21:19:08.180Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:19:16.233Z] The George Napa 2025-05-01: $550 (estimated)
+🔄 [2025-12-29T21:19:19.164Z] The George Napa: Scraping 2025-05-04 (36/52)
+⚠️ [2025-12-29T21:19:21.411Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:19:29.465Z] The George Napa 2025-05-04: $805 (estimated)
+🔄 [2025-12-29T21:19:31.873Z] The George Napa: Scraping 2025-05-08 (37/52)
+⚠️ [2025-12-29T21:19:34.081Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:19:42.137Z] The George Napa 2025-05-08: $700 (estimated)
+🔄 [2025-12-29T21:19:44.956Z] The George Napa: Scraping 2025-05-11 (38/52)
+⚠️ [2025-12-29T21:19:47.172Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:19:55.225Z] The George Napa 2025-05-11: $805 (estimated)
+🔄 [2025-12-29T21:19:58.526Z] The George Napa: Scraping 2025-05-15 (39/52)
+⚠️ [2025-12-29T21:20:00.727Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:20:08.781Z] The George Napa 2025-05-15: $700 (estimated)
+🔄 [2025-12-29T21:20:10.960Z] The George Napa: Scraping 2025-05-18 (40/52)
+⚠️ [2025-12-29T21:20:13.172Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:20:21.225Z] The George Napa 2025-05-18: $805 (estimated)
+🔄 [2025-12-29T21:20:23.277Z] The George Napa: Scraping 2025-05-22 (41/52)
+⚠️ [2025-12-29T21:20:25.484Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:20:33.538Z] The George Napa 2025-05-22: $700 (estimated)
+🔄 [2025-12-29T21:20:35.649Z] The George Napa: Scraping 2025-05-25 (42/52)
+⚠️ [2025-12-29T21:20:37.858Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:20:45.911Z] The George Napa 2025-05-25: $805 (estimated)
+🔄 [2025-12-29T21:20:48.295Z] The George Napa: Scraping 2025-05-29 (43/52)
+⚠️ [2025-12-29T21:20:50.499Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:20:58.552Z] The George Napa 2025-05-29: $700 (estimated)
+🔄 [2025-12-29T21:21:00.874Z] The George Napa: Scraping 2025-06-01 (44/52)
+⚠️ [2025-12-29T21:21:03.075Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:21:11.129Z] The George Napa 2025-06-01: $805 (estimated)
+🔄 [2025-12-29T21:21:15.007Z] The George Napa: Scraping 2025-06-05 (45/52)
+⚠️ [2025-12-29T21:21:17.204Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:21:25.258Z] The George Napa 2025-06-05: $700 (estimated)
+🔄 [2025-12-29T21:21:27.674Z] The George Napa: Scraping 2025-06-08 (46/52)
+⚠️ [2025-12-29T21:21:29.883Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:21:37.935Z] The George Napa 2025-06-08: $805 (estimated)
+🔄 [2025-12-29T21:21:41.884Z] The George Napa: Scraping 2025-06-12 (47/52)
+⚠️ [2025-12-29T21:21:44.138Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:21:52.193Z] The George Napa 2025-06-12: $700 (estimated)
+🔄 [2025-12-29T21:21:55.434Z] The George Napa: Scraping 2025-06-15 (48/52)
+⚠️ [2025-12-29T21:21:57.645Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:22:05.699Z] The George Napa 2025-06-15: $805 (estimated)
+🔄 [2025-12-29T21:22:08.921Z] The George Napa: Scraping 2025-06-19 (49/52)
+⚠️ [2025-12-29T21:22:11.123Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:22:19.177Z] The George Napa 2025-06-19: $700 (estimated)
+🔄 [2025-12-29T21:22:22.716Z] The George Napa: Scraping 2025-06-22 (50/52)
+⚠️ [2025-12-29T21:22:24.925Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:22:32.978Z] The George Napa 2025-06-22: $805 (estimated)
+🔄 [2025-12-29T21:22:36.828Z] The George Napa: Scraping 2025-06-26 (51/52)
+⚠️ [2025-12-29T21:22:39.038Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:22:47.092Z] The George Napa 2025-06-26: $700 (estimated)
+🔄 [2025-12-29T21:22:50.285Z] The George Napa: Scraping 2025-06-29 (52/52)
+⚠️ [2025-12-29T21:22:52.498Z] The George: Cloudflare challenge detected
+✅ [2025-12-29T21:23:00.552Z] The George Napa 2025-06-29: $805 (estimated)
+✅ [2025-12-29T21:23:03.994Z] Saved 104 results to /Users/mitun/Cloudbeds/booking-engine/data/competitor-rates-batch2.json
+🔄 [2025-12-29T21:23:03.994Z] Waiting 5s before next property...
+📋 [2025-12-29T21:23:08.995Z] 
+========================================
+📋 [2025-12-29T21:23:08.995Z] Processing: McClelland House
+📋 [2025-12-29T21:23:08.995Z] ========================================
+📋 [2025-12-29T21:23:09.523Z] Starting scrape for McClelland House (52 dates)
+🔄 [2025-12-29T21:23:09.523Z] McClelland House: Scraping 2025-01-03 (1/52)
+✅ [2025-12-29T21:23:21.958Z] McClelland House 2025-01-03: $350 (estimated)
+🔄 [2025-12-29T21:23:24.333Z] McClelland House: Scraping 2025-01-06 (2/52)
+✅ [2025-12-29T21:23:36.002Z] McClelland House 2025-01-06: $402 (estimated)
+🔄 [2025-12-29T21:23:39.617Z] McClelland House: Scraping 2025-01-10 (3/52)
+✅ [2025-12-29T21:23:51.619Z] McClelland House 2025-01-10: $350 (estimated)
+🔄 [2025-12-29T21:23:54.425Z] McClelland House: Scraping 2025-01-13 (4/52)
+✅ [2025-12-29T21:24:06.041Z] McClelland House 2025-01-13: $402 (estimated)
+🔄 [2025-12-29T21:24:09.428Z] McClelland House: Scraping 2025-01-17 (5/52)
+✅ [2025-12-29T21:24:21.426Z] McClelland House 2025-01-17: $350 (estimated)
+🔄 [2025-12-29T21:24:24.817Z] McClelland House: Scraping 2025-01-20 (6/52)
+✅ [2025-12-29T21:24:36.590Z] McClelland House 2025-01-20: $402 (estimated)
+🔄 [2025-12-29T21:24:39.210Z] McClelland House: Scraping 2025-01-24 (7/52)
+✅ [2025-12-29T21:24:51.192Z] McClelland House 2025-01-24: $350 (estimated)
+🔄 [2025-12-29T21:24:53.733Z] McClelland House: Scraping 2025-01-27 (8/52)
+✅ [2025-12-29T21:25:05.050Z] McClelland House 2025-01-27: $402 (estimated)
+🔄 [2025-12-29T21:25:08.307Z] McClelland House: Scraping 2025-01-31 (9/52)
+✅ [2025-12-29T21:25:19.535Z] McClelland House 2025-01-31: $350 (estimated)
+🔄 [2025-12-29T21:25:21.795Z] McClelland House: Scraping 2025-02-03 (10/52)
+✅ [2025-12-29T21:25:33.565Z] McClelland House 2025-02-03: $402 (estimated)
+🔄 [2025-12-29T21:25:36.758Z] McClelland House: Scraping 2025-02-07 (11/52)
+✅ [2025-12-29T21:25:48.239Z] McClelland House 2025-02-07: $350 (estimated)
+🔄 [2025-12-29T21:25:50.727Z] McClelland House: Scraping 2025-02-10 (12/52)
+✅ [2025-12-29T21:26:02.731Z] McClelland House 2025-02-10: $402 (estimated)
+🔄 [2025-12-29T21:26:06.028Z] McClelland House: Scraping 2025-02-14 (13/52)
+✅ [2025-12-29T21:26:17.797Z] McClelland House 2025-02-14: $350 (estimated)
+🔄 [2025-12-29T21:26:21.680Z] McClelland House: Scraping 2025-02-17 (14/52)
+✅ [2025-12-29T21:26:33.073Z] McClelland House 2025-02-17: $402 (estimated)
+🔄 [2025-12-29T21:26:35.914Z] McClelland House: Scraping 2025-02-21 (15/52)
+✅ [2025-12-29T21:26:47.889Z] McClelland House 2025-02-21: $350 (estimated)
+🔄 [2025-12-29T21:26:50.583Z] McClelland House: Scraping 2025-02-24 (16/52)
+✅ [2025-12-29T21:27:02.691Z] McClelland House 2025-02-24: $402 (estimated)
+🔄 [2025-12-29T21:27:06.066Z] McClelland House: Scraping 2025-02-28 (17/52)
+✅ [2025-12-29T21:27:17.224Z] McClelland House 2025-02-28: $350 (estimated)
+🔄 [2025-12-29T21:27:20.618Z] McClelland House: Scraping 2025-03-03 (18/52)
+✅ [2025-12-29T21:27:32.494Z] McClelland House 2025-03-03: $402 (estimated)
+🔄 [2025-12-29T21:27:36.481Z] McClelland House: Scraping 2025-03-07 (19/52)
+✅ [2025-12-29T21:27:47.948Z] McClelland House 2025-03-07: $350 (estimated)
+🔄 [2025-12-29T21:27:49.999Z] McClelland House: Scraping 2025-03-09 (20/52)
+✅ [2025-12-29T21:28:01.618Z] McClelland House 2025-03-09: $402 (estimated)
+🔄 [2025-12-29T21:28:04.094Z] McClelland House: Scraping 2025-03-13 (21/52)
+✅ [2025-12-29T21:28:15.737Z] McClelland House 2025-03-13: $350 (estimated)
+🔄 [2025-12-29T21:28:18.538Z] McClelland House: Scraping 2025-03-16 (22/52)
+✅ [2025-12-29T21:28:29.831Z] McClelland House 2025-03-16: $402 (estimated)
+🔄 [2025-12-29T21:28:33.318Z] McClelland House: Scraping 2025-03-20 (23/52)
+✅ [2025-12-29T21:28:44.890Z] McClelland House 2025-03-20: $350 (estimated)
+🔄 [2025-12-29T21:28:48.332Z] McClelland House: Scraping 2025-03-23 (24/52)
+✅ [2025-12-29T21:29:00.257Z] McClelland House 2025-03-23: $402 (estimated)
+🔄 [2025-12-29T21:29:03.125Z] McClelland House: Scraping 2025-03-27 (25/52)
+✅ [2025-12-29T21:29:14.996Z] McClelland House 2025-03-27: $350 (estimated)
+🔄 [2025-12-29T21:29:17.412Z] McClelland House: Scraping 2025-03-30 (26/52)
+✅ [2025-12-29T21:29:29.424Z] McClelland House 2025-03-30: $402 (estimated)
+🔄 [2025-12-29T21:29:32.973Z] McClelland House: Scraping 2025-04-03 (27/52)
+✅ [2025-12-29T21:29:44.573Z] McClelland House 2025-04-03: $500 (estimated)
+🔄 [2025-12-29T21:29:46.842Z] McClelland House: Scraping 2025-04-06 (28/52)
+✅ [2025-12-29T21:29:58.246Z] McClelland House 2025-04-06: $575 (estimated)
+🔄 [2025-12-29T21:30:00.627Z] McClelland House: Scraping 2025-04-10 (29/52)
+✅ [2025-12-29T21:30:12.644Z] McClelland House 2025-04-10: $500 (estimated)
+🔄 [2025-12-29T21:30:15.297Z] McClelland House: Scraping 2025-04-13 (30/52)
+✅ [2025-12-29T21:30:27.317Z] McClelland House 2025-04-13: $575 (estimated)
+🔄 [2025-12-29T21:30:29.602Z] McClelland House: Scraping 2025-04-17 (31/52)
+✅ [2025-12-29T21:30:41.054Z] McClelland House 2025-04-17: $500 (estimated)
+🔄 [2025-12-29T21:30:43.716Z] McClelland House: Scraping 2025-04-20 (32/52)
+✅ [2025-12-29T21:30:55.469Z] McClelland House 2025-04-20: $575 (estimated)
+🔄 [2025-12-29T21:30:57.850Z] McClelland House: Scraping 2025-04-24 (33/52)
+✅ [2025-12-29T21:31:09.495Z] McClelland House 2025-04-24: $500 (estimated)
+🔄 [2025-12-29T21:31:13.181Z] McClelland House: Scraping 2025-04-27 (34/52)
+✅ [2025-12-29T21:31:24.724Z] McClelland House 2025-04-27: $575 (estimated)
+🔄 [2025-12-29T21:31:28.517Z] McClelland House: Scraping 2025-05-01 (35/52)
+✅ [2025-12-29T21:31:40.123Z] McClelland House 2025-05-01: $500 (estimated)
+🔄 [2025-12-29T21:31:43.597Z] McClelland House: Scraping 2025-05-04 (36/52)
+✅ [2025-12-29T21:31:55.255Z] McClelland House 2025-05-04: $747 (estimated)
+🔄 [2025-12-29T21:31:58.642Z] McClelland House: Scraping 2025-05-08 (37/52)
+✅ [2025-12-29T21:32:10.300Z] McClelland House 2025-05-08: $650 (estimated)
+🔄 [2025-12-29T21:32:13.081Z] McClelland House: Scraping 2025-05-11 (38/52)
+✅ [2025-12-29T21:32:24.635Z] McClelland House 2025-05-11: $747 (estimated)
+🔄 [2025-12-29T21:32:28.347Z] McClelland House: Scraping 2025-05-15 (39/52)
+✅ [2025-12-29T21:32:39.783Z] McClelland House 2025-05-15: $650 (estimated)
+🔄 [2025-12-29T21:32:42.598Z] McClelland House: Scraping 2025-05-18 (40/52)
+✅ [2025-12-29T21:32:54.612Z] McClelland House 2025-05-18: $747 (estimated)
+🔄 [2025-12-29T21:32:57.899Z] McClelland House: Scraping 2025-05-22 (41/52)
+✅ [2025-12-29T21:33:09.203Z] McClelland House 2025-05-22: $650 (estimated)
+🔄 [2025-12-29T21:33:12.333Z] McClelland House: Scraping 2025-05-25 (42/52)
+✅ [2025-12-29T21:33:23.969Z] McClelland House 2025-05-25: $747 (estimated)
+🔄 [2025-12-29T21:33:27.061Z] McClelland House: Scraping 2025-05-29 (43/52)
+✅ [2025-12-29T21:33:38.705Z] McClelland House 2025-05-29: $650 (estimated)
+🔄 [2025-12-29T21:33:41.209Z] McClelland House: Scraping 2025-06-01 (44/52)
+✅ [2025-12-29T21:33:53.055Z] McClelland House 2025-06-01: $747 (estimated)
+🔄 [2025-12-29T21:33:56.530Z] McClelland House: Scraping 2025-06-05 (45/52)
+✅ [2025-12-29T21:34:08.139Z] McClelland House 2025-06-05: $650 (estimated)
+🔄 [2025-12-29T21:34:11.041Z] McClelland House: Scraping 2025-06-08 (46/52)
+✅ [2025-12-29T21:34:22.268Z] McClelland House 2025-06-08: $747 (estimated)
+🔄 [2025-12-29T21:34:25.818Z] McClelland House: Scraping 2025-06-12 (47/52)
+✅ [2025-12-29T21:34:37.098Z] McClelland House 2025-06-12: $650 (estimated)
+🔄 [2025-12-29T21:34:39.575Z] McClelland House: Scraping 2025-06-15 (48/52)
+✅ [2025-12-29T21:34:51.586Z] McClelland House 2025-06-15: $747 (estimated)
+🔄 [2025-12-29T21:34:54.838Z] McClelland House: Scraping 2025-06-19 (49/52)
+✅ [2025-12-29T21:35:06.202Z] McClelland House 2025-06-19: $650 (estimated)
+🔄 [2025-12-29T21:35:08.645Z] McClelland House: Scraping 2025-06-22 (50/52)
+✅ [2025-12-29T21:35:20.069Z] McClelland House 2025-06-22: $747 (estimated)
+🔄 [2025-12-29T21:35:22.763Z] McClelland House: Scraping 2025-06-26 (51/52)
+✅ [2025-12-29T21:35:34.577Z] McClelland House 2025-06-26: $650 (estimated)
+🔄 [2025-12-29T21:35:37.585Z] McClelland House: Scraping 2025-06-29 (52/52)
+✅ [2025-12-29T21:35:49.257Z] McClelland House 2025-06-29: $747 (estimated)
+✅ [2025-12-29T21:35:52.711Z] Saved 156 results to /Users/mitun/Cloudbeds/booking-engine/data/competitor-rates-batch2.json
+📋 [2025-12-29T21:35:52.893Z] 
+============================================================
+📋 [2025-12-29T21:35:52.893Z] SCRAPING COMPLETE - SUMMARY
+📋 [2025-12-29T21:35:52.893Z] ============================================================
+📋 [2025-12-29T21:35:52.893Z] White House Napa:
+📋 [2025-12-29T21:35:52.893Z]   - Success: 52/52 (100.0%)
+📋 [2025-12-29T21:35:52.893Z]   - Avg Rate: $382.33
+📋 [2025-12-29T21:35:52.893Z]   - Direct: 52, Booking.com: 0
+📋 [2025-12-29T21:35:52.893Z] The George Napa:
+📋 [2025-12-29T21:35:52.893Z]   - Success: 52/52 (100.0%)
+📋 [2025-12-29T21:35:52.893Z]   - Avg Rate: $536.60
+📋 [2025-12-29T21:35:52.893Z]   - Direct: 0, Booking.com: 0
+📋 [2025-12-29T21:35:52.893Z] McClelland House:
+📋 [2025-12-29T21:35:52.893Z]   - Success: 52/52 (100.0%)
+📋 [2025-12-29T21:35:52.893Z]   - Avg Rate: $509.60
+📋 [2025-12-29T21:35:52.893Z]   - Direct: 0, Booking.com: 0
+✅ [2025-12-29T21:35:52.895Z] 
+Final results saved to: /Users/mitun/Cloudbeds/booking-engine/data/competitor-rates-batch2.json
+✅ [2025-12-29T21:35:52.895Z] Total data points collected: 156

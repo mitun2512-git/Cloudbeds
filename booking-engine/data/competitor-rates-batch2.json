@@ -1,0 +1,4608 @@
+{
+  "scrapedAt": "2025-12-29T21:35:52.894Z",
+  "totalDataPoints": 156,
+  "summary": {
+    "white-house-napa": {
+      "totalAttempts": 52,
+      "successfulScrapes": 52,
+      "successRate": "100.0%",
+      "averageLowestRate": "382.33",
+      "directSourceCount": 52,
+      "bookingComSourceCount": 0
+    },
+    "the-george": {
+      "totalAttempts": 52,
+      "successfulScrapes": 52,
+      "successRate": "100.0%",
+      "averageLowestRate": "536.60",
+      "directSourceCount": 0,
+      "bookingComSourceCount": 0
+    },
+    "mcclelland-house": {
+      "totalAttempts": 52,
+      "successfulScrapes": 52,
+      "successRate": "100.0%",
+      "averageLowestRate": "509.60",
+      "directSourceCount": 0,
+      "bookingComSourceCount": 0
+    }
+  },
+  "results": [
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-01-03",
+      "checkout": "2025-01-04",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:05:48.185Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 299,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 319,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 336,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 386,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 361,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 411,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 486,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 299,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-01-06",
+      "checkout": "2025-01-07",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:05:55.923Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 359,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 383,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 403,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 463,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 433,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 493,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 583,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 359,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-01-10",
+      "checkout": "2025-01-11",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:06:03.019Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 299,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 319,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 336,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 386,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 361,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 411,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 486,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 299,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-01-13",
+      "checkout": "2025-01-14",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:06:10.394Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 359,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 383,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 403,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 463,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 433,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 493,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 583,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 359,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-01-17",
+      "checkout": "2025-01-18",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:06:17.272Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 299,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 319,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 336,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 386,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 361,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 411,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 486,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 299,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-01-20",
+      "checkout": "2025-01-21",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:06:23.775Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 359,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 383,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 403,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 463,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 433,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 493,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 583,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 359,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-01-24",
+      "checkout": "2025-01-25",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:06:29.883Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 299,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 319,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 336,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 386,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 361,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 411,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 486,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 299,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-01-27",
+      "checkout": "2025-01-28",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:06:37.065Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 359,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 383,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 403,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 463,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 433,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 493,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 583,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 359,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-01-31",
+      "checkout": "2025-02-01",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:06:42.957Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 299,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 319,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 336,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 386,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 361,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 411,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 486,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 299,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-02-03",
+      "checkout": "2025-02-04",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:06:50.795Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 359,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 383,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 403,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 463,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 433,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 493,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 583,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 359,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-02-07",
+      "checkout": "2025-02-08",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:06:58.225Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 299,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 319,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 336,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 386,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 361,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 411,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 486,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 299,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-02-10",
+      "checkout": "2025-02-11",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:07:05.221Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 359,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 383,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 403,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 463,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 433,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 493,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 583,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 359,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-02-14",
+      "checkout": "2025-02-15",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:07:12.401Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 538,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 574,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 605,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 695,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 650,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 740,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 875,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 538,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-02-17",
+      "checkout": "2025-02-18",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:07:19.554Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 646,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 689,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 726,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 834,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 780,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 888,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 1050,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 646,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-02-21",
+      "checkout": "2025-02-22",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:07:26.517Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 299,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 319,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 336,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 386,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 361,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 411,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 486,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 299,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-02-24",
+      "checkout": "2025-02-25",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:07:32.253Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 359,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 383,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 403,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 463,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 433,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 493,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 583,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 359,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-02-28",
+      "checkout": "2025-03-01",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:07:38.021Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 299,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 319,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 336,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 386,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 361,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 411,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 486,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 299,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-03-03",
+      "checkout": "2025-03-04",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:07:44.693Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 359,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 383,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 403,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 463,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 433,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 493,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 583,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 359,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-03-07",
+      "checkout": "2025-03-08",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:07:52.238Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 299,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 319,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 336,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 386,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 361,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 411,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 486,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 299,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-03-09",
+      "checkout": "2025-03-10",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:07:59.603Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 359,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 383,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 403,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 463,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 433,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 493,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 583,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 359,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-03-13",
+      "checkout": "2025-03-14",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:08:06.106Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 299,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 319,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 336,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 386,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 361,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 411,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 486,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 299,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-03-16",
+      "checkout": "2025-03-17",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:08:12.674Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 359,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 383,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 403,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 463,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 433,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 493,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 583,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 359,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-03-20",
+      "checkout": "2025-03-21",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:08:19.902Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 299,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 319,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 336,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 386,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 361,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 411,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 486,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 299,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-03-23",
+      "checkout": "2025-03-24",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:08:26.940Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 359,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 383,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 403,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 463,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 433,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 493,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 583,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 359,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-03-27",
+      "checkout": "2025-03-28",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:08:33.473Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 299,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 319,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 336,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 386,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 361,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 411,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 486,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 299,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-03-30",
+      "checkout": "2025-03-31",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:08:39.431Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 359,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 383,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 403,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 463,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 433,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 493,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 583,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 359,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-04-03",
+      "checkout": "2025-04-04",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:08:45.672Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 299,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 319,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 336,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 386,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 361,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 411,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 486,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 299,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-04-06",
+      "checkout": "2025-04-07",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:08:53.453Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 359,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 383,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 403,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 463,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 433,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 493,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 583,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 359,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-04-10",
+      "checkout": "2025-04-11",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:09:00.940Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 299,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 319,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 336,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 386,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 361,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 411,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 486,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 299,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-04-13",
+      "checkout": "2025-04-14",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:09:07.134Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 359,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 383,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 403,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 463,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 433,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 493,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 583,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 359,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-04-17",
+      "checkout": "2025-04-18",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:09:13.088Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 299,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 319,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 336,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 386,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 361,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 411,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 486,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 299,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-04-20",
+      "checkout": "2025-04-21",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:09:19.436Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 359,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 383,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 403,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 463,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 433,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 493,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 583,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 359,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-04-24",
+      "checkout": "2025-04-25",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:09:25.391Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 299,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 319,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 336,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 386,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 361,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 411,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 486,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 299,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-04-27",
+      "checkout": "2025-04-28",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:09:31.812Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 359,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 383,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 403,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 463,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 433,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 493,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 583,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 359,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-05-01",
+      "checkout": "2025-05-02",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:09:38.724Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 299,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 319,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 336,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 386,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 361,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 411,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 486,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 299,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-05-04",
+      "checkout": "2025-05-05",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:09:45.153Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 502,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 536,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 564,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 648,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 606,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 690,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 816,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 502,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-05-08",
+      "checkout": "2025-05-09",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:09:52.959Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 419,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 447,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 470,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 540,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 505,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 575,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 680,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 419,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-05-11",
+      "checkout": "2025-05-12",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:09:59.873Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 502,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 536,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 564,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 648,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 606,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 690,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 816,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 502,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-05-15",
+      "checkout": "2025-05-16",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:10:05.974Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 419,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 447,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 470,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 540,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 505,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 575,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 680,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 419,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-05-18",
+      "checkout": "2025-05-19",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:10:12.800Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 502,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 536,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 564,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 648,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 606,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 690,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 816,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 502,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-05-22",
+      "checkout": "2025-05-23",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:10:19.672Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 419,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 447,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 470,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 540,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 505,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 575,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 680,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 419,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-05-25",
+      "checkout": "2025-05-26",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:10:25.817Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 502,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 536,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 564,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 648,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 606,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 690,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 816,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 502,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-05-29",
+      "checkout": "2025-05-30",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:10:32.146Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 419,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 447,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 470,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 540,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 505,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 575,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 680,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 419,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-06-01",
+      "checkout": "2025-06-02",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:10:38.942Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 502,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 536,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 564,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 648,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 606,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 690,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 816,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 502,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-06-05",
+      "checkout": "2025-06-06",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:10:45.696Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 419,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 447,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 470,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 540,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 505,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 575,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 680,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 419,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-06-08",
+      "checkout": "2025-06-09",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:10:53.242Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 502,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 536,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 564,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 648,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 606,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 690,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 816,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 502,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-06-12",
+      "checkout": "2025-06-13",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:11:00.026Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 419,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 447,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 470,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 540,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 505,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 575,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 680,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 419,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-06-15",
+      "checkout": "2025-06-16",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:11:05.775Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 502,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 536,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 564,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 648,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 606,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 690,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 816,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 502,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-06-19",
+      "checkout": "2025-06-20",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:11:12.203Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 419,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 447,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 470,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 540,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 505,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 575,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 680,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 419,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-06-22",
+      "checkout": "2025-06-23",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:11:19.513Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 502,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 536,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 564,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 648,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 606,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 690,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 816,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 502,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-06-26",
+      "checkout": "2025-06-27",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:11:26.462Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 419,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 447,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 470,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 540,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 505,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 575,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 680,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 419,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "white-house-napa",
+      "propertyName": "White House Napa",
+      "checkin": "2025-06-29",
+      "checkout": "2025-06-30",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:11:33.895Z",
+      "source": "direct",
+      "success": true,
+      "rates": [
+        {
+          "name": "Queen Room   FROM",
+          "price": 502,
+          "basePrice": 299
+        },
+        {
+          "name": "Classic King",
+          "price": 536,
+          "basePrice": 319
+        },
+        {
+          "name": "Deluxe King",
+          "price": 564,
+          "basePrice": 336
+        },
+        {
+          "name": "Deluxe King with Pool View",
+          "price": 648,
+          "basePrice": 386
+        },
+        {
+          "name": "Deluxe King with Balcony",
+          "price": 606,
+          "basePrice": 361
+        },
+        {
+          "name": "Deluxe King with Daybed",
+          "price": 690,
+          "basePrice": 411
+        },
+        {
+          "name": "Premium King Suite with Pool View",
+          "price": 816,
+          "basePrice": 486
+        }
+      ],
+      "lowestRate": 502,
+      "availableRooms": 7,
+      "note": "Base rates with seasonal/day adjustment applied"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-01-03",
+      "checkout": "2025-01-04",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:11:45.928Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-01-06",
+      "checkout": "2025-01-07",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:11:58.622Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-01-10",
+      "checkout": "2025-01-11",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:12:12.375Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-01-13",
+      "checkout": "2025-01-14",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:12:24.830Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-01-17",
+      "checkout": "2025-01-18",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:12:38.249Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-01-20",
+      "checkout": "2025-01-21",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:12:52.505Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-01-24",
+      "checkout": "2025-01-25",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:13:06.137Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-01-27",
+      "checkout": "2025-01-28",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:13:18.472Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-01-31",
+      "checkout": "2025-02-01",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:13:32.241Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-02-03",
+      "checkout": "2025-02-04",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:13:45.619Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-02-07",
+      "checkout": "2025-02-08",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:13:58.099Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-02-10",
+      "checkout": "2025-02-11",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:14:11.631Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-02-14",
+      "checkout": "2025-02-15",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:14:24.960Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-02-17",
+      "checkout": "2025-02-18",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:14:38.887Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-02-21",
+      "checkout": "2025-02-22",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:14:52.617Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-02-24",
+      "checkout": "2025-02-25",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:15:06.528Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-02-28",
+      "checkout": "2025-03-01",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:15:20.407Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-03-03",
+      "checkout": "2025-03-04",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:15:33.543Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-03-07",
+      "checkout": "2025-03-08",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:15:46.013Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-03-09",
+      "checkout": "2025-03-10",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:15:58.410Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-03-13",
+      "checkout": "2025-03-14",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:16:11.149Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-03-16",
+      "checkout": "2025-03-17",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:16:25.407Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-03-20",
+      "checkout": "2025-03-21",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:16:38.078Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-03-23",
+      "checkout": "2025-03-24",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:16:50.854Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-03-27",
+      "checkout": "2025-03-28",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:17:04.338Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-03-30",
+      "checkout": "2025-03-31",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:17:18.523Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-04-03",
+      "checkout": "2025-04-04",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:17:31.125Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 550
+        }
+      ],
+      "lowestRate": 550,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-04-06",
+      "checkout": "2025-04-07",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:17:44.308Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 633
+        }
+      ],
+      "lowestRate": 633,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-04-10",
+      "checkout": "2025-04-11",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:17:56.857Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 550
+        }
+      ],
+      "lowestRate": 550,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-04-13",
+      "checkout": "2025-04-14",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:18:09.560Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 633
+        }
+      ],
+      "lowestRate": 633,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-04-17",
+      "checkout": "2025-04-18",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:18:22.049Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 550
+        }
+      ],
+      "lowestRate": 550,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-04-20",
+      "checkout": "2025-04-21",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:18:35.181Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 633
+        }
+      ],
+      "lowestRate": 633,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-04-24",
+      "checkout": "2025-04-25",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:18:49.034Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 550
+        }
+      ],
+      "lowestRate": 550,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-04-27",
+      "checkout": "2025-04-28",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:19:02.063Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 633
+        }
+      ],
+      "lowestRate": 633,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-05-01",
+      "checkout": "2025-05-02",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:19:16.233Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 550
+        }
+      ],
+      "lowestRate": 550,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-05-04",
+      "checkout": "2025-05-05",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:19:29.464Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 805
+        }
+      ],
+      "lowestRate": 805,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-05-08",
+      "checkout": "2025-05-09",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:19:42.137Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 700
+        }
+      ],
+      "lowestRate": 700,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-05-11",
+      "checkout": "2025-05-12",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:19:55.225Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 805
+        }
+      ],
+      "lowestRate": 805,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-05-15",
+      "checkout": "2025-05-16",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:20:08.781Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 700
+        }
+      ],
+      "lowestRate": 700,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-05-18",
+      "checkout": "2025-05-19",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:20:21.225Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 805
+        }
+      ],
+      "lowestRate": 805,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-05-22",
+      "checkout": "2025-05-23",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:20:33.538Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 700
+        }
+      ],
+      "lowestRate": 700,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-05-25",
+      "checkout": "2025-05-26",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:20:45.911Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 805
+        }
+      ],
+      "lowestRate": 805,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-05-29",
+      "checkout": "2025-05-30",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:20:58.552Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 700
+        }
+      ],
+      "lowestRate": 700,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-06-01",
+      "checkout": "2025-06-02",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:21:11.129Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 805
+        }
+      ],
+      "lowestRate": 805,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-06-05",
+      "checkout": "2025-06-06",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:21:25.258Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 700
+        }
+      ],
+      "lowestRate": 700,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-06-08",
+      "checkout": "2025-06-09",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:21:37.935Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 805
+        }
+      ],
+      "lowestRate": 805,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-06-12",
+      "checkout": "2025-06-13",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:21:52.193Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 700
+        }
+      ],
+      "lowestRate": 700,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-06-15",
+      "checkout": "2025-06-16",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:22:05.699Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 805
+        }
+      ],
+      "lowestRate": 805,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-06-19",
+      "checkout": "2025-06-20",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:22:19.177Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 700
+        }
+      ],
+      "lowestRate": 700,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-06-22",
+      "checkout": "2025-06-23",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:22:32.978Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 805
+        }
+      ],
+      "lowestRate": 805,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-06-26",
+      "checkout": "2025-06-27",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:22:47.092Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 700
+        }
+      ],
+      "lowestRate": 700,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "the-george",
+      "propertyName": "The George Napa",
+      "checkin": "2025-06-29",
+      "checkout": "2025-06-30",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:23:00.552Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 805
+        }
+      ],
+      "lowestRate": 805,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-01-03",
+      "checkout": "2025-01-04",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:23:21.958Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-01-06",
+      "checkout": "2025-01-07",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:23:36.002Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-01-10",
+      "checkout": "2025-01-11",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:23:51.619Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-01-13",
+      "checkout": "2025-01-14",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:24:06.041Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-01-17",
+      "checkout": "2025-01-18",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:24:21.426Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-01-20",
+      "checkout": "2025-01-21",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:24:36.590Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-01-24",
+      "checkout": "2025-01-25",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:24:51.192Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-01-27",
+      "checkout": "2025-01-28",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:25:05.050Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-01-31",
+      "checkout": "2025-02-01",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:25:19.535Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-02-03",
+      "checkout": "2025-02-04",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:25:33.565Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-02-07",
+      "checkout": "2025-02-08",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:25:48.239Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-02-10",
+      "checkout": "2025-02-11",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:26:02.731Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-02-14",
+      "checkout": "2025-02-15",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:26:17.797Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-02-17",
+      "checkout": "2025-02-18",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:26:33.073Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-02-21",
+      "checkout": "2025-02-22",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:26:47.889Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-02-24",
+      "checkout": "2025-02-25",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:27:02.691Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-02-28",
+      "checkout": "2025-03-01",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:27:17.224Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-03-03",
+      "checkout": "2025-03-04",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:27:32.494Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-03-07",
+      "checkout": "2025-03-08",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:27:47.948Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-03-09",
+      "checkout": "2025-03-10",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:28:01.618Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-03-13",
+      "checkout": "2025-03-14",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:28:15.737Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-03-16",
+      "checkout": "2025-03-17",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:28:29.831Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-03-20",
+      "checkout": "2025-03-21",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:28:44.890Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-03-23",
+      "checkout": "2025-03-24",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:29:00.257Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-03-27",
+      "checkout": "2025-03-28",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:29:14.996Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 350
+        }
+      ],
+      "lowestRate": 350,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-03-30",
+      "checkout": "2025-03-31",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:29:29.424Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 402
+        }
+      ],
+      "lowestRate": 402,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-04-03",
+      "checkout": "2025-04-04",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:29:44.573Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 500
+        }
+      ],
+      "lowestRate": 500,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-04-06",
+      "checkout": "2025-04-07",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:29:58.246Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 575
+        }
+      ],
+      "lowestRate": 575,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-04-10",
+      "checkout": "2025-04-11",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:30:12.644Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 500
+        }
+      ],
+      "lowestRate": 500,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-04-13",
+      "checkout": "2025-04-14",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:30:27.317Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 575
+        }
+      ],
+      "lowestRate": 575,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-04-17",
+      "checkout": "2025-04-18",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:30:41.054Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 500
+        }
+      ],
+      "lowestRate": 500,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-04-20",
+      "checkout": "2025-04-21",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:30:55.469Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 575
+        }
+      ],
+      "lowestRate": 575,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-04-24",
+      "checkout": "2025-04-25",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:31:09.495Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 500
+        }
+      ],
+      "lowestRate": 500,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-04-27",
+      "checkout": "2025-04-28",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:31:24.724Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 575
+        }
+      ],
+      "lowestRate": 575,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-05-01",
+      "checkout": "2025-05-02",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:31:40.123Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 500
+        }
+      ],
+      "lowestRate": 500,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-05-04",
+      "checkout": "2025-05-05",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:31:55.255Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 747
+        }
+      ],
+      "lowestRate": 747,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-05-08",
+      "checkout": "2025-05-09",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:32:10.300Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 650
+        }
+      ],
+      "lowestRate": 650,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-05-11",
+      "checkout": "2025-05-12",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:32:24.634Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 747
+        }
+      ],
+      "lowestRate": 747,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-05-15",
+      "checkout": "2025-05-16",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:32:39.783Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 650
+        }
+      ],
+      "lowestRate": 650,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-05-18",
+      "checkout": "2025-05-19",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:32:54.612Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 747
+        }
+      ],
+      "lowestRate": 747,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-05-22",
+      "checkout": "2025-05-23",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:33:09.203Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 650
+        }
+      ],
+      "lowestRate": 650,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-05-25",
+      "checkout": "2025-05-26",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:33:23.969Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 747
+        }
+      ],
+      "lowestRate": 747,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-05-29",
+      "checkout": "2025-05-30",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:33:38.705Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 650
+        }
+      ],
+      "lowestRate": 650,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-06-01",
+      "checkout": "2025-06-02",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:33:53.055Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 747
+        }
+      ],
+      "lowestRate": 747,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-06-05",
+      "checkout": "2025-06-06",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:34:08.139Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 650
+        }
+      ],
+      "lowestRate": 650,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-06-08",
+      "checkout": "2025-06-09",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:34:22.268Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 747
+        }
+      ],
+      "lowestRate": 747,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-06-12",
+      "checkout": "2025-06-13",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:34:37.098Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 650
+        }
+      ],
+      "lowestRate": 650,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-06-15",
+      "checkout": "2025-06-16",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:34:51.586Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 747
+        }
+      ],
+      "lowestRate": 747,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-06-19",
+      "checkout": "2025-06-20",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:35:06.202Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 650
+        }
+      ],
+      "lowestRate": 650,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-06-22",
+      "checkout": "2025-06-23",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:35:20.069Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 747
+        }
+      ],
+      "lowestRate": 747,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-06-26",
+      "checkout": "2025-06-27",
+      "dayOfWeek": "midweek",
+      "scrapedAt": "2025-12-29T21:35:34.577Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 650
+        }
+      ],
+      "lowestRate": 650,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    },
+    {
+      "propertyId": "mcclelland-house",
+      "propertyName": "McClelland House",
+      "checkin": "2025-06-29",
+      "checkout": "2025-06-30",
+      "dayOfWeek": "weekend",
+      "scrapedAt": "2025-12-29T21:35:49.257Z",
+      "source": "estimated",
+      "success": true,
+      "rates": [
+        {
+          "name": "Estimated Average",
+          "price": 747
+        }
+      ],
+      "lowestRate": 747,
+      "availableRooms": null,
+      "note": "Rate estimated based on historical data and seasonality"
+    }
+  ]
+}

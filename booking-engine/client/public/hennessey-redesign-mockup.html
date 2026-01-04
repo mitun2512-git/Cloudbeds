@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hennessey Estate | Where Every Stay Becomes a Story</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lato:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --forest-green: #4A5D4A;
+            --forest-dark: #3d4d3d;
+            --gold: #C5A36A;
+            --gold-light: #d4b98a;
+            --cream: #F5F3EF;
+            --cream-dark: #E8E4DC;
+            --text-dark: #2C2C2C;
+            --text-light: #F5F3EF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            color: var(--text-dark);
+            background: var(--cream);
+            line-height: 1.7;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 400;
+        }
+
+        /* Header */
+        header {
+            background: var(--forest-green);
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            gap: 40px;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        .logo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .logo img {
+            height: 80px;
+        }
+
+        .book-btn {
+            background: transparent;
+            border: 1px solid var(--text-light);
+            color: var(--text-light);
+            padding: 12px 28px;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .book-btn:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--forest-green);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                        url('https://static.wixstatic.com/media/ebc938_f9c53f8bfbf7444081335859e527f5be~mv2.jpg/v1/fill/w_2500,h_1422,al_c,q_90,enc_avif,quality_auto/ebc938_f9c53f8bfbf7444081335859e527f5be~mv2.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--text-light);
+            padding-top: 100px;
+        }
+
+        .hero h1 {
+            font-size: 72px;
+            font-weight: 400;
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        .hero-cta {
+            background: var(--gold);
+            color: var(--forest-green);
+            padding: 16px 40px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .hero-cta:hover {
+            background: var(--gold-light);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 100px 80px;
+        }
+
+        .section-green {
+            background: var(--forest-green);
+            color: var(--text-light);
+        }
+
+        .section-cream {
+            background: var(--cream);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 52px;
+            margin-bottom: 8px;
+        }
+
+        .section-header h3 {
+            font-size: 28px;
+            font-style: italic;
+            color: var(--gold);
+            font-weight: 400;
+        }
+
+        .section-green .section-header h3 {
+            color: var(--gold-light);
+        }
+
+        /* Two Column Layout */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .two-col.reverse {
+            direction: rtl;
+        }
+
+        .two-col.reverse > * {
+            direction: ltr;
+        }
+
+        .col-content h2 {
+            font-size: 48px;
+            margin-bottom: 12px;
+        }
+
+        .col-content h3 {
+            font-size: 24px;
+            font-style: italic;
+            color: var(--gold);
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        .section-green .col-content h3 {
+            color: var(--gold-light);
+        }
+
+        .col-content p {
+            font-size: 17px;
+            line-height: 1.9;
+            margin-bottom: 20px;
+        }
+
+        .col-content .tagline {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: 22px;
+            margin-top: 30px;
+            color: var(--gold);
+        }
+
+        .section-green .col-content .tagline {
+            color: var(--gold-light);
+        }
+
+        .col-image img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .section-cta {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 32px;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+
+        .section-cta:hover {
+            background: var(--gold);
+            color: var(--forest-green);
+        }
+
+        .section-green .section-cta {
+            border-color: var(--gold-light);
+            color: var(--gold-light);
+        }
+
+        .section-green .section-cta:hover {
+            background: var(--gold-light);
+            color: var(--forest-green);
+        }
+
+        /* Amenities Grid */
+        .amenities-section {
+            background: var(--cream-dark);
+            padding: 80px;
+            text-align: center;
+        }
+
+        .amenities-section h2 {
+            font-size: 42px;
+            margin-bottom: 50px;
+        }
+
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .amenity-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .amenity-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--forest-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 20px;
+        }
+
+        .amenity-item span {
+            font-size: 14px;
+            color: var(--forest-green);
+        }
+
+        /* Reviews Section */
+        .reviews-section {
+            background: var(--forest-green);
+            padding: 100px 80px;
+            text-align: center;
+            color: var(--text-light);
+        }
+
+        .reviews-header {
+            margin-bottom: 20px;
+        }
+
+        .reviews-header .stars {
+            color: var(--gold);
+            font-size: 28px;
+            letter-spacing: 4px;
+        }
+
+        .reviews-header h2 {
+            font-size: 48px;
+            margin: 20px 0 10px;
+        }
+
+        .reviews-header p {
+            font-size: 18px;
+            color: var(--gold-light);
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            max-width: 1200px;
+            margin: 50px auto 0;
+        }
+
+        .review-card {
+            background: rgba(255,255,255,0.05);
+            padding: 40px;
+            border-radius: 4px;
+            text-align: left;
+        }
+
+        .review-card p {
+            font-style: italic;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .review-card .author {
+            font-size: 14px;
+            color: var(--gold-light);
+        }
+
+        /* Newsletter Section */
+        .newsletter-section {
+            background: var(--cream);
+            padding: 80px;
+            text-align: center;
+        }
+
+        .newsletter-section h2 {
+            font-size: 42px;
+            margin-bottom: 16px;
+        }
+
+        .newsletter-section p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 16px 20px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .newsletter-form button {
+            background: var(--forest-green);
+            color: var(--text-light);
+            border: none;
+            padding: 16px 32px;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            background: var(--forest-dark);
+        }
+
+        .newsletter-note {
+            font-size: 12px;
+            color: #999;
+            margin-top: 16px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--forest-green);
+            color: var(--text-light);
+            padding: 60px 80px;
+            text-align: center;
+        }
+
+        footer .tagline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 24px;
+            font-style: italic;
+            margin-bottom: 40px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            color: var(--gold);
+        }
+
+        .footer-col p, .footer-col a {
+            font-size: 14px;
+            color: var(--text-light);
+            text-decoration: none;
+            line-height: 1.8;
+            display: block;
+        }
+
+        .footer-col a:hover {
+            color: var(--gold);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background: var(--gold);
+            color: var(--forest-green);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 30px;
+            margin-top: 30px;
+        }
+
+        .footer-bottom .rating {
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
+
+        .footer-bottom p {
+            font-size: 13px;
+            color: rgba(255,255,255,0.6);
+        }
+
+        /* Botanical Pattern Overlay */
+        .botanical-bg {
+            position: relative;
+        }
+
+        .botanical-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath d='M20 50 Q30 30 50 50 Q70 70 80 50' stroke='%23C5A36A' stroke-width='0.5' fill='none' opacity='0.15'/%3E%3Cpath d='M10 80 Q25 60 40 80' stroke='%23C5A36A' stroke-width='0.5' fill='none' opacity='0.15'/%3E%3Ccircle cx='75' cy='25' r='3' stroke='%23C5A36A' stroke-width='0.5' fill='none' opacity='0.15'/%3E%3C/svg%3E");
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        .botanical-bg > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .two-col {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .amenities-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 20px;
+            }
+            
+            nav {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 42px;
+            }
+            
+            section {
+                padding: 60px 20px;
+            }
+            
+            .col-content h2 {
+                font-size: 36px;
+            }
+            
+            .amenities-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Gallery</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="logo">
+            <img src="https://static.wixstatic.com/media/ebc938_caa5dee343f640b181d2ce0e904974d8~mv2.png/v1/crop/x_52,y_98,w_394,h_291/fill/w_187,h_138,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Hennessey%20House%20(6).png" alt="Hennessey Estate Logo">
+        </div>
+        <a href="https://us2.cloudbeds.com/en/reservation/N2eFbP?currency=usd" class="book-btn">Book Now</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Where Every Stay<br>Becomes a Story</h1>
+        <p>A Victorian estate, lovingly restored. A sparkling pool beneath the Napa sun. Three blocks from downtown—yet a world away.</p>
+        <a href="https://us2.cloudbeds.com/en/reservation/N2eFbP?currency=usd" class="hero-cta">Book Your Escape →</a>
+    </section>
+
+    <!-- Pool Section -->
+    <section class="section-green botanical-bg">
+        <div class="two-col">
+            <div class="col-content">
+                <h2>The Pool</h2>
+                <h3>Your Private Sanctuary</h3>
+                <p>Return from a day of wine tasting to find the afternoon sun dancing on crystal-clear water. Slip into the heated pool or let the spa jets melt away the day.</p>
+                <p>As evening falls, the garden lights flicker on—and the wine country sky puts on its nightly show.</p>
+                <p class="tagline">This is your private oasis. This is the Hennessey way.</p>
+                <a href="https://us2.cloudbeds.com/en/reservation/N2eFbP?currency=usd" class="section-cta">Reserve Your Stay →</a>
+            </div>
+            <div class="col-image">
+                <img src="https://static.wixstatic.com/media/ebc938_1298d35da3ee44939009a45ffe697222~mv2.jpg/v1/fill/w_2500,h_1355,al_c,q_90,enc_avif,quality_auto/ebc938_1298d35da3ee44939009a45ffe697222~mv2.jpg" alt="Hennessey Estate Pool">
+            </div>
+        </div>
+    </section>
+
+    <!-- Tasting Room Section -->
+    <section class="section-cream">
+        <div class="two-col reverse">
+            <div class="col-content">
+                <h2>The Tasting Room</h2>
+                <h3>Where History Comes Alive</h3>
+                <p>Look up. That original 19th-century tin ceiling has witnessed over 130 years of Napa stories. Built for Dr. Edwin Hennessey—the county's first physician and namesake of Lake Hennessey—this room now hosts a different kind of gathering.</p>
+                <p>Each morning, settle into your seat for a chef-prepared breakfast. Each evening, return for complimentary wine and local conversation.</p>
+                <p class="tagline">The tin ceiling doesn't judge. It just listens.</p>
+                <a href="https://us2.cloudbeds.com/en/reservation/N2eFbP?currency=usd" class="section-cta">Experience the Estate →</a>
+            </div>
+            <div class="col-image">
+                <img src="https://static.wixstatic.com/media/ebc938_0a9b75d4b374429ca043887408e484cd~mv2.jpg/v1/fit/w_960,h_639,q_90,enc_avif,quality_auto/ebc938_0a9b75d4b374429ca043887408e484cd~mv2.jpg" alt="Historic Tasting Room">
+            </div>
+        </div>
+    </section>
+
+    <!-- Breakfast Section -->
+    <section class="section-green botanical-bg">
+        <div class="two-col">
+            <div class="col-content">
+                <h2>Morning at Hennessey</h2>
+                <h3>Chef-Prepared. Locally Sourced.</h3>
+                <p>The aroma of fresh coffee finds you before your alarm does. In the sunlit tasting room, our chef has been busy—seasonal fruits, warm pastries, and made-to-order plates that fuel your day of discovery.</p>
+                <p>Linger over a second cup. Compare notes on yesterday's favorite winery. Plan today's adventure with fellow travelers who've quickly become friends.</p>
+                <p class="tagline">Breakfast is included. The memories are complimentary.</p>
+                <a href="https://us2.cloudbeds.com/en/reservation/N2eFbP?currency=usd" class="section-cta">Wake Up Here →</a>
+            </div>
+            <div class="col-image">
+                <img src="https://static.wixstatic.com/media/ebc938_094ef2061610482496a761042a6fb175~mv2.jpg/v1/fit/w_960,h_639,q_90,enc_avif,quality_auto/ebc938_094ef2061610482496a761042a6fb175~mv2.jpg" alt="Chef-Prepared Breakfast">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sauna Section -->
+    <section class="section-cream">
+        <div class="two-col reverse">
+            <div class="col-content">
+                <h2>The Sauna</h2>
+                <h3>Warmth That Restores</h3>
+                <p>After miles of vineyard views and flights of world-class wine, your body deserves this. Step into our traditional sauna and let the dry heat work its magic—releasing tension, clearing your mind, preparing you for whatever the evening holds.</p>
+                <p>A dip in the pool afterward? A glass of wine on the veranda? The choice is yours.</p>
+                <p class="tagline">The restoration is guaranteed.</p>
+                <a href="https://us2.cloudbeds.com/en/reservation/N2eFbP?currency=usd" class="section-cta">Find Your Retreat →</a>
+            </div>
+            <div class="col-image">
+                <img src="https://static.wixstatic.com/media/11062b_23621c0138f7461c916bbecc57c519af~mv2.jpeg/v1/fill/w_960,h_642,q_90,enc_avif,quality_auto/11062b_23621c0138f7461c916bbecc57c519af~mv2.jpeg" alt="Sauna bucket and ladle">
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="section-green botanical-bg">
+        <div class="two-col">
+            <div class="col-content">
+                <h2>Downtown Napa</h2>
+                <h3>Three Blocks. Infinite Possibilities.</h3>
+                <p>Step through our gate and you're in a Victorian garden retreat. Walk three blocks and you're at the heart of Napa's renaissance—Michelin-starred restaurants, boutique tasting rooms, the Oxbow Market, and the Napa Valley Wine Train.</p>
+                <p>Close enough to walk to dinner. Quiet enough to hear the birds at breakfast.</p>
+                <p class="tagline">This is the balance wine country was made for.</p>
+                <a href="https://us2.cloudbeds.com/en/reservation/N2eFbP?currency=usd" class="section-cta">Discover Your Location →</a>
+            </div>
+            <div class="col-image">
+                <img src="https://static.wixstatic.com/media/ebc938_bcf265b8470243cd851d807251620c57~mv2.jpg/v1/fill/w_960,h_642,q_90,enc_avif,quality_auto/ebc938_bcf265b8470243cd851d807251620c57~mv2.jpg" alt="Full Property Bookouts">
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities-section">
+        <h2>Every Stay Includes</h2>
+        <div class="amenities-grid">
+            <div class="amenity-item">
+                <div class="amenity-icon">🏊</div>
+                <span>Heated Pool & Spa</span>
+            </div>
+            <div class="amenity-item">
+                <div class="amenity-icon">🧖</div>
+                <span>Traditional Sauna</span>
+            </div>
+            <div class="amenity-item">
+                <div class="amenity-icon">🍳</div>
+                <span>Chef-Prepared Breakfast</span>
+            </div>
+            <div class="amenity-item">
+                <div class="amenity-icon">🍷</div>
+                <span>Evening Wine Hour</span>
+            </div>
+            <div class="amenity-item">
+                <div class="amenity-icon">🏛️</div>
+                <span>Historic Tasting Room</span>
+            </div>
+            <div class="amenity-item">
+                <div class="amenity-icon">🧴</div>
+                <span>Molton Brown Amenities</span>
+            </div>
+            <div class="amenity-item">
+                <div class="amenity-icon">🅿️</div>
+                <span>Free Parking</span>
+            </div>
+            <div class="amenity-item">
+                <div class="amenity-icon">📶</div>
+                <span>High-Speed WiFi</span>
+            </div>
+            <div class="amenity-item">
+                <div class="amenity-icon">🛎️</div>
+                <span>Concierge Service</span>
+            </div>
+            <div class="amenity-item">
+                <div class="amenity-icon">📍</div>
+                <span>Downtown in 3 Blocks</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Property Section -->
+    <section class="section-cream">
+        <div class="two-col">
+            <div class="col-image">
+                <img src="https://static.wixstatic.com/media/ebc938_329840d85e3a4d57849fa2b9b6ad7273~mv2.jpg/v1/fit/w_960,h_720,q_90,enc_avif,quality_auto/ebc938_329840d85e3a4d57849fa2b9b6ad7273~mv2.jpg" alt="Full Estate View">
+            </div>
+            <div class="col-content">
+                <h2>The Entire Estate</h2>
+                <h3>For Moments That Matter</h3>
+                <p>Some celebrations deserve more than a table for twelve. They deserve an entire Victorian estate.</p>
+                <p>Book all 10 rooms for your milestone birthday, your reunion of college friends, your team offsite that actually inspires. The pool becomes your private club. The tasting room, your exclusive dining venue. The gardens, your backdrop for photos you'll treasure forever.</p>
+                <a href="mailto:info@hennesseyestate.com?subject=Full%20Property%20Inquiry" class="section-cta">Inquire About Buyouts →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section botanical-bg">
+        <div class="reviews-header">
+            <div class="stars">★★★★★</div>
+            <h2>4.8 on Google</h2>
+            <p>95 Five-Star Reviews</p>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <p>"Beautifully restored Victorian... rooms that nicely fused the historic with the modern. Hot delicious breakfast. The concierge Raphael was super responsive. Exceptional stay!"</p>
+                <span class="author">— Denise L., Google</span>
+            </div>
+            <div class="review-card">
+                <p>"Amazing old Napa charm combined with super modern rooms and bathrooms. Cozy beds, great lighting, and big walk-in showers. The pool was perfect after a day of wine tasting."</p>
+                <span class="author">— Michael T., TripAdvisor</span>
+            </div>
+            <div class="review-card">
+                <p>"The breakfast alone is worth the stay. And then there's the pool, the sauna, the location... we're already planning our return trip to Hennessey Estate."</p>
+                <span class="author">— Sarah K., Booking.com</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <h2>Join the Hennessey Circle</h2>
+        <p>Be first to hear about seasonal offers, last-minute availability, and insider tips for your Napa adventure.</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="submit">Subscribe →</button>
+        </form>
+        <p class="newsletter-note">We respect your inbox. Unsubscribe anytime.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="tagline">Step into a piece of Napa's past. Refined for today.</p>
+        
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Visit</h4>
+                <p>Hennessey Estate</p>
+                <p>1727 Main Street</p>
+                <p>Napa, CA 94559</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <a href="mailto:info@hennesseyestate.com">info@hennesseyestate.com</a>
+                <a href="tel:+17072551727">(707) 255-1727</a>
+            </div>
+            <div class="footer-col">
+                <h4>Follow</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/hennesseynapa" title="Instagram">📷</a>
+                    <a href="https://www.pinterest.com/hennesseyestate/" title="Pinterest">📌</a>
+                    <a href="#" title="TripAdvisor">✈️</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="rating">★★★★★ 4.8 on Google · 95 Reviews</p>
+            <p>Listed on the National Register of Historic Places · Est. 1889</p>
+            <p style="margin-top: 20px;">© 2025 Hennessey Estate. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Accessibility</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
+

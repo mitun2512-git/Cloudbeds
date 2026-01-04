@@ -1,0 +1,484 @@
+{
+  "scrapedAt": "2025-12-29T21:05:19.811Z",
+  "totalDataPoints": 52,
+  "summary": {
+    "francis-house": {
+      "totalAttempts": 52,
+      "successfulScrapes": 52,
+      "successRate": "100%",
+      "averageLowestRate": "871.50",
+      "estimatedCount": 52,
+      "directCount": 0
+    }
+  },
+  "results": [
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-01-03",
+      "lowestRate": 640,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.805Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-01-06",
+      "lowestRate": 736,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-01-10",
+      "lowestRate": 640,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-01-13",
+      "lowestRate": 736,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-01-17",
+      "lowestRate": 640,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-01-20",
+      "lowestRate": 736,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-01-24",
+      "lowestRate": 640,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-01-27",
+      "lowestRate": 736,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-01-31",
+      "lowestRate": 640,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-02-03",
+      "lowestRate": 736,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-02-07",
+      "lowestRate": 640,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-02-10",
+      "lowestRate": 736,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-02-14",
+      "lowestRate": 640,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-02-17",
+      "lowestRate": 736,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-02-21",
+      "lowestRate": 640,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-02-24",
+      "lowestRate": 736,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-02-28",
+      "lowestRate": 640,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-03-03",
+      "lowestRate": 736,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-03-07",
+      "lowestRate": 640,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-03-09",
+      "lowestRate": 736,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-03-13",
+      "lowestRate": 640,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-03-16",
+      "lowestRate": 736,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-03-20",
+      "lowestRate": 640,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-03-23",
+      "lowestRate": 736,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-03-27",
+      "lowestRate": 640,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-03-30",
+      "lowestRate": 736,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-04-03",
+      "lowestRate": 850,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-04-06",
+      "lowestRate": 977,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-04-10",
+      "lowestRate": 850,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-04-13",
+      "lowestRate": 977,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-04-17",
+      "lowestRate": 850,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-04-20",
+      "lowestRate": 977,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-04-24",
+      "lowestRate": 850,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-04-27",
+      "lowestRate": 977,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-05-01",
+      "lowestRate": 850,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-05-04",
+      "lowestRate": 1208,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-05-08",
+      "lowestRate": 1050,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-05-11",
+      "lowestRate": 1208,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-05-15",
+      "lowestRate": 1050,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-05-18",
+      "lowestRate": 1208,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-05-22",
+      "lowestRate": 1050,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-05-25",
+      "lowestRate": 1208,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-05-29",
+      "lowestRate": 1050,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-06-01",
+      "lowestRate": 1208,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-06-05",
+      "lowestRate": 1050,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-06-08",
+      "lowestRate": 1208,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-06-12",
+      "lowestRate": 1050,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-06-15",
+      "lowestRate": 1208,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-06-19",
+      "lowestRate": 1050,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-06-22",
+      "lowestRate": 1208,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-06-26",
+      "lowestRate": 1050,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    },
+    {
+      "propertyName": "The Francis House",
+      "propertyId": "francis-house",
+      "checkin": "2025-06-29",
+      "lowestRate": 1208,
+      "source": "estimated",
+      "success": true,
+      "scrapedAt": "2025-12-29T21:05:19.811Z"
+    }
+  ]
+}

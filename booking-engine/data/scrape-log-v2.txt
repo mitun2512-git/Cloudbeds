@@ -1,0 +1,47 @@
+Error: Failed to launch the browser process:  Code: null
+
+stderr:
+[1230/005701.124045:ERROR:third_party/crashpad/crashpad/util/mac/xattr.cc:41] getxattr size org.chromium.crashpad.database.initialized on file /Users/mitun/Library/Application Support/Google/Chrome for Testing/Crashpad: Operation not permitted (1)
+[1230/005701.124606:ERROR:third_party/crashpad/crashpad/util/mac/xattr.cc:41] getxattr size com.googlecode.crashpad.initialized on file /Users/mitun/Library/Application Support/Google/Chrome for Testing/Crashpad: Operation not permitted (1)
+[1230/005701.124971:ERROR:third_party/crashpad/crashpad/util/mac/xattr.cc:66] setxattr org.chromium.crashpad.database.initialized on file /Users/mitun/Library/Application Support/Google/Chrome for Testing/Crashpad: Operation not permitted (1)
+[1230/005701.125681:ERROR:third_party/crashpad/crashpad/util/file/file_io.cc:103] ReadExactly: expected 8, observed 0
+[1230/005701.126020:ERROR:third_party/crashpad/crashpad/util/mac/xattr.cc:41] getxattr size org.chromium.crashpad.database.initialized on file /Users/mitun/Library/Application Support/Google/Chrome for Testing/Crashpad: Operation not permitted (1)
+[1230/005701.126182:ERROR:third_party/crashpad/crashpad/util/mac/xattr.cc:41] getxattr size com.googlecode.crashpad.initialized on file /Users/mitun/Library/Application Support/Google/Chrome for Testing/Crashpad: Operation not permitted (1)
+[1230/005701.126353:ERROR:third_party/crashpad/crashpad/util/mac/xattr.cc:66] setxattr org.chromium.crashpad.database.initialized on file /Users/mitun/Library/Application Support/Google/Chrome for Testing/Crashpad: Operation not permitted (1)
+[1230/005701.127707:ERROR:third_party/crashpad/crashpad/util/file/file_io.cc:103] ReadExactly: expected 8, observed 0
+[1230/005701.132175:ERROR:third_party/crashpad/crashpad/util/mac/xattr.cc:41] getxattr size org.chromium.crashpad.database.initialized on file /Users/mitun/Library/Application Support/Google/Chrome for Testing/Crashpad: Operation not permitted (1)
+[1230/005701.132574:ERROR:third_party/crashpad/crashpad/util/mac/xattr.cc:41] getxattr size com.googlecode.crashpad.initialized on file /Users/mitun/Library/Application Support/Google/Chrome for Testing/Crashpad: Operation not permitted (1)
+[1230/005701.132746:ERROR:third_party/crashpad/crashpad/util/mac/xattr.cc:66] setxattr org.chromium.crashpad.database.initialized on file /Users/mitun/Library/Application Support/Google/Chrome for Testing/Crashpad: Operation not permitted (1)
+Received signal 6
+ [0x000117288ea0]
+ [0x00011728c80c]
+ [0x0001850a2744]
+ [0x000185098888]
+ [0x000184f9e808]
+ [0x00018c6dbe88]
+ [0x000184ef6ac4]
+ [0x000184edfa60]
+ [0x00018c6ae8cc]
+ [0x00018c6ae6e8]
+ [0x00018a4b0fe4]
+ [0x00018a4b1c60]
+ [0x00018a4b0d10]
+ [0x00018a4b418c]
+ [0x00018950cd38]
+ [0x00018950ae90]
+ [0x00018950a984]
+ [0x000112aed104]
+ [0x0001132c4ac0]
+ [0x0001132c488c]
+ [0x00011280cd08]
+ [0x000111d27f80]
+ [0x0001103921d0]
+ [0x0001026d485c]
+ [0x000184cd9d54]
+[end of stack trace]
+
+TROUBLESHOOTING: https://pptr.dev/troubleshooting
+
+    at ChildProcess.onClose (/Users/mitun/Cloudbeds/booking-engine/node_modules/@puppeteer/browsers/lib/cjs/launch.js:340:24)
+    at ChildProcess.emit (node:events:520:35)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)

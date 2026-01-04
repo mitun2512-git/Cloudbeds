@@ -1,0 +1,989 @@
+/* ============================================
+   PRICING ENGINE - SIMPLIFIED UI
+   Clean, calendar-focused design
+   ============================================ */
+
+.pricing-engine-simple {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f8f9fa;
+  min-height: 100vh;
+  padding: 1.5rem 2rem;
+}
+
+/* Header */
+.pe-header {
+  margin-bottom: 1.5rem;
+}
+
+.pe-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 0.25rem;
+}
+
+.pe-header p {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Tab Navigation */
+.pe-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 0.5rem;
+}
+
+.pe-tab {
+  padding: 0.6rem 1.25rem;
+  background: transparent;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6c757d;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  transition: all 0.2s;
+}
+
+.pe-tab:hover {
+  color: #1a1a2e;
+  background: #e9ecef;
+}
+
+.pe-tab.active {
+  color: #722f37;
+  background: white;
+  box-shadow: 0 -2px 0 #722f37 inset;
+}
+
+/* Content Area */
+.pe-content {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+}
+
+/* ============================================
+   CALENDAR VIEW
+   ============================================ */
+
+.calendar-view {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Legend Bar */
+.calendar-legend-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: #495057;
+}
+
+.legend-item .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
+
+.legend-item .dot.low { background: #d1fae5; border: 1px solid #10b981; }
+.legend-item .dot.standard { background: #f3f4f6; border: 1px solid #9ca3af; }
+.legend-item .dot.medium { background: #fef3c7; border: 1px solid #f59e0b; }
+.legend-item .dot.high { background: #fee2e2; border: 1px solid #ef4444; }
+.legend-item .dot.premium { background: #fce7f3; border: 1px solid #ec4899; }
+
+.event-icon {
+  font-size: 0.9rem;
+}
+
+/* Calendar Navigation */
+.calendar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.nav-btn {
+  padding: 0.5rem 1rem;
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #495057;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover {
+  background: #f8f9fa;
+  border-color: #adb5bd;
+}
+
+.current-month-display {
+  text-align: center;
+}
+
+.month-label {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+/* Calendar Grid */
+.calendar-main {
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.weekday {
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day-cell {
+  aspect-ratio: 1;
+  padding: 0.5rem;
+  border-right: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s;
+  position: relative;
+  min-height: 80px;
+}
+
+.day-cell:nth-child(7n) {
+  border-right: none;
+}
+
+.day-cell.empty {
+  background: #fafafa;
+  cursor: default;
+}
+
+.day-cell:not(.empty):hover {
+  transform: scale(1.02);
+  z-index: 2;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.day-cell.selected {
+  box-shadow: 0 0 0 2px #722f37;
+  z-index: 3;
+}
+
+/* Price Level Colors */
+.day-cell.low { background: #ecfdf5; }
+.day-cell.standard { background: #ffffff; }
+.day-cell.medium { background: #fffbeb; }
+.day-cell.high { background: #fef2f2; }
+.day-cell.premium { background: #fdf2f8; }
+
+.day-cell.has-event {
+  border: 2px solid #c9a962;
+}
+
+.day-number {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.day-multiplier {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0.15rem 0;
+}
+
+.day-base {
+  font-size: 0.7rem;
+  color: #6b7280;
+}
+
+.event-badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  font-size: 0.8rem;
+}
+
+/* Room Prices Panel */
+.room-prices-panel {
+  margin-top: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background: #722f37;
+  color: white;
+}
+
+.panel-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.close-btn {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+.panel-info {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  background: white;
+  border-bottom: 1px solid #e9ecef;
+  flex-wrap: wrap;
+}
+
+.multiplier-badge {
+  background: #1a1a2e;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.event-tag, .season-tag {
+  background: #fef3c7;
+  color: #92400e;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.room-prices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+}
+
+.room-price-card {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.room-name {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.room-price {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #722f37;
+}
+
+.room-breakdown {
+  display: block;
+  font-size: 0.7rem;
+  color: #9ca3af;
+  margin-top: 0.25rem;
+}
+
+/* Monthly Summary */
+.monthly-summary {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.summary-item {
+  text-align: center;
+}
+
+.summary-label {
+  display: block;
+  font-size: 0.75rem;
+  color: #6c757d;
+  margin-bottom: 0.25rem;
+}
+
+.summary-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+/* Calendar Loading */
+.calendar-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  color: #6c757d;
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #e9ecef;
+  border-top-color: #722f37;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ============================================
+   FORECAST VIEW
+   ============================================ */
+
+.forecast-view {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Headline Metrics */
+.forecast-headline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.headline-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.headline-card.main {
+  background: linear-gradient(135deg, #722f37, #4a1f24);
+  color: white;
+}
+
+.headline-card.positive {
+  background: #ecfdf5;
+  border: 1px solid #10b981;
+}
+
+.headline-card.negative {
+  background: #fef2f2;
+  border: 1px solid #ef4444;
+}
+
+.headline-label {
+  display: block;
+  font-size: 0.8rem;
+  color: inherit;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+.headline-card.main .headline-label {
+  color: rgba(255,255,255,0.8);
+}
+
+.headline-value {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: inherit;
+}
+
+.headline-card.main .headline-value {
+  color: white;
+}
+
+.headline-sub {
+  display: block;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  opacity: 0.7;
+}
+
+/* Historical Comparison */
+.historical-comparison {
+  margin-bottom: 2rem;
+}
+
+.historical-comparison h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 1rem;
+}
+
+.yoy-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.yoy-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.yoy-year {
+  width: 40px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.yoy-bar-fill {
+  height: 32px;
+  background: linear-gradient(90deg, #c9a962, #d4b872);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  min-width: 100px;
+  transition: width 0.5s ease;
+}
+
+.yoy-bar-fill span {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  white-space: nowrap;
+}
+
+.yoy-bar.forecast .yoy-bar-fill {
+  background: linear-gradient(90deg, #722f37, #8b3a44);
+}
+
+.yoy-bar.forecast .yoy-bar-fill span {
+  color: white;
+}
+
+/* Monthly Tracker */
+.monthly-tracker {
+  margin-bottom: 2rem;
+}
+
+.monthly-tracker h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 1rem;
+}
+
+.tracker-header {
+  display: grid;
+  grid-template-columns: 80px 100px 100px 80px 60px;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: #f8f9fa;
+  border-radius: 8px 8px 0 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: uppercase;
+}
+
+.tracker-body {
+  border: 1px solid #e9ecef;
+  border-top: none;
+}
+
+.tracker-row {
+  display: grid;
+  grid-template-columns: 80px 100px 100px 80px 60px;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 0.85rem;
+  align-items: center;
+}
+
+.tracker-row:last-child {
+  border-bottom: none;
+}
+
+.tracker-row.future {
+  opacity: 0.5;
+  background: #fafafa;
+}
+
+.tracker-month {
+  font-weight: 600;
+  color: #374151;
+}
+
+.tracker-forecast, .tracker-actual {
+  color: #495057;
+}
+
+.tracker-variance {
+  font-weight: 600;
+}
+
+.tracker-variance.positive {
+  color: #10b981;
+}
+
+.tracker-variance.negative {
+  color: #ef4444;
+}
+
+.tracker-status {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.future-dot {
+  color: #d1d5db;
+}
+
+.tracker-footer {
+  display: grid;
+  grid-template-columns: 80px 100px 100px 80px 60px;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: #1a1a2e;
+  color: white;
+  border-radius: 0 0 8px 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.tracker-footer .tracker-variance.positive {
+  color: #6ee7b7;
+}
+
+.tracker-footer .tracker-variance.negative {
+  color: #fca5a5;
+}
+
+/* Insights Grid */
+.forecast-insights h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 1rem;
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.insight-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.insight-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.insight-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+.insight-text {
+  font-size: 0.8rem;
+  color: #6c757d;
+  line-height: 1.4;
+}
+
+/* ============================================
+   CONFIGURATION VIEW
+   ============================================ */
+
+.config-view {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.config-header {
+  margin-bottom: 1.5rem;
+}
+
+.config-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 0.5rem;
+}
+
+.config-header p {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.config-formula {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.formula-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.formula {
+  font-family: 'SF Mono', Monaco, monospace;
+  font-size: 0.9rem;
+  color: #722f37;
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+}
+
+/* Config Table */
+.config-table {
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.config-table-header {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 0.8fr 0.8fr;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: #f8f9fa;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: uppercase;
+}
+
+.config-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 0.8fr 0.8fr;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e9ecef;
+  align-items: center;
+}
+
+.config-row:last-child {
+  border-bottom: none;
+}
+
+.config-room-name {
+  font-weight: 600;
+  color: #374151;
+}
+
+.config-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.currency {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.config-input {
+  width: 80px;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.config-input:focus {
+  outline: none;
+  border-color: #722f37;
+}
+
+.config-total {
+  font-weight: 600;
+  color: #374151;
+}
+
+.config-example {
+  font-weight: 700;
+  color: #722f37;
+}
+
+/* Config Actions */
+.config-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.reset-btn {
+  padding: 0.6rem 1.25rem;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #6c757d;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background: #f8f9fa;
+}
+
+.save-btn {
+  padding: 0.6rem 1.5rem;
+  background: #722f37;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background: #5a252c;
+}
+
+.config-note {
+  background: #fef3c7;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  font-size: 0.8rem;
+  color: #92400e;
+}
+
+/* ============================================
+   LOADING & ERROR STATES
+   ============================================ */
+
+.loading-state,
+.error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e9ecef;
+  border-top-color: #722f37;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading-state p,
+.error-state p {
+  color: #6c757d;
+  margin: 0;
+}
+
+.error-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.error-state p.error-sub {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  color: #9ca3af;
+}
+
+.methodology-note {
+  margin-top: 0.25rem;
+  opacity: 0.8;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+/* Data Source Notice */
+.data-source-notice {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  color: #166534;
+}
+
+.source-icon {
+  font-size: 1rem;
+}
+
+/* Booking Count in YoY bars */
+.booking-count {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  margin-left: 0.5rem;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .pricing-engine-simple {
+    padding: 1rem;
+  }
+
+  .pe-tabs {
+    flex-wrap: wrap;
+  }
+
+  .pe-tab {
+    flex: 1;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .calendar-legend-bar {
+    gap: 0.75rem;
+    font-size: 0.7rem;
+  }
+
+  .calendar-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .day-cell {
+    min-height: 60px;
+    padding: 0.25rem;
+  }
+
+  .day-multiplier {
+    font-size: 0.85rem;
+  }
+
+  .day-base {
+    font-size: 0.6rem;
+  }
+
+  .tracker-header,
+  .tracker-row,
+  .tracker-footer {
+    grid-template-columns: 60px 80px 80px 60px 40px;
+    font-size: 0.75rem;
+  }
+
+  .config-table-header,
+  .config-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .config-table-header span:nth-child(n+3),
+  .config-row span:nth-child(n+4) {
+    display: none;
+  }
+}

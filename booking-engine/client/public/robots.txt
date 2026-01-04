@@ -1,0 +1,68 @@
+# Hennessey Estate - Robots.txt
+# Allow search engines to index guest-facing pages only
+
+User-agent: *
+
+# Allow guest-facing pages
+Allow: /
+Allow: /book
+Allow: /book/
+
+# Block all dashboard and staff pages
+Disallow: /dashboard
+Disallow: /dashboard/
+Disallow: /staff
+Disallow: /staff/
+Disallow: /admin
+Disallow: /admin/
+Disallow: /api/
+Disallow: /reservations
+Disallow: /reservations/
+Disallow: /email-marketing
+Disallow: /email-marketing/
+Disallow: /revenue
+Disallow: /revenue/
+Disallow: /pricing
+Disallow: /pricing/
+Disallow: /settings
+Disallow: /settings/
+Disallow: /website-editor
+Disallow: /website-editor/
+Disallow: /benchmark
+Disallow: /benchmark/
+Disallow: /availability-checker
+Disallow: /availability-checker/
+
+# Block query parameters that might expose admin functionality
+Disallow: /*?admin*
+Disallow: /*?staff*
+Disallow: /*?dashboard*
+
+# Sitemap location
+Sitemap: https://hennesseyestate.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Google-specific
+User-agent: Googlebot
+Allow: /
+Disallow: /dashboard
+Disallow: /dashboard/
+Disallow: /staff
+Disallow: /staff/
+Disallow: /admin
+Disallow: /admin/
+Disallow: /api/
+
+# Bing-specific  
+User-agent: Bingbot
+Allow: /
+Disallow: /dashboard
+Disallow: /dashboard/
+Disallow: /staff
+Disallow: /staff/
+Disallow: /admin
+Disallow: /admin/
+Disallow: /api/
+

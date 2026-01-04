@@ -1,0 +1,32 @@
+{
+  "name": "cloudbeds-booking-engine",
+  "version": "1.0.0",
+  "description": "Booking engine webapp integrated with Cloudbeds",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && node index.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "test": "node test-integration.js",
+    "test:server": "cd server && npm start",
+    "test:integration": "node test-integration.js"
+  },
+  "keywords": [
+    "cloudbeds",
+    "booking",
+    "hotel",
+    "reservation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "puppeteer": "^24.34.0"
+  }
+}

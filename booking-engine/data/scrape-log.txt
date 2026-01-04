@@ -1,0 +1,376 @@
+📋 [2025-12-29T13:17:42.278Z] ============================================================
+📋 [2025-12-29T13:17:42.279Z] Competitor Rate Scraping Script
+📋 [2025-12-29T13:17:42.279Z] ============================================================
+📋 [2025-12-29T13:17:42.279Z] Generated 52 date pairs (Jan-Jun 2025)
+🔄 [2025-12-29T13:17:42.279Z] Launching browser...
+📋 [2025-12-29T13:17:43.222Z] 
+========================================
+📋 [2025-12-29T13:17:43.222Z] Processing: The Francis House
+📋 [2025-12-29T13:17:43.222Z] ========================================
+📋 [2025-12-29T13:17:43.744Z] Starting scrape for The Francis House (52 dates)
+🔄 [2025-12-29T13:17:43.744Z] The Francis House: Scraping 2025-01-03 (1/52)
+⚠️ [2025-12-29T13:17:48.787Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:17:48.788Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:17:53.526Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:17:53.526Z] The Francis House 2025-01-03: $640 (estimated)
+🔄 [2025-12-29T13:17:56.339Z] The Francis House: Scraping 2025-01-06 (2/52)
+⚠️ [2025-12-29T13:18:02.048Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:18:02.048Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:18:10.555Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:18:10.555Z] The Francis House 2025-01-06: $736 (estimated)
+🔄 [2025-12-29T13:18:12.672Z] The Francis House: Scraping 2025-01-10 (3/52)
+⚠️ [2025-12-29T13:18:18.366Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:18:18.366Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:18:25.792Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:18:25.792Z] The Francis House 2025-01-10: $640 (estimated)
+🔄 [2025-12-29T13:18:27.895Z] The Francis House: Scraping 2025-01-13 (4/52)
+⚠️ [2025-12-29T13:18:33.596Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:18:33.596Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:18:41.119Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:18:41.119Z] The Francis House 2025-01-13: $736 (estimated)
+🔄 [2025-12-29T13:18:45.056Z] The Francis House: Scraping 2025-01-17 (5/52)
+⚠️ [2025-12-29T13:18:50.758Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:18:50.758Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:18:58.278Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:18:58.279Z] The Francis House 2025-01-17: $640 (estimated)
+🔄 [2025-12-29T13:19:01.930Z] The Francis House: Scraping 2025-01-20 (6/52)
+⚠️ [2025-12-29T13:19:07.635Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:19:07.635Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:19:15.156Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:19:15.157Z] The Francis House 2025-01-20: $736 (estimated)
+🔄 [2025-12-29T13:19:17.853Z] The Francis House: Scraping 2025-01-24 (7/52)
+⚠️ [2025-12-29T13:19:23.532Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:19:23.532Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:19:31.013Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:19:31.013Z] The Francis House 2025-01-24: $640 (estimated)
+🔄 [2025-12-29T13:19:34.097Z] The Francis House: Scraping 2025-01-27 (8/52)
+⚠️ [2025-12-29T13:19:38.804Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:19:38.805Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:19:45.840Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:19:45.840Z] The Francis House 2025-01-27: $736 (estimated)
+🔄 [2025-12-29T13:19:48.440Z] The Francis House: Scraping 2025-01-31 (9/52)
+⚠️ [2025-12-29T13:19:54.144Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:19:54.144Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:20:01.711Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:20:01.711Z] The Francis House 2025-01-31: $640 (estimated)
+🔄 [2025-12-29T13:20:03.806Z] The Francis House: Scraping 2025-02-03 (10/52)
+⚠️ [2025-12-29T13:20:09.516Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:20:09.516Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:20:17.032Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:20:17.033Z] The Francis House 2025-02-03: $736 (estimated)
+🔄 [2025-12-29T13:20:19.822Z] The Francis House: Scraping 2025-02-07 (11/52)
+⚠️ [2025-12-29T13:20:25.541Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:20:25.542Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:20:33.053Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:20:33.054Z] The Francis House 2025-02-07: $640 (estimated)
+🔄 [2025-12-29T13:20:35.198Z] The Francis House: Scraping 2025-02-10 (12/52)
+⚠️ [2025-12-29T13:20:40.950Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:20:40.951Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:20:48.494Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:20:48.494Z] The Francis House 2025-02-10: $736 (estimated)
+🔄 [2025-12-29T13:20:50.687Z] The Francis House: Scraping 2025-02-14 (13/52)
+⚠️ [2025-12-29T13:20:56.392Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:20:56.392Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:21:03.908Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:21:03.908Z] The Francis House 2025-02-14: $640 (estimated)
+🔄 [2025-12-29T13:21:07.183Z] The Francis House: Scraping 2025-02-17 (14/52)
+⚠️ [2025-12-29T13:21:12.886Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:21:12.886Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:21:20.590Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:21:20.590Z] The Francis House 2025-02-17: $736 (estimated)
+🔄 [2025-12-29T13:21:23.438Z] The Francis House: Scraping 2025-02-21 (15/52)
+⚠️ [2025-12-29T13:21:29.150Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:21:29.150Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:21:37.528Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:21:37.529Z] The Francis House 2025-02-21: $640 (estimated)
+🔄 [2025-12-29T13:21:40.353Z] The Francis House: Scraping 2025-02-24 (16/52)
+⚠️ [2025-12-29T13:21:46.043Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:21:46.044Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:21:53.514Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:21:53.514Z] The Francis House 2025-02-24: $736 (estimated)
+🔄 [2025-12-29T13:21:56.597Z] The Francis House: Scraping 2025-02-28 (17/52)
+⚠️ [2025-12-29T13:22:02.309Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:22:02.309Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:22:09.824Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:22:09.824Z] The Francis House 2025-02-28: $640 (estimated)
+🔄 [2025-12-29T13:22:12.104Z] The Francis House: Scraping 2025-03-03 (18/52)
+⚠️ [2025-12-29T13:22:17.814Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:22:17.814Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:22:25.334Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:22:25.335Z] The Francis House 2025-03-03: $736 (estimated)
+🔄 [2025-12-29T13:22:28.828Z] The Francis House: Scraping 2025-03-07 (19/52)
+⚠️ [2025-12-29T13:22:34.538Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:22:34.539Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:22:42.814Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:22:42.814Z] The Francis House 2025-03-07: $640 (estimated)
+🔄 [2025-12-29T13:22:45.370Z] The Francis House: Scraping 2025-03-09 (20/52)
+⚠️ [2025-12-29T13:22:51.081Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:22:51.081Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:22:58.599Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:22:58.599Z] The Francis House 2025-03-09: $736 (estimated)
+🔄 [2025-12-29T13:23:00.813Z] The Francis House: Scraping 2025-03-13 (21/52)
+⚠️ [2025-12-29T13:23:06.528Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:23:06.528Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:23:14.044Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:23:14.044Z] The Francis House 2025-03-13: $640 (estimated)
+🔄 [2025-12-29T13:23:17.631Z] The Francis House: Scraping 2025-03-16 (22/52)
+⚠️ [2025-12-29T13:23:23.325Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:23:23.325Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:23:30.847Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:23:30.847Z] The Francis House 2025-03-16: $736 (estimated)
+🔄 [2025-12-29T13:23:33.354Z] The Francis House: Scraping 2025-03-20 (23/52)
+⚠️ [2025-12-29T13:23:39.060Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:23:39.061Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:23:46.155Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:23:46.155Z] The Francis House 2025-03-20: $640 (estimated)
+🔄 [2025-12-29T13:23:49.542Z] The Francis House: Scraping 2025-03-23 (24/52)
+⚠️ [2025-12-29T13:23:55.259Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:23:55.259Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:24:02.789Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:24:02.789Z] The Francis House 2025-03-23: $736 (estimated)
+🔄 [2025-12-29T13:24:04.925Z] The Francis House: Scraping 2025-03-27 (25/52)
+⚠️ [2025-12-29T13:24:10.634Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:24:10.634Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:24:18.009Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:24:18.010Z] The Francis House 2025-03-27: $640 (estimated)
+🔄 [2025-12-29T13:24:20.885Z] The Francis House: Scraping 2025-03-30 (26/52)
+⚠️ [2025-12-29T13:24:26.593Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:24:26.594Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:24:34.503Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:24:34.503Z] The Francis House 2025-03-30: $736 (estimated)
+🔄 [2025-12-29T13:24:36.944Z] The Francis House: Scraping 2025-04-03 (27/52)
+⚠️ [2025-12-29T13:24:42.671Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:24:42.671Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:24:50.204Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:24:50.204Z] The Francis House 2025-04-03: $850 (estimated)
+🔄 [2025-12-29T13:24:52.288Z] The Francis House: Scraping 2025-04-06 (28/52)
+⚠️ [2025-12-29T13:24:57.996Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:24:57.996Z] Trying Booking.com fallback for The Francis House
+⚠️ [2025-12-29T13:25:05.534Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:25:05.534Z] The Francis House 2025-04-06: $977 (estimated)
+🔄 [2025-12-29T13:25:08.914Z] The Francis House: Scraping 2025-04-10 (29/52)
+⚠️ [2025-12-29T13:25:08.915Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:25:08.915Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:25:08.915Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:25:08.915Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:25:08.915Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:25:08.915Z] The Francis House 2025-04-10: $850 (estimated)
+🔄 [2025-12-29T13:25:11.137Z] The Francis House: Scraping 2025-04-13 (30/52)
+⚠️ [2025-12-29T13:25:11.138Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:25:11.138Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:25:11.138Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:25:11.138Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:25:11.138Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:25:11.138Z] The Francis House 2025-04-13: $977 (estimated)
+🔄 [2025-12-29T13:25:14.032Z] The Francis House: Scraping 2025-04-17 (31/52)
+⚠️ [2025-12-29T13:25:14.033Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:25:14.033Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:25:14.033Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:25:14.033Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:25:14.033Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:25:14.033Z] The Francis House 2025-04-17: $850 (estimated)
+🔄 [2025-12-29T13:26:29.748Z] The Francis House: Scraping 2025-04-20 (32/52)
+⚠️ [2025-12-29T13:26:29.749Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:26:29.749Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:26:29.749Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:26:29.749Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:26:29.749Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:26:29.749Z] The Francis House 2025-04-20: $977 (estimated)
+🔄 [2025-12-29T13:26:33.435Z] The Francis House: Scraping 2025-04-24 (33/52)
+⚠️ [2025-12-29T13:26:33.438Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:26:33.439Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:26:33.439Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:26:33.439Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:26:33.439Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:26:33.439Z] The Francis House 2025-04-24: $850 (estimated)
+🔄 [2025-12-29T13:26:36.464Z] The Francis House: Scraping 2025-04-27 (34/52)
+⚠️ [2025-12-29T13:26:36.464Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:26:36.464Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:26:36.464Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:26:36.464Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:26:36.464Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:26:36.464Z] The Francis House 2025-04-27: $977 (estimated)
+🔄 [2025-12-29T13:26:40.300Z] The Francis House: Scraping 2025-05-01 (35/52)
+⚠️ [2025-12-29T13:26:40.300Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:26:40.300Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:26:40.300Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:26:40.300Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:26:40.300Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:26:40.300Z] The Francis House 2025-05-01: $850 (estimated)
+🔄 [2025-12-29T13:26:42.714Z] The Francis House: Scraping 2025-05-04 (36/52)
+⚠️ [2025-12-29T13:26:42.714Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:26:42.715Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:26:42.715Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:26:42.715Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:26:42.715Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:26:42.715Z] The Francis House 2025-05-04: $1208 (estimated)
+🔄 [2025-12-29T13:26:46.194Z] The Francis House: Scraping 2025-05-08 (37/52)
+⚠️ [2025-12-29T13:26:46.195Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:26:46.195Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:26:46.195Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:26:46.195Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:26:46.195Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:26:46.195Z] The Francis House 2025-05-08: $1050 (estimated)
+🔄 [2025-12-29T13:26:49.881Z] The Francis House: Scraping 2025-05-11 (38/52)
+⚠️ [2025-12-29T13:26:49.881Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:26:49.882Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:26:49.882Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:26:49.882Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:26:49.882Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:26:49.882Z] The Francis House 2025-05-11: $1208 (estimated)
+🔄 [2025-12-29T13:26:53.437Z] The Francis House: Scraping 2025-05-15 (39/52)
+⚠️ [2025-12-29T13:26:53.437Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:26:53.437Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:26:53.437Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:26:53.437Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:26:53.437Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:26:53.437Z] The Francis House 2025-05-15: $1050 (estimated)
+🔄 [2025-12-29T13:26:56.529Z] The Francis House: Scraping 2025-05-18 (40/52)
+⚠️ [2025-12-29T13:26:56.529Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:26:56.529Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:26:56.529Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:26:56.530Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:26:56.530Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:26:56.530Z] The Francis House 2025-05-18: $1208 (estimated)
+🔄 [2025-12-29T13:26:58.945Z] The Francis House: Scraping 2025-05-22 (41/52)
+⚠️ [2025-12-29T13:26:58.945Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:26:58.946Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:26:58.946Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:26:58.946Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:26:58.946Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:26:58.946Z] The Francis House 2025-05-22: $1050 (estimated)
+🔄 [2025-12-29T13:27:01.410Z] The Francis House: Scraping 2025-05-25 (42/52)
+⚠️ [2025-12-29T13:27:01.410Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:27:01.410Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:27:01.410Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:27:01.410Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:27:01.410Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:27:01.410Z] The Francis House 2025-05-25: $1208 (estimated)
+🔄 [2025-12-29T13:27:03.721Z] The Francis House: Scraping 2025-05-29 (43/52)
+⚠️ [2025-12-29T13:27:03.721Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:27:03.721Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:27:03.721Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:27:03.721Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:27:03.721Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:27:03.721Z] The Francis House 2025-05-29: $1050 (estimated)
+🔄 [2025-12-29T13:27:07.267Z] The Francis House: Scraping 2025-06-01 (44/52)
+⚠️ [2025-12-29T13:27:07.267Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:27:07.267Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:27:07.267Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:27:07.267Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:27:07.267Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:27:07.267Z] The Francis House 2025-06-01: $1208 (estimated)
+🔄 [2025-12-29T13:27:10.963Z] The Francis House: Scraping 2025-06-05 (45/52)
+⚠️ [2025-12-29T13:27:10.963Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:27:10.963Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:27:10.963Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:27:10.963Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:27:10.963Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:27:10.963Z] The Francis House 2025-06-05: $1050 (estimated)
+🔄 [2025-12-29T13:27:13.804Z] The Francis House: Scraping 2025-06-08 (46/52)
+⚠️ [2025-12-29T13:27:13.804Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:27:13.804Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:27:13.804Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:27:13.804Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:27:13.804Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:27:13.804Z] The Francis House 2025-06-08: $1208 (estimated)
+🔄 [2025-12-29T13:42:28.094Z] The Francis House: Scraping 2025-06-12 (47/52)
+⚠️ [2025-12-29T13:42:28.094Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:42:28.094Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:42:28.095Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:42:28.095Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:42:28.095Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:42:28.095Z] The Francis House 2025-06-12: $1050 (estimated)
+🔄 [2025-12-29T13:42:30.693Z] The Francis House: Scraping 2025-06-15 (48/52)
+⚠️ [2025-12-29T13:42:30.693Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:42:30.693Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:42:30.693Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:42:30.693Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:42:30.693Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:42:30.693Z] The Francis House 2025-06-15: $1208 (estimated)
+🔄 [2025-12-29T13:42:34.591Z] The Francis House: Scraping 2025-06-19 (49/52)
+⚠️ [2025-12-29T13:42:34.592Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:42:34.592Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:42:34.592Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:42:34.592Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:42:34.592Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:42:34.592Z] The Francis House 2025-06-19: $1050 (estimated)
+🔄 [2025-12-29T13:42:37.190Z] The Francis House: Scraping 2025-06-22 (50/52)
+⚠️ [2025-12-29T13:42:37.191Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:42:37.191Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:42:37.191Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:42:37.191Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:42:37.191Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:42:37.191Z] The Francis House 2025-06-22: $1208 (estimated)
+🔄 [2025-12-29T13:42:39.662Z] The Francis House: Scraping 2025-06-26 (51/52)
+⚠️ [2025-12-29T13:42:39.662Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:42:39.662Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:42:39.662Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:42:39.662Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:42:39.662Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:42:39.662Z] The Francis House 2025-06-26: $1050 (estimated)
+🔄 [2025-12-29T13:42:42.402Z] The Francis House: Scraping 2025-06-29 (52/52)
+⚠️ [2025-12-29T13:42:42.403Z] Francis House direct scrape failed: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:42:42.403Z] Direct scrape failed for The Francis House, trying Booking.com...
+🔄 [2025-12-29T13:42:42.403Z] Trying Booking.com fallback for The Francis House
+❌ [2025-12-29T13:42:42.403Z] Booking.com scrape failed for The Francis House: Attempted to use detached Frame 'D6C692069BAB51174C5462A9E1B678BB'.
+⚠️ [2025-12-29T13:42:42.403Z] All scraping failed for The Francis House, using estimated rates
+✅ [2025-12-29T13:42:42.403Z] The Francis House 2025-06-29: $1208 (estimated)
+❌ [2025-12-29T13:42:45.607Z] Fatal error: Connection closed.
+ConnectionClosedError: Connection closed.
+    at Connection._rawSend (/Users/mitun/Cloudbeds/booking-engine/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Connection.js:106:35)
+    at Connection.send (/Users/mitun/Cloudbeds/booking-engine/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Connection.js:99:21)
+    at CdpPage.close (/Users/mitun/Cloudbeds/booking-engine/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Page.js:876:34)
+    at async scrapeProperty (/Users/mitun/Cloudbeds/booking-engine/scripts/scrape-competitor-rates.js:685:3)
+    at async main (/Users/mitun/Cloudbeds/booking-engine/scripts/scrape-competitor-rates.js:730:31)
+📋 [2025-12-29T13:42:45.662Z] 
+============================================================
+📋 [2025-12-29T13:42:45.665Z] SCRAPING COMPLETE - SUMMARY
+📋 [2025-12-29T13:42:45.665Z] ============================================================
+📋 [2025-12-29T13:42:45.665Z] The Francis House:
+📋 [2025-12-29T13:42:45.665Z]   - Success: 0/0 (NaN%)
+📋 [2025-12-29T13:42:45.665Z]   - Avg Rate: $N/A
+📋 [2025-12-29T13:42:45.665Z]   - Direct: 0, Booking.com: 0
+📋 [2025-12-29T13:42:45.665Z] White House Napa:
+📋 [2025-12-29T13:42:45.665Z]   - Success: 0/0 (NaN%)
+📋 [2025-12-29T13:42:45.665Z]   - Avg Rate: $N/A
+📋 [2025-12-29T13:42:45.665Z]   - Direct: 0, Booking.com: 0
+📋 [2025-12-29T13:42:45.665Z] The George Napa:
+📋 [2025-12-29T13:42:45.665Z]   - Success: 0/0 (NaN%)
+📋 [2025-12-29T13:42:45.665Z]   - Avg Rate: $N/A
+📋 [2025-12-29T13:42:45.665Z]   - Direct: 0, Booking.com: 0
+📋 [2025-12-29T13:42:45.665Z] McClelland House:
+📋 [2025-12-29T13:42:45.665Z]   - Success: 0/0 (NaN%)
+📋 [2025-12-29T13:42:45.665Z]   - Avg Rate: $N/A
+📋 [2025-12-29T13:42:45.665Z]   - Direct: 0, Booking.com: 0
+✅ [2025-12-29T13:42:45.667Z] 
+Final results saved to: /Users/mitun/Cloudbeds/booking-engine/data/competitor-rates.json
+✅ [2025-12-29T13:42:45.667Z] Total data points collected: 0
+booking-engine/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Connection.js:106:35)
+    at Connection.send (/Users/mitun/Cloudbeds/booking-engine/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Connection.js:99:21)
+    at CdpPage.close (/Users/mitun/Cloudbeds/booking-engine/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Page.js:876:34)
+    at async scrapeProperty (/Users/mitun/Cloudbeds/booking-engine/scripts/scrape-competitor-rates.js:515:3)
+    at async main (/Users/mitun/Cloudbeds/booking-engine/scripts/scrape-competitor-rates.js:560:31)
+📋 [2025-12-29T13:19:11.254Z] 
+============================================================
+📋 [2025-12-29T13:19:11.254Z] SCRAPING COMPLETE - SUMMARY
+📋 [2025-12-29T13:19:11.254Z] ============================================================
+📋 [2025-12-29T13:19:11.254Z] The Francis House:
+📋 [2025-12-29T13:19:11.254Z]   - Success: 0/0 (NaN%)
+📋 [2025-12-29T13:19:11.254Z]   - Avg Rate: $N/A
+📋 [2025-12-29T13:19:11.254Z]   - Direct: 0, Booking.com: 0
+📋 [2025-12-29T13:19:11.254Z] White House Napa:
+📋 [2025-12-29T13:19:11.254Z]   - Success: 0/0 (NaN%)
+📋 [2025-12-29T13:19:11.254Z]   - Avg Rate: $N/A
+📋 [2025-12-29T13:19:11.254Z]   - Direct: 0, Booking.com: 0
+📋 [2025-12-29T13:19:11.254Z] The George Napa:
+📋 [2025-12-29T13:19:11.254Z]   - Success: 0/0 (NaN%)
+📋 [2025-12-29T13:19:11.254Z]   - Avg Rate: $N/A
+📋 [2025-12-29T13:19:11.254Z]   - Direct: 0, Booking.com: 0
+📋 [2025-12-29T13:19:11.255Z] McClelland House:
+📋 [2025-12-29T13:19:11.255Z]   - Success: 0/0 (NaN%)
+📋 [2025-12-29T13:19:11.255Z]   - Avg Rate: $N/A
+📋 [2025-12-29T13:19:11.255Z]   - Direct: 0, Booking.com: 0
+✅ [2025-12-29T13:19:11.255Z] 
+Final results saved to: /Users/mitun/Cloudbeds/booking-engine/data/competitor-rates.json
+✅ [2025-12-29T13:19:11.255Z] Total data points collected: 0

@@ -1,0 +1,617 @@
+/* ========================================
+   Advanced Email Editor Component
+   Industry-leading email builder
+   ======================================== */
+
+.email-editor {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+/* Editor Toolbar */
+.editor-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--color-surface-elevated);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.toolbar-right {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-icon:hover {
+  background: var(--color-surface);
+  border-color: var(--color-primary);
+}
+
+.preview-toggle {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.preview-toggle button {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: transparent;
+  border: none;
+  border-right: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.preview-toggle button:last-child {
+  border-right: none;
+}
+
+.preview-toggle button.active {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* Editor Content Layout */
+.editor-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.editor-sidebar {
+  width: 300px;
+  background: var(--color-surface-elevated);
+  border-right: 1px solid var(--color-border);
+  overflow-y: auto;
+  padding: var(--spacing-lg);
+}
+
+.sidebar-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.sidebar-section h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xs);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-family: inherit;
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(139, 115, 85, 0.1);
+}
+
+.form-group small {
+  display: block;
+  margin-top: var(--spacing-xs);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.char-count {
+  font-size: 0.75rem;
+  font-weight: normal;
+  color: var(--color-text-muted);
+  margin-left: var(--spacing-xs);
+}
+
+.validation-error {
+  color: #dc3545;
+  font-size: 0.75rem;
+  margin-top: var(--spacing-xs);
+  padding: var(--spacing-xs);
+  background: #f8d7da;
+  border-radius: var(--radius-sm);
+  border: 1px solid #f5c6cb;
+}
+
+.validation-warning {
+  color: #856404;
+  font-size: 0.75rem;
+  margin-top: var(--spacing-xs);
+  padding: var(--spacing-xs);
+  background: #fff3cd;
+  border-radius: var(--radius-sm);
+  border: 1px solid #ffeaa7;
+}
+
+.validation-error-block {
+  margin: var(--spacing-md) 0;
+  padding: var(--spacing-md);
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: var(--radius-md);
+  color: #721c24;
+  font-size: 0.875rem;
+}
+
+.form-group input.error,
+.form-group textarea.error {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+.form-group input.warning,
+.form-group textarea.warning {
+  border-color: #ffc107;
+  box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.1);
+}
+
+.url-hint {
+  color: #856404;
+  font-style: italic;
+}
+
+.subject-input {
+  font-weight: 500;
+}
+
+/* Block Palette */
+.block-palette {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-sm);
+}
+
+.block-type-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.block-type-btn:hover {
+  background: var(--color-primary-subtle);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.block-icon {
+  font-size: 1.5rem;
+}
+
+.block-label {
+  font-size: 0.75rem;
+  color: var(--color-text);
+}
+
+/* Template Variables */
+.variables-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.variable-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: var(--color-surface);
+  border-radius: var(--radius-sm);
+  font-size: 0.8125rem;
+}
+
+.variable-item code {
+  padding: 2px 6px;
+  background: var(--color-primary-subtle);
+  border-radius: 3px;
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 0.75rem;
+  color: var(--color-primary);
+}
+
+.variable-item span {
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+}
+
+/* Main Editor Area */
+.editor-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.email-preview {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--spacing-xl);
+  display: flex;
+  justify-content: center;
+}
+
+.email-preview.desktop {
+  background: #e5e5e5;
+}
+
+.email-preview.mobile {
+  background: #d5d5d5;
+}
+
+.email-preview.desktop .preview-body {
+  width: 600px;
+  max-width: 100%;
+}
+
+.email-preview.mobile .preview-body {
+  width: 375px;
+  max-width: 100%;
+}
+
+.preview-header {
+  background: white;
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.preview-subject {
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xs);
+}
+
+.preview-preheader {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.preview-body {
+  background: white;
+  min-height: 400px;
+  padding: var(--spacing-lg);
+}
+
+/* Email Blocks */
+.email-block {
+  position: relative;
+  margin-bottom: var(--spacing-md);
+  border: 2px solid transparent;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+}
+
+.email-block:hover {
+  border-color: var(--color-border);
+}
+
+.email-block.selected {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(139, 115, 85, 0.1);
+}
+
+.block-controls {
+  position: absolute;
+  top: -10px;
+  right: var(--spacing-sm);
+  display: flex;
+  gap: var(--spacing-xs);
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 10;
+}
+
+.email-block:hover .block-controls,
+.email-block.selected .block-controls {
+  opacity: 1;
+}
+
+.block-controls button {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.block-controls button:hover {
+  background: var(--color-primary-dark);
+  transform: scale(1.1);
+}
+
+/* Block Types */
+.header-block .block-preview {
+  padding: var(--spacing-md) 0;
+}
+
+.header-block .header-h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.header-block .header-h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.header-block .header-h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.block-editor {
+  padding: var(--spacing-md);
+  background: var(--color-surface);
+  border-radius: var(--radius-sm);
+}
+
+.block-editor input,
+.block-editor textarea,
+.block-editor select {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.text-block .block-preview {
+  padding: var(--spacing-md) 0;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.button-block {
+  text-align: center;
+  padding: var(--spacing-md) 0;
+}
+
+.button-preview {
+  display: inline-block;
+  padding: var(--spacing-sm) var(--spacing-xl);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.button-preview.button-primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.button-preview.button-secondary {
+  background: var(--color-secondary);
+  color: white;
+}
+
+.button-preview.button-outline {
+  background: transparent;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.divider-block {
+  padding: var(--spacing-md) 0;
+}
+
+.divider-preview {
+  height: 1px;
+  background: var(--color-border);
+  margin: var(--spacing-md) 0;
+}
+
+.spacer-preview {
+  background: transparent;
+}
+
+.footer-block .block-preview {
+  padding: var(--spacing-md) 0;
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--spacing-lg);
+}
+
+/* Rich Text Editor */
+.rich-text-editor-wrapper {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.rich-text-toolbar {
+  display: flex;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs);
+  background: var(--color-surface-elevated);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.rich-text-toolbar button {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+
+.rich-text-toolbar button:hover {
+  background: var(--color-surface);
+  border-color: var(--color-primary);
+}
+
+.rich-text-editor {
+  min-height: 150px;
+  padding: var(--spacing-md);
+  background: white;
+  color: var(--color-text);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  outline: none;
+}
+
+.rich-text-editor:empty:before {
+  content: attr(placeholder);
+  color: var(--color-text-muted);
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--color-text-muted);
+}
+
+.empty-state p {
+  margin-bottom: var(--spacing-lg);
+  font-size: 0.875rem;
+}
+
+/* Template Modal */
+.template-modal {
+  max-width: 800px;
+  width: 90%;
+}
+
+.templates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--spacing-lg);
+  padding: var(--spacing-md);
+}
+
+.template-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-lg);
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.template-card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.template-preview {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.template-name {
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xs);
+}
+
+.template-category {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .editor-sidebar {
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .editor-content {
+    flex-direction: column;
+  }
+  
+  .editor-sidebar {
+    width: 100%;
+    max-height: 300px;
+  }
+  
+  .email-preview.desktop .preview-body,
+  .email-preview.mobile .preview-body {
+    width: 100%;
+  }
+}
+
