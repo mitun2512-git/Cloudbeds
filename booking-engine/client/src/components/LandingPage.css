@@ -2701,6 +2701,7 @@
     height: 50vh;
     min-height: 320px;
     width: 100%;
+    order: -1; /* Show image first on mobile, consistent with rooms section */
   }
   
   .section-image img {
