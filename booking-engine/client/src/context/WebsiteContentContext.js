@@ -12,6 +12,7 @@ export const defaultContent = {
     logo: '/logo-white.png',
     establishedText: 'EST. 1889',
     showEstablished: true,
+    bookingUrl: 'https://us2.cloudbeds.com/en/reservation/N2eFbP?currency=usd',
     colors: {
       primary: '#3a4a3a',
       secondary: '#c5a36a',

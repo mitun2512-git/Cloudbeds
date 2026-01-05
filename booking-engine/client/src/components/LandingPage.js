@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { useWebsiteContent } from '../context/WebsiteContentContext';
 import './LandingPage.css';
 
@@ -312,6 +311,9 @@ const LandingPage = () => {
 
   // Destructure content for easier access
   const { global: globalContent, header, hero, quickInfo, reviews, rooms, buyout, contentSections, amenities, gallery, location, newsletter, footer } = content;
+  
+  // Cloudbeds booking URL
+  const bookingUrl = globalContent?.bookingUrl || 'https://us2.cloudbeds.com/en/reservation/N2eFbP?currency=usd';
 
   return (
     <div className="landing-page">
@@ -336,9 +338,9 @@ const LandingPage = () => {
               {header?.navLinks?.slice(4).map((link, i) => (
                 <a key={i} href={link.href}>{link.label}</a>
               ))}
-              <Link to={header?.bookButtonLink || '/book'} className="nav-book-btn">
+              <a href={bookingUrl} className="nav-book-btn">
                 {header?.bookButtonText || 'Book Now'}
-              </Link>
+              </a>
             </div>
 
             <button 
@@ -356,9 +358,9 @@ const LandingPage = () => {
             {header?.navLinks?.map((link, i) => (
               <a key={i} href={link.href} onClick={() => setMobileMenuOpen(false)}>{link.label}</a>
             ))}
-            <Link to={header?.bookButtonLink || '/book'} className="mobile-book-btn" onClick={() => setMobileMenuOpen(false)}>
+            <a href={bookingUrl} className="mobile-book-btn" onClick={() => setMobileMenuOpen(false)}>
               Book Your Stay
-            </Link>
+            </a>
           </div>
         </header>
       )}
@@ -407,9 +409,9 @@ const LandingPage = () => {
                 ))}
               </div>
             )}
-            <Link to={hero?.ctaLink || '/book'} className="hero-cta primary">
+            <a href={bookingUrl} className="hero-cta primary">
               {hero?.ctaText || 'Book Your Escape →'}
-            </Link>
+            </a>
           </div>
           <div className="hero-scroll-indicator">
             <span>Scroll to explore</span>
@@ -468,7 +470,7 @@ const LandingPage = () => {
               ))}
             </div>
             <p className="buyout-hero-description">{buyout?.description}</p>
-            <Link to="/book?buyout=true" className="buyout-hero-cta">{buyout?.ctaText}</Link>
+            <a href={bookingUrl} className="buyout-hero-cta">{buyout?.ctaText}</a>
           </div>
         </section>
       )}
@@ -548,7 +550,7 @@ const LandingPage = () => {
             <a href={reviews?.reviewsLink} target="_blank" rel="noopener noreferrer" className="review-link">
               Read All {reviews?.reviewCount} Reviews →
             </a>
-            <Link to="/book" className="review-link primary">Book Your Stay →</Link>
+            <a href={bookingUrl} className="review-link primary">Book Your Stay →</a>
           </div>
         </section>
       )}
@@ -577,7 +579,7 @@ const LandingPage = () => {
                 <span className="price-range">From {rooms?.priceFrom}/night</span>
                 <span className="price-note">{rooms?.pricePeak}/night peak season</span>
               </div>
-              <Link to="/book" className="rooms-cta">{rooms?.ctaText}</Link>
+              <a href={bookingUrl} className="rooms-cta">{rooms?.ctaText}</a>
             </div>
             <div className="rooms-image">
               <img src={rooms?.image || fallbackImages.room} alt="Luxury Room Interior" />
@@ -602,7 +604,7 @@ const LandingPage = () => {
                   Read more →
                 </button>
               )}
-              <Link to="/book" className="section-cta">{contentSections?.pool?.ctaText}</Link>
+              <a href={bookingUrl} className="section-cta">{contentSections?.pool?.ctaText}</a>
             </div>
             <div className="section-image">
               <img src={contentSections?.pool?.image || fallbackImages.pool} alt={contentSections?.pool?.title} />
@@ -632,7 +634,7 @@ const LandingPage = () => {
                   Read more →
                 </button>
               )}
-              <Link to="/book" className="section-cta dark">{contentSections?.tastingRoom?.ctaText}</Link>
+              <a href={bookingUrl} className="section-cta dark">{contentSections?.tastingRoom?.ctaText}</a>
             </div>
             <div className="section-image">
               <img src={contentSections?.tastingRoom?.image || fallbackImages.tastingRoom} alt={contentSections?.tastingRoom?.title} />
@@ -657,7 +659,7 @@ const LandingPage = () => {
                   Read more →
                 </button>
               )}
-              <Link to="/book" className="section-cta">{contentSections?.breakfast?.ctaText}</Link>
+              <a href={bookingUrl} className="section-cta">{contentSections?.breakfast?.ctaText}</a>
             </div>
             <div className="section-image">
               <img src={contentSections?.breakfast?.image || fallbackImages.breakfast} alt={contentSections?.breakfast?.title} />
@@ -682,7 +684,7 @@ const LandingPage = () => {
                   Read more →
                 </button>
               )}
-              <Link to="/book" className="section-cta dark">{contentSections?.sauna?.ctaText}</Link>
+              <a href={bookingUrl} className="section-cta dark">{contentSections?.sauna?.ctaText}</a>
             </div>
             <div className="section-image">
               <img src={contentSections?.sauna?.image || fallbackImages.sauna} alt={contentSections?.sauna?.title} />
@@ -720,7 +722,7 @@ const LandingPage = () => {
                 {p}
               </p>
             ))}
-            <Link to="/book" className="location-cta">{location?.ctaText}</Link>
+            <a href={bookingUrl} className="location-cta">{location?.ctaText}</a>
           </div>
         </section>
       )}
@@ -817,7 +819,7 @@ const LandingPage = () => {
       )}
       
       {/* Floating Reserve Button - Mobile */}
-      <Link to="/book" className="mobile-reserve-btn">Stay Here</Link>
+      <a href={bookingUrl} className="mobile-reserve-btn">Stay Here</a>
     </div>
   );
 };
