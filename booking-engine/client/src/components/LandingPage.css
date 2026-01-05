@@ -869,7 +869,7 @@
 }
 
 .gallery-categories {
-  max-width: 1400px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -906,7 +906,7 @@
 
 .carousel-slide {
   min-width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 3/2;
   position: relative;
 }
 
@@ -916,6 +916,10 @@
   object-fit: cover;
   cursor: pointer;
   transition: transform 0.4s ease;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .gallery-carousel:hover .carousel-slide img {
