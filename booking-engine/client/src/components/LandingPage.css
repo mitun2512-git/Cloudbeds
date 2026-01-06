@@ -1550,8 +1550,8 @@
 }
 
 .buyout-feature .feature-icon {
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
   flex-shrink: 0;
   color: var(--color-gold);
   display: flex;
@@ -2872,8 +2872,8 @@
   }
   
   .buyout-feature .feature-icon {
-    width: 40px;
-    height: 40px;
+    width: 52px;
+    height: 52px;
     flex-shrink: 0;
     color: var(--color-gold);
   }
