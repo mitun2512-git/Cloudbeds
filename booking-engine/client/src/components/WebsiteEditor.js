@@ -169,6 +169,28 @@ const WebsiteEditor = () => {
     }
   };
 
+  // Block search engines from indexing the editor
+  useEffect(() => {
+    // Set noindex meta tag
+    let metaRobots = document.querySelector('meta[name="robots"]');
+    if (!metaRobots) {
+      metaRobots = document.createElement('meta');
+      metaRobots.name = 'robots';
+      document.head.appendChild(metaRobots);
+    }
+    metaRobots.content = 'noindex, nofollow';
+    
+    // Set page title
+    document.title = 'Website Editor | Hennessey Estate';
+    
+    // Cleanup: restore default robots on unmount
+    return () => {
+      if (metaRobots) {
+        metaRobots.content = 'index, follow';
+      }
+    };
+  }, []);
+
   // Keyboard shortcuts
   useEffect(() => {
     const handleKeyDown = (e) => {
