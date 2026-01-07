@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { format, startOfToday, addDays, differenceInDays, parseISO } from 'date-fns';
+import { format, startOfToday, addDays, differenceInDays } from 'date-fns';
 import { getAvailability } from '../services/api';
 import './AvailabilityChecker.css';
 
@@ -7,7 +7,6 @@ const AvailabilityChecker = ({ propertyId }) => {
   const [startDate, setStartDate] = useState(format(startOfToday(), 'yyyy-MM-dd'));
   const [endDate, setEndDate] = useState(format(addDays(startOfToday(), 1), 'yyyy-MM-dd'));
   const [availability, setAvailability] = useState([]);
-  const [roomTypes, setRoomTypes] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [lastCheckedDates, setLastCheckedDates] = useState(null);
@@ -22,10 +21,8 @@ const AvailabilityChecker = ({ propertyId }) => {
     try {
       const result = await getAvailability(startDate, endDate, propertyId);
       const availList = result.availability || [];
-      const roomTypesList = result.roomTypes || [];
       
       setAvailability(availList);
-      setRoomTypes(roomTypesList);
       setLastCheckedDates({ start: startDate, end: endDate });
     } catch (err) {
       const errorMessage = err.response?.data?.error || err.message || 'Unable to load availability.';

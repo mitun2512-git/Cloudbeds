@@ -331,7 +331,7 @@ const LandingPage = () => {
   const bookingUrl = globalContent?.bookingUrl || 'https://us2.cloudbeds.com/en/reservation/N2eFbP?currency=usd';
 
   return (
-    <div className="landing-page">
+    <div className="landing-page" role="main">
       {/* Navigation */}
       {header?.visible !== false && (
         <header className={`landing-header ${isScrolled ? 'scrolled' : ''}`}>

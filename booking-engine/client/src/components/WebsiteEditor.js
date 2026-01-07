@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useRef, useEffect } from 'react';
-import { useWebsiteContent, defaultContent } from '../context/WebsiteContentContext';
+import { useWebsiteContent } from '../context/WebsiteContentContext';
 import './WebsiteEditor.css';
 
 // ============================================
@@ -9,12 +9,13 @@ import './WebsiteEditor.css';
 
 const WebsiteEditor = () => {
   // Get shared content from context
-  const { content, setContent, updateContent, updateSection, resetToDefaults, exportContent, importContent, isLoaded } = useWebsiteContent();
+  const { content, setContent, updateContent, resetToDefaults, exportContent, importContent, isLoaded } = useWebsiteContent();
   
   // Editor state (local only)
   const [selectedElement, setSelectedElement] = useState(null);
   const [deviceView, setDeviceView] = useState('desktop'); // desktop, tablet, mobile
   const [leftPanelTab, setLeftPanelTab] = useState('sections'); // sections, elements, media
+  // eslint-disable-next-line no-unused-vars
   const [rightPanelOpen, setRightPanelOpen] = useState(true);
   const [history, setHistory] = useState([]);
   const [historyIndex, setHistoryIndex] = useState(-1);
@@ -114,17 +115,17 @@ const WebsiteEditor = () => {
     }
   };
 
-  // Save website - now saves to context (which auto-saves to localStorage)
-  const handleSave = async () => {
-    setHasUnsavedChanges(false);
-    showNotification('Website saved successfully! Changes will appear on the live site.', 'success');
-  };
-
   // Show notification
-  const showNotification = (message, type = 'info') => {
+  const showNotification = useCallback((message, type = 'info') => {
     setNotification({ message, type });
     setTimeout(() => setNotification(null), 4000);
-  };
+  }, []);
+
+  // Save website - now saves to context (which auto-saves to localStorage)
+  const handleSave = useCallback(async () => {
+    setHasUnsavedChanges(false);
+    showNotification('Website saved successfully! Changes will appear on the live site.', 'success');
+  }, [showNotification]);
 
   // Export content as JSON
   const handleExport = () => {
@@ -214,7 +215,7 @@ const WebsiteEditor = () => {
     
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [handleUndo, handleRedo]);
+  }, [handleUndo, handleRedo, handleSave]);
 
   // Get device width
   const getDeviceWidth = () => {

@@ -5,8 +5,6 @@ import {
   getRoomPricing,
   saveEmailDraft,
   getEmailDrafts,
-  getEmailDraft,
-  deleteEmailDraft,
   createEmailCampaign,
   getEmailCampaigns,
   sendEmailCampaign,
@@ -86,70 +84,6 @@ const CampaignAnalyticsCards = ({ campaigns, onViewAnalytics }) => {
           </div>
         );
       })}
-    </div>
-  );
-};
-
-// Campaign List Item Component with Quick Stats
-const CampaignListItem = ({ campaign, onViewAnalytics }) => {
-  const [quickStats, setQuickStats] = useState(null);
-  const [loadingStats, setLoadingStats] = useState(false);
-
-  useEffect(() => {
-    if (campaign.status === 'sent' && !quickStats && !loadingStats) {
-      setLoadingStats(true);
-      getCampaignTracking(campaign.id)
-        .then(tracking => {
-          if (tracking.success) {
-            setQuickStats(tracking.stats);
-          }
-        })
-        .catch(error => {
-          console.error('Error loading quick stats:', error);
-        })
-        .finally(() => {
-          setLoadingStats(false);
-        });
-    }
-  }, [campaign.id, campaign.status, quickStats, loadingStats]);
-
-  return (
-    <div className="campaign-item">
-      <div className="campaign-info">
-        <h4>{campaign.name}</h4>
-        <p className="campaign-meta">
-          Status: <span className={`status-${campaign.status}`}>{campaign.status}</span>
-          {campaign.sentAt && ` · Sent: ${new Date(campaign.sentAt).toLocaleDateString()}`}
-        </p>
-        <p className="campaign-recipients">
-          {campaign.recipients?.length || 0} recipients
-        </p>
-        {quickStats && (
-          <div className="campaign-quick-stats">
-            <span className="quick-stat">
-              <strong>{quickStats.uniqueOpens || 0}</strong> opens ({quickStats.openRate || 0}%)
-            </span>
-            <span className="quick-stat">
-              <strong>{quickStats.uniqueClicks || 0}</strong> clicks ({quickStats.clickRate || 0}%)
-            </span>
-          </div>
-        )}
-        {loadingStats && (
-          <div className="campaign-quick-stats">
-            <span className="quick-stat">Loading analytics...</span>
-          </div>
-        )}
-      </div>
-      <div className="campaign-actions">
-        {campaign.status === 'sent' && (
-          <button 
-            className="btn-tracking"
-            onClick={() => onViewAnalytics(campaign.id)}
-          >
-            📊 View Analytics
-          </button>
-        )}
-      </div>
     </div>
   );
 };
@@ -693,19 +627,20 @@ const generatePlaceholderEmail = (guestName) => {
   return `${emailName}@${domain}`;
 };
 
-// Napa Valley area codes and nearby cities for location validation
+// Napa Valley area codes for location validation
 const NAPA_AREA_CODES = ['707', '415', '510', '925', '650', '408', '916', '209'];
-const NAPA_NEARBY_CITIES = ['napa', 'sonoma', 'vallejo', 'fairfield', 'san francisco', 'sf', 'oakland', 'berkeley', 'sacramento', 'san jose', 'santa rosa', 'petaluma', 'novato', 'san rafael', 'concord', 'walnut creek', 'fremont', 'hayward', 'richmond'];
 
 const EmailMarketing = () => {
   const [strategies, setStrategies] = useState([]);
   const [reservationData, setReservationData] = useState(null);
+  // eslint-disable-next-line no-unused-vars
   const [allReservations, setAllReservations] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [completedStrategies, setCompletedStrategies] = useState([]);
   const [selectedStrategy, setSelectedStrategy] = useState(null);
   const [selectedGuest, setSelectedGuest] = useState(null);
+  // eslint-disable-next-line no-unused-vars
   const [roomPricing, setRoomPricing] = useState(null);
   const [validationResults, setValidationResults] = useState({});
   
@@ -1277,62 +1212,6 @@ const EmailMarketing = () => {
     }
   };
 
-  // Strategy completion handler
-  const handleStrategyComplete = (strategyId) => {
-    const completedStrategy = strategies.find(s => s.id === strategyId);
-    if (!completedStrategy) return;
-
-    setStrategies(prev => prev.map(s => 
-      s.id === strategyId 
-        ? { ...s, status: 'completed', completedAt: new Date().toISOString() }
-        : s
-    ));
-
-    const currentUsedIndices = strategies
-      .filter(s => s.id !== strategyId)
-      .map(s => s.templateIndex);
-
-    const availableTemplates = strategyTemplates
-      .map((template, index) => ({ template, index }))
-      .filter(({ index }) => !currentUsedIndices.includes(index) && index !== completedStrategy.templateIndex);
-
-    if (availableTemplates.length > 0) {
-      const randomTemplate = availableTemplates[Math.floor(Math.random() * availableTemplates.length)];
-      const newStrategy = {
-        id: `strategy-${Date.now()}-${randomTemplate.index}`,
-        templateIndex: randomTemplate.index,
-        type: randomTemplate.template.type,
-        title: randomTemplate.template.title,
-        icon: randomTemplate.template.icon,
-        description: randomTemplate.template.description,
-        purpose: randomTemplate.template.purpose,
-        expectedImpact: randomTemplate.template.expectedImpact,
-        validationType: randomTemplate.template.validationType,
-        details: randomTemplate.template.generateDetails(reservationData),
-        filterGuests: randomTemplate.template.filterGuests,
-        generateEmail: randomTemplate.template.generateEmail,
-        guests: randomTemplate.template.filterGuests(allReservations),
-        completed: false,
-        createdAt: new Date().toISOString()
-      };
-
-      // Update validation for the new strategy
-      const newValidation = validateCampaigns([newStrategy], roomPricing, allReservations);
-      setValidationResults(prev => ({ ...prev, ...newValidation }));
-
-      setStrategies(prev => prev.map(s => 
-        s.id === strategyId ? newStrategy : s
-      ));
-    } else {
-      setStrategies(prev => prev.filter(s => s.id !== strategyId));
-    }
-
-    if (selectedStrategy?.id === strategyId) {
-      setSelectedStrategy(null);
-      setSelectedGuest(null);
-    }
-  };
-
   const handleSelectStrategy = (strategy) => {
     if (selectedStrategy?.id === strategy.id) {
       setSelectedStrategy(null);
@@ -1790,7 +1669,7 @@ const EmailMarketing = () => {
                             <div className="footer-logo">Hennessey Estate</div>
                             <div className="footer-address">1727 Main Street, Napa, CA 94559</div>
                             <div className="footer-links">
-                              <a href="#">Website</a> · <a href="#">Instagram</a> · <a href="#">Unsubscribe</a>
+                              <span className="footer-link">Website</span> · <span className="footer-link">Instagram</span> · <span className="footer-link">Unsubscribe</span>
                             </div>
                           </div>
                         </div>

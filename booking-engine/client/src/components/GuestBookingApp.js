@@ -1357,7 +1357,7 @@ const GuestBookingApp = () => {
   const steps = ['Dates', 'Room', 'Extras', 'Details', 'Payment', 'Confirmed'];
 
   return (
-    <div className="guest-booking-app">
+    <div className="guest-booking-app" aria-label="Hotel Booking Application">
       {/* Header */}
         <header className="booking-header">
         <div className="header-content">
