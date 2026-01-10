@@ -1,42 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-  <!-- Homepage -->
+  <!-- ================================
+       HOMEPAGE - Priority 1.0
+       ================================ -->
   <url>
     <loc>https://hennesseyestate.com/</loc>
-    <lastmod>2026-01-02</lastmod>
+    <lastmod>2026-01-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://hennesseyestate.com/images/pool-aerial.png</image:loc>
       <image:title>Hennessey Estate heated pool and Victorian gardens</image:title>
-      <image:caption>Aerial view of the heated pool at Hennessey Estate in Napa Valley</image:caption>
+      <image:caption>Aerial view of the heated pool at Hennessey Estate luxury bed and breakfast in Napa Valley</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://hennesseyestate.com/images/room-couple.png</image:loc>
       <image:title>Luxury guest room at Hennessey Estate</image:title>
-      <image:caption>Elegant Victorian guest room with modern amenities</image:caption>
+      <image:caption>Elegant Victorian guest room with modern amenities at Hennessey Estate B&B</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://hennesseyestate.com/images/dinner-party.png</image:loc>
       <image:title>Historic tasting room at Hennessey Estate</image:title>
-      <image:caption>Private dining experience in the historic tasting room with original tin ceiling</image:caption>
+      <image:caption>Private dining experience in the historic tasting room with original 1889 tin ceiling</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://hennesseyestate.com/images/breakfast-tasting-room.png</image:loc>
       <image:title>Chef-prepared breakfast at Hennessey Estate</image:title>
-      <image:caption>Gourmet breakfast served in the Victorian tasting room</image:caption>
+      <image:caption>Gourmet farm-to-table breakfast served daily in the Victorian tasting room</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://hennesseyestate.com/images/pool-group.png</image:loc>
+      <image:title>Guests enjoying the pool at Hennessey Estate</image:title>
+      <image:caption>Relaxing poolside at Hennessey Estate bed and breakfast in downtown Napa</image:caption>
     </image:image>
   </url>
   
-  <!-- Booking Page -->
+  <!-- ================================
+       BOOKING PAGE - Priority 0.9
+       ================================ -->
   <url>
     <loc>https://hennesseyestate.com/book</loc>
-    <lastmod>2026-01-02</lastmod>
+    <lastmod>2026-01-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   
+  <!-- ================================
+       ROOMS & SUITES HUB - Priority 0.8
+       (Future expansion)
+       ================================ -->
+  <!--
+  <url>
+    <loc>https://hennesseyestate.com/rooms</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  Individual room pages to be added:
+  - /rooms/garden-suite
+  - /rooms/vineyard-view
+  - /rooms/main-house-queen
+  - /rooms/carriage-house-king
+  - etc.
+  -->
+  
+  <!-- ================================
+       AMENITIES HUB - Priority 0.7
+       (Future expansion)
+       ================================ -->
+  <!--
+  <url>
+    <loc>https://hennesseyestate.com/amenities</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  Individual amenity pages to be added:
+  - /amenities/heated-pool
+  - /amenities/spa-sauna
+  - /amenities/wine-tasting
+  - /amenities/breakfast
+  -->
+  
+  <!-- ================================
+       EXPERIENCES HUB - Priority 0.7
+       (Future expansion)
+       ================================ -->
+  <!--
+  <url>
+    <loc>https://hennesseyestate.com/experiences</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  Individual experience pages to be added:
+  - /experiences/wine-tasting-tours
+  - /experiences/hot-air-balloon
+  - /experiences/culinary-tours
+  - /experiences/couples-retreats
+  -->
+  
+  <!-- ================================
+       INFORMATIONAL PAGES - Priority 0.6
+       (Future expansion)
+       ================================ -->
+  <!--
+  <url>
+    <loc>https://hennesseyestate.com/about</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hennesseyestate.com/gallery</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hennesseyestate.com/contact</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hennesseyestate.com/faq</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  -->
+  
+  <!-- ================================
+       BLOG/CONTENT HUB - Priority 0.7
+       (Future expansion)
+       ================================ -->
+  <!--
+  <url>
+    <loc>https://hennesseyestate.com/blog</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  Blog posts to be added as they're published:
+  - /blog/napa-valley-wine-guide
+  - /blog/best-restaurants-napa
+  - /blog/romantic-getaway-guide
+  - etc.
+  -->
+  
+  <!-- ================================
+       SPECIALS & PACKAGES - Priority 0.7
+       (Future expansion)
+       ================================ -->
+  <!--
+  <url>
+    <loc>https://hennesseyestate.com/specials</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  -->
+  
 </urlset>
-

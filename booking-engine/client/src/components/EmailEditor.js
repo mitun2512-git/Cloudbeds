@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './EmailEditor.css';
 
 /**
@@ -82,7 +82,6 @@ const EmailEditor = ({ draft, onSave, onCancel, mode = 'edit' }) => {
   const [showTemplates, setShowTemplates] = useState(false);
   const [showAbtest, setShowAbtest] = useState(false);
   const [abTestSubject, setAbTestSubject] = useState('');
-  const editorRef = useRef(null);
 
   // Initialize with template if provided
   useEffect(() => {
@@ -96,6 +95,7 @@ const EmailEditor = ({ draft, onSave, onCancel, mode = 'edit' }) => {
         })));
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [draft?.templateId]);
 
   const addBlock = (blockType) => {

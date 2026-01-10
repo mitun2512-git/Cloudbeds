@@ -1276,7 +1276,7 @@ const GuestBookingApp = () => {
     }
   }, [location.search]);
 
-  // Set page title for SEO
+  // Set page title and meta tags for SEO
   useEffect(() => {
     document.title = 'Book Your Stay | Hennessey Estate - Napa Valley B&B';
     
@@ -1284,6 +1284,21 @@ const GuestBookingApp = () => {
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', 'Book your luxury stay at Hennessey Estate in downtown Napa Valley. Choose from 10 ensuite rooms with pool, spa, sauna access and chef-prepared breakfast included.');
+    }
+    
+    // Ensure booking page is indexed by search engines
+    let metaRobots = document.querySelector('meta[name="robots"]');
+    if (!metaRobots) {
+      metaRobots = document.createElement('meta');
+      metaRobots.name = 'robots';
+      document.head.appendChild(metaRobots);
+    }
+    metaRobots.content = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+    
+    // Update canonical URL for booking page
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) {
+      canonical.href = 'https://hennesseyestate.com/book';
     }
   }, []);
 
@@ -1342,7 +1357,7 @@ const GuestBookingApp = () => {
   const steps = ['Dates', 'Room', 'Extras', 'Details', 'Payment', 'Confirmed'];
 
   return (
-    <div className="guest-booking-app">
+    <div className="guest-booking-app" aria-label="Hotel Booking Application">
       {/* Header */}
         <header className="booking-header">
         <div className="header-content">

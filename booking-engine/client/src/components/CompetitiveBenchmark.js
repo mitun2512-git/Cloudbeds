@@ -253,11 +253,6 @@ const CompetitiveBenchmark = () => {
     }).format(value);
   };
 
-  const getPerformanceIndex = (property) => {
-    // Use RevPAR for performance comparison
-    return Math.round((property.revPar / 600) * 100); // 600 as max RevPAR baseline
-  };
-
   const getRankIcon = (index) => {
     const icons = ['🥇', '🥈', '🥉', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟'];
     return icons[index] || '';

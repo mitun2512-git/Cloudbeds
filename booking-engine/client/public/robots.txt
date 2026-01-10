@@ -8,9 +8,11 @@ Allow: /
 Allow: /book
 Allow: /book/
 
-# Block all dashboard and staff pages
+# Block all dashboard, staff, and internal pages
 Disallow: /dashboard
 Disallow: /dashboard/
+Disallow: /editor
+Disallow: /editor/
 Disallow: /staff
 Disallow: /staff/
 Disallow: /admin
@@ -47,8 +49,11 @@ Crawl-delay: 1
 # Google-specific
 User-agent: Googlebot
 Allow: /
+Allow: /book
 Disallow: /dashboard
 Disallow: /dashboard/
+Disallow: /editor
+Disallow: /editor/
 Disallow: /staff
 Disallow: /staff/
 Disallow: /admin
@@ -58,8 +63,11 @@ Disallow: /api/
 # Bing-specific  
 User-agent: Bingbot
 Allow: /
+Allow: /book
 Disallow: /dashboard
 Disallow: /dashboard/
+Disallow: /editor
+Disallow: /editor/
 Disallow: /staff
 Disallow: /staff/
 Disallow: /admin

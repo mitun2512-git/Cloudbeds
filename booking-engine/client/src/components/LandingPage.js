@@ -255,7 +255,7 @@ const LandingPage = () => {
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
-  // Set page title and meta description for SEO
+  // Set page title and meta tags for SEO
   useEffect(() => {
     document.title = 'Hennessey Estate | Luxury Bed & Breakfast in Downtown Napa Valley';
     
@@ -263,6 +263,21 @@ const LandingPage = () => {
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', 'Experience Victorian elegance at Hennessey Estate, a historic 1889 bed and breakfast in downtown Napa. 10 luxury ensuite rooms, heated pool & spa, chef-prepared breakfast.');
+    }
+    
+    // Ensure page is indexed by search engines
+    let metaRobots = document.querySelector('meta[name="robots"]');
+    if (!metaRobots) {
+      metaRobots = document.createElement('meta');
+      metaRobots.name = 'robots';
+      document.head.appendChild(metaRobots);
+    }
+    metaRobots.content = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+    
+    // Update canonical URL
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) {
+      canonical.href = 'https://hennesseyestate.com/';
     }
   }, []);
 
@@ -316,7 +331,7 @@ const LandingPage = () => {
   const bookingUrl = globalContent?.bookingUrl || 'https://us2.cloudbeds.com/en/reservation/N2eFbP?currency=usd';
 
   return (
-    <div className="landing-page">
+    <div className="landing-page" role="main">
       {/* Navigation */}
       {header?.visible !== false && (
         <header className={`landing-header ${isScrolled ? 'scrolled' : ''}`}>

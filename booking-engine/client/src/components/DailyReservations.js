@@ -13,12 +13,6 @@ const DailyReservations = () => {
   const [outstandingData, setOutstandingData] = useState({ reservations: [], loading: false, count: 0 });
   const [servicesData, setServicesData] = useState({ breakfast: [], cleaning: [], dailyCleaning: [], checkoutCleaning: [], loading: false });
 
-  useEffect(() => {
-    fetchReservations();
-    fetchOutstandingBalance();
-    fetchServicesData();
-  }, []);
-
   const fetchReservations = async () => {
     try {
       setLoading(true);
@@ -66,6 +60,12 @@ const DailyReservations = () => {
       setServicesData(prev => ({ ...prev, loading: false }));
     }
   }, []);
+
+  useEffect(() => {
+    fetchReservations();
+    fetchOutstandingBalance();
+    fetchServicesData();
+  }, [fetchOutstandingBalance, fetchServicesData]);
 
   const formatDate = (dateStr) => {
     if (!dateStr) return '-';

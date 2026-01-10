@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { getPricingCalendar, getPricingRecommendations, getHistoricalRevenue } from '../services/api';
+import { getPricingCalendar, getHistoricalRevenue } from '../services/api';
 import './DynamicPricing.css';
 
 // Room configuration with base prices (Matched to Server Config)
@@ -34,7 +34,8 @@ export default function DynamicPricing() {
       setRoomConfig(DEFAULT_ROOM_CONFIG);
       localStorage.setItem('hennesseyRoomConfig', JSON.stringify(DEFAULT_ROOM_CONFIG));
     }
-  }, []); // run once on mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // run once on mount - intentionally omit roomConfig to avoid re-running
 
   // Save config to localStorage when it changes
   useEffect(() => {
@@ -121,7 +122,7 @@ function PricingCalendarView({ roomConfig, setRoomConfig }) {
     } finally {
       setLoading(false);
     }
-  }, [month, year, roomConfig]);
+  }, [month, year, roomConfig, setRoomConfig]);
 
   useEffect(() => {
     fetchCalendar();
