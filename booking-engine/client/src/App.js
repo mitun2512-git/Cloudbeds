@@ -15,6 +15,8 @@ import GuestBookingApp from './components/GuestBookingApp';
 import LandingPage from './components/LandingPage';
 import WebsiteEditor from './components/WebsiteEditor';
 import GuestChatDashboard from './components/GuestChatDashboard';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsOfService from './components/TermsOfService';
 import { WebsiteContentProvider } from './context/WebsiteContentContext';
 import { getProperties, getCacheStatus, triggerCacheRefresh } from './services/api';
 
@@ -365,6 +367,10 @@ function App() {
           
           {/* Website Editor - Wix-inspired visual editor */}
           <Route path="/editor" element={<WebsiteEditor />} />
+          
+          {/* Legal Pages */}
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsOfService />} />
           
           {/* Staff Dashboard */}
           <Route path="/dashboard/*" element={<StaffDashboard />} />
