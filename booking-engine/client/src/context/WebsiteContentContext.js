@@ -66,7 +66,7 @@ export const defaultContent = {
     backgroundVideo: '/hero-video.mp4',
     backgroundImage: '/images/pool-aerial.png',
     trustBadges: [
-      { icon: '★★★★★', text: '4.9/5 Google · 97 Reviews' },
+      { icon: '★★★★★', text: '5/5 Google · 97 Reviews' },
       { icon: '🏛️', text: 'Historic Places Registry' },
     ],
     quickFacts: [
@@ -91,7 +91,7 @@ export const defaultContent = {
   // Reviews Section
   reviews: {
     visible: true,
-    rating: '4.9',
+    rating: '5',
     ratingOutOf: '5',
     platform: 'Google',
     reviewCount: '97',
@@ -354,7 +354,7 @@ export const defaultContent = {
   footer: {
     visible: true,
     tagline: 'Step into a piece of Napa\'s past. Refined for today.',
-    rating: '★★★★★ 4.9/5 on Google · 97 Reviews',
+    rating: '★★★★★ 5/5 on Google · 97 Reviews',
     historic: 'Listed on the National Register of Historic Places · Est. 1889',
     copyright: '© 2026 Hennessey Estate. All rights reserved.',
   },
