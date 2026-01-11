@@ -16,39 +16,19 @@ const ESTATE_CONFIG = {
   taxRate: 0.15,
 };
 
-const EVENT_TYPES = [
-  { id: 'celebration', label: 'Birthday / Anniversary', icon: '🎂' },
-  { id: 'reunion', label: 'Family / Friends Reunion', icon: '👨‍👩‍👧‍👦' },
-  { id: 'corporate', label: 'Corporate Retreat', icon: '💼' },
-  { id: 'wedding', label: 'Wedding / Elopement', icon: '💒' },
-  { id: 'wellness', label: 'Wellness Retreat', icon: '🧘' },
-  { id: 'other', label: 'Other Occasion', icon: '✨' },
-];
-
-const BUYOUT_ADDONS = [
-  { id: 'private_chef', name: 'Private Chef Dinner', price: 175, priceType: 'per_person', icon: '👨‍🍳' },
-  { id: 'wine_concierge', name: 'Wine Concierge Service', price: 500, priceType: 'flat', icon: '🍷' },
-  { id: 'packed_lunches', name: 'Packed Vineyard Lunches', price: 65, priceType: 'per_person', icon: '🧺' },
-  { id: 'spa_day', name: 'Group Spa Experience', price: 200, priceType: 'per_person', icon: '💆' },
-  { id: 'photography', name: 'Professional Photography', price: 750, priceType: 'flat', icon: '📸' },
-  { id: 'airport', name: 'Group Airport Transfer', price: 450, priceType: 'flat', icon: '🚐' },
-];
-
-const STEPS = { EVENT: 0, DATES: 1, ADDONS: 2, GUEST: 3, PAYMENT: 4, CONFIRMATION: 5 };
-const STEP_LABELS = ['Occasion', 'Dates', 'Add-ons', 'Details', 'Payment', 'Confirmed'];
+const STEPS = { DATES: 0, GUEST: 1, PAYMENT: 2, CONFIRMATION: 3 };
+const STEP_LABELS = ['Dates', 'Details', 'Payment', 'Confirmed'];
 
 // ============================================================================
 // MAIN COMPONENT
 // ============================================================================
 const EstateBuyoutBooking = () => {
-  const [step, setStep] = useState(STEPS.EVENT);
-  const [eventType, setEventType] = useState('');
+  const [step, setStep] = useState(STEPS.DATES);
   const [dates, setDates] = useState({
     checkIn: format(addDays(new Date(), 30), 'yyyy-MM-dd'),
     checkOut: format(addDays(new Date(), 32), 'yyyy-MM-dd'),
   });
   const [guests, setGuests] = useState(10);
-  const [addons, setAddons] = useState({});
   const [guest, setGuest] = useState({});
   const [confirmation, setConfirmation] = useState(null);
   const [isProcessing, setIsProcessing] = useState(false);
@@ -66,15 +46,11 @@ const EstateBuyoutBooking = () => {
   // Calculate pricing
   const calculateTotal = () => {
     const roomTotal = ESTATE_CONFIG.baseNightlyRate * nights;
-    const addonsTotal = BUYOUT_ADDONS.reduce((sum, addon) => {
-      if (!addons[addon.id]) return sum;
-      return sum + (addon.priceType === 'per_person' ? addon.price * guests : addon.price);
-    }, 0);
-    const subtotal = roomTotal + addonsTotal;
+    const subtotal = roomTotal;
     const taxes = subtotal * ESTATE_CONFIG.taxRate;
     const total = subtotal + taxes;
     const deposit = total * ESTATE_CONFIG.depositPercent / 100;
-    return { roomTotal, addonsTotal, subtotal, taxes, total, deposit };
+    return { roomTotal, subtotal, taxes, total, deposit };
   };
 
   const pricing = calculateTotal();
@@ -136,42 +112,7 @@ const EstateBuyoutBooking = () => {
       {/* Main Content */}
       <main className="booking-main">
         
-        {/* STEP 1: Event Type */}
-        {step === STEPS.EVENT && (
-          <div className="booking-step">
-            <div className="step-header">
-              <h2>What's the Occasion?</h2>
-              <p>Select the type of event for your estate buyout</p>
-            </div>
-
-            <div className="event-grid">
-              {EVENT_TYPES.map((event) => (
-                <div
-                  key={event.id}
-                  className={`room-card ${eventType === event.id ? 'selected' : ''}`}
-                  onClick={() => setEventType(event.id)}
-                >
-                  <div className="room-header">
-                    <h3>{event.icon} {event.label}</h3>
-                  </div>
-                  <button className={`btn-select ${eventType === event.id ? 'selected' : ''}`}>
-                    {eventType === event.id ? 'Selected' : 'Select'}
-                  </button>
-                </div>
-              ))}
-            </div>
-
-            <button 
-              className="btn-next" 
-              onClick={() => goToStep(STEPS.DATES)}
-              disabled={!eventType}
-            >
-              Continue
-            </button>
-          </div>
-        )}
-
-        {/* STEP 2: Dates & Guests */}
+        {/* STEP 1: Dates & Guests */}
         {step === STEPS.DATES && (
           <div className="booking-step date-selection">
             <div className="step-header">
@@ -229,16 +170,16 @@ const EstateBuyoutBooking = () => {
                 <span>${pricing.roomTotal.toLocaleString()}</span>
               </div>
               <div className="pricing-row total">
-                <span>Estimated Total (before add-ons & tax)</span>
+                <span>Estimated Total (before tax)</span>
                 <span>${pricing.roomTotal.toLocaleString()}</span>
               </div>
             </div>
 
             <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
-              <button className="btn-secondary" onClick={() => goToStep(STEPS.EVENT)}>Back</button>
+              <Link to="/" className="btn-secondary">← Back to Home</Link>
               <button 
                 className="btn-next" 
-                onClick={() => goToStep(STEPS.ADDONS)}
+                onClick={() => goToStep(STEPS.GUEST)}
                 disabled={nights < ESTATE_CONFIG.minNights}
                 style={{ flex: 1 }}
               >
@@ -248,55 +189,7 @@ const EstateBuyoutBooking = () => {
           </div>
         )}
 
-        {/* STEP 3: Add-ons */}
-        {step === STEPS.ADDONS && (
-          <div className="booking-step">
-            <div className="step-header">
-              <h2>Enhance Your Stay</h2>
-              <p>Optional services to make your estate experience extraordinary</p>
-            </div>
-
-            <div className="addons-grid">
-              {BUYOUT_ADDONS.map((addon) => (
-                <div
-                  key={addon.id}
-                  className={`addon-card ${addons[addon.id] ? 'selected' : ''}`}
-                  onClick={() => setAddons(prev => ({ ...prev, [addon.id]: !prev[addon.id] }))}
-                >
-                  <span className="addon-icon">{addon.icon}</span>
-                  <div className="addon-content">
-                    <h4>{addon.name}</h4>
-                    <div className="addon-price">
-                      <span className="price">${addon.price}</span>
-                      <span className="price-note">
-                        {addon.priceType === 'per_person' ? '/person' : ' total'}
-                      </span>
-                    </div>
-                  </div>
-                  <div className="addon-checkbox">{addons[addon.id] ? '✓' : ''}</div>
-                </div>
-              ))}
-            </div>
-
-            {pricing.addonsTotal > 0 && (
-              <div className="addons-summary">
-                <div className="summary-line">
-                  <span>Add-ons Total</span>
-                  <span>${pricing.addonsTotal.toLocaleString()}</span>
-                </div>
-              </div>
-            )}
-
-            <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
-              <button className="btn-secondary" onClick={() => goToStep(STEPS.DATES)}>Back</button>
-              <button className="btn-next" onClick={() => goToStep(STEPS.GUEST)} style={{ flex: 1 }}>
-                {Object.values(addons).some(v => v) ? 'Continue' : 'Skip & Continue'}
-              </button>
-            </div>
-          </div>
-        )}
-
-        {/* STEP 4: Guest Details */}
+        {/* STEP 2: Guest Details */}
         {step === STEPS.GUEST && (
           <div className="booking-step">
             <div className="step-header">
@@ -368,7 +261,7 @@ const EstateBuyoutBooking = () => {
             </div>
 
             <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
-              <button className="btn-secondary" onClick={() => goToStep(STEPS.ADDONS)}>Back</button>
+              <button className="btn-secondary" onClick={() => goToStep(STEPS.DATES)}>Back</button>
               <button 
                 className="btn-next" 
                 onClick={() => validateGuest() && goToStep(STEPS.PAYMENT)}
@@ -380,7 +273,7 @@ const EstateBuyoutBooking = () => {
           </div>
         )}
 
-        {/* STEP 5: Payment */}
+        {/* STEP 3: Payment */}
         {step === STEPS.PAYMENT && (
           <div className="booking-step">
             <div className="step-header">
@@ -394,14 +287,14 @@ const EstateBuyoutBooking = () => {
                 
                 <div className="summary-section">
                   <div className="detail-row">
-                    <span className="label">Event</span>
-                    <span className="value">{EVENT_TYPES.find(e => e.id === eventType)?.label}</span>
-                  </div>
-                  <div className="detail-row">
                     <span className="label">Dates</span>
                     <span className="value">
                       {format(parseISO(dates.checkIn), 'MMM d')} – {format(parseISO(dates.checkOut), 'MMM d, yyyy')}
                     </span>
+                  </div>
+                  <div className="detail-row">
+                    <span className="label">Duration</span>
+                    <span className="value">{nights} nights</span>
                   </div>
                   <div className="detail-row">
                     <span className="label">Guests</span>
@@ -434,12 +327,6 @@ const EstateBuyoutBooking = () => {
                     <span>Estate ({nights} nights)</span>
                     <span>${pricing.roomTotal.toLocaleString()}</span>
                   </div>
-                  {pricing.addonsTotal > 0 && (
-                    <div className="breakdown-line addon">
-                      <span>Add-ons</span>
-                      <span>${pricing.addonsTotal.toLocaleString()}</span>
-                    </div>
-                  )}
                   <div className="breakdown-line">
                     <span>Taxes & fees (15%)</span>
                     <span>${pricing.taxes.toLocaleString()}</span>
@@ -462,7 +349,7 @@ const EstateBuyoutBooking = () => {
           </div>
         )}
 
-        {/* STEP 6: Confirmation */}
+        {/* STEP 4: Confirmation */}
         {step === STEPS.CONFIRMATION && confirmation && (
           <div className="booking-step confirmation">
             <div className="confirmation-header">
@@ -478,10 +365,6 @@ const EstateBuyoutBooking = () => {
               </div>
 
               <div className="confirmation-details">
-                <div className="detail-row">
-                  <span className="label">Event</span>
-                  <span className="value">{EVENT_TYPES.find(e => e.id === eventType)?.label}</span>
-                </div>
                 <div className="detail-row">
                   <span className="label">Check-in</span>
                   <span className="value">{format(parseISO(dates.checkIn), 'EEEE, MMMM d, yyyy')}</span>

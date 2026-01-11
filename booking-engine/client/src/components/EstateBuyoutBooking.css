@@ -15,24 +15,6 @@
   text-transform: uppercase;
 }
 
-/* Event Type Grid - reuse room-card styling */
-.event-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.event-grid .room-card {
-  text-align: center;
-  padding: 1.5rem;
-}
-
-.event-grid .room-card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-}
-
 /* Simple Date Inputs */
 .date-inputs-simple {
   display: flex;
