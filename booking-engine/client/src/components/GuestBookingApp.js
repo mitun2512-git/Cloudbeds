@@ -81,6 +81,22 @@ const cleanHtmlText = (html) => {
   return text;
 };
 
+// Booking Types
+const BOOKING_TYPES = {
+  INDIVIDUAL: 'individual',
+  BUYOUT: 'buyout'
+};
+
+// Estate Buyout Configuration
+const ESTATE_CONFIG = {
+  totalRooms: 10,
+  maxGuests: 20,
+  minNights: 2,
+  baseNightlyRate: 4500,
+  depositPercent: 50,
+  taxRate: 0.15,
+};
+
 // Booking Steps
 const STEPS = {
   DATES: 0,
@@ -89,6 +105,27 @@ const STEPS = {
   GUEST: 3,
   PAYMENT: 4,
   CONFIRMATION: 5
+};
+
+// Get visible steps based on booking type
+const getStepsForType = (bookingType) => {
+  if (bookingType === BOOKING_TYPES.BUYOUT) {
+    return ['Dates', 'Details', 'Payment', 'Confirmed'];
+  }
+  return ['Dates', 'Room', 'Extras', 'Details', 'Payment', 'Confirmed'];
+};
+
+// Map logical step index to display index for progress bar
+const getDisplayStepIndex = (step, bookingType) => {
+  if (bookingType === BOOKING_TYPES.BUYOUT) {
+    // Buyout: DATES(0)->0, GUEST(3)->1, PAYMENT(4)->2, CONFIRMATION(5)->3
+    if (step === STEPS.DATES) return 0;
+    if (step === STEPS.GUEST) return 1;
+    if (step === STEPS.PAYMENT) return 2;
+    if (step === STEPS.CONFIRMATION) return 3;
+    return 0;
+  }
+  return step;
 };
 
 // Add-ons available at Hennessey Estate
@@ -284,9 +321,9 @@ const DateRangeCalendar = ({ checkIn, checkOut, onDateSelect, selectionMode }) =
 };
 
 // ============================================================================
-// STEP 1: Date Selection
+// STEP 1: Date Selection + Booking Type
 // ============================================================================
-const DateSelection = ({ dates, setDates, onNext }) => {
+const DateSelection = ({ dates, setDates, bookingType, setBookingType, onNext }) => {
   const [selectionMode, setSelectionMode] = useState('checkIn');
   const [calendarVisible, setCalendarVisible] = useState(false);
   
@@ -373,37 +410,98 @@ const DateSelection = ({ dates, setDates, onNext }) => {
         />
       )}
 
-      <div className="guest-count">
-        <div className="count-field">
-          <label>Adults</label>
-          <select 
-            value={dates.adults} 
-            onChange={(e) => setDates(prev => ({ ...prev, adults: parseInt(e.target.value) }))}
+      {/* Booking Type Selection */}
+      <div className="booking-type-selector">
+        <label className="booking-type-label">What type of booking?</label>
+        <div className="booking-type-options">
+          <div 
+            className={`booking-type-option ${bookingType === BOOKING_TYPES.INDIVIDUAL ? 'selected' : ''}`}
+            onClick={() => setBookingType(BOOKING_TYPES.INDIVIDUAL)}
           >
-            {[1, 2, 3, 4, 5, 6].map(n => (
-              <option key={n} value={n}>{n}</option>
-            ))}
-          </select>
-        </div>
-        <div className="count-field">
-          <label>Children</label>
-          <select 
-            value={dates.children} 
-            onChange={(e) => setDates(prev => ({ ...prev, children: parseInt(e.target.value) }))}
+            <span className="option-icon">🛏️</span>
+            <span className="option-title">Individual Room</span>
+            <span className="option-desc">Book 1 or more rooms</span>
+          </div>
+          <div 
+            className={`booking-type-option ${bookingType === BOOKING_TYPES.BUYOUT ? 'selected' : ''}`}
+            onClick={() => setBookingType(BOOKING_TYPES.BUYOUT)}
           >
-            {[0, 1, 2, 3, 4].map(n => (
-              <option key={n} value={n}>{n}</option>
-            ))}
-          </select>
+            <span className="option-icon">🏠</span>
+            <span className="option-title">Full Estate</span>
+            <span className="option-desc">All {ESTATE_CONFIG.totalRooms} rooms · Up to {ESTATE_CONFIG.maxGuests} guests</span>
+          </div>
         </div>
       </div>
+
+      {/* Guest Count - Different for each booking type */}
+      {bookingType === BOOKING_TYPES.INDIVIDUAL ? (
+        <div className="guest-count">
+          <div className="count-field">
+            <label>Adults</label>
+            <select 
+              value={dates.adults} 
+              onChange={(e) => setDates(prev => ({ ...prev, adults: parseInt(e.target.value) }))}
+            >
+              {[1, 2, 3, 4, 5, 6].map(n => (
+                <option key={n} value={n}>{n}</option>
+              ))}
+            </select>
+          </div>
+          <div className="count-field">
+            <label>Children</label>
+            <select 
+              value={dates.children} 
+              onChange={(e) => setDates(prev => ({ ...prev, children: parseInt(e.target.value) }))}
+            >
+              {[0, 1, 2, 3, 4].map(n => (
+                <option key={n} value={n}>{n}</option>
+              ))}
+            </select>
+          </div>
+        </div>
+      ) : (
+        <div className="guest-count buyout-guests">
+          <div className="count-field">
+            <label>Total Guests</label>
+            <select 
+              value={dates.adults} 
+              onChange={(e) => setDates(prev => ({ ...prev, adults: parseInt(e.target.value), children: 0 }))}
+            >
+              {Array.from({ length: ESTATE_CONFIG.maxGuests - 1 }, (_, i) => i + 2).map(n => (
+                <option key={n} value={n}>{n} guests</option>
+              ))}
+            </select>
+          </div>
+        </div>
+      )}
+
+      {/* Buyout Pricing Preview */}
+      {bookingType === BOOKING_TYPES.BUYOUT && nights >= ESTATE_CONFIG.minNights && (
+        <div className="buyout-pricing-preview">
+          <div className="pricing-row">
+            <span>Estate ({nights} nights × ${ESTATE_CONFIG.baseNightlyRate.toLocaleString()})</span>
+            <span>${(ESTATE_CONFIG.baseNightlyRate * nights).toLocaleString()}</span>
+          </div>
+          <div className="pricing-row total">
+            <span>Estimated Total (incl. 15% tax)</span>
+            <span>${Math.round(ESTATE_CONFIG.baseNightlyRate * nights * 1.15).toLocaleString()}</span>
+          </div>
+        </div>
+      )}
+
+      {/* Minimum nights warning for buyout */}
+      {bookingType === BOOKING_TYPES.BUYOUT && nights > 0 && nights < ESTATE_CONFIG.minNights && (
+        <div className="buyout-warning">
+          Full Estate Buyout requires a minimum of {ESTATE_CONFIG.minNights} nights
+        </div>
+      )}
 
       <button 
         className="btn-next" 
         onClick={onNext}
-        disabled={!isValid}
+        disabled={bookingType === BOOKING_TYPES.BUYOUT ? nights < ESTATE_CONFIG.minNights : !isValid}
       >
-        Search Available Rooms
+        {bookingType === BOOKING_TYPES.BUYOUT ? 'Continue' : 'Search Available Rooms'}
       </button>
 
       {/* Property Info Section */}
@@ -1236,10 +1334,13 @@ const GuestBookingApp = () => {
   const location = useLocation();
   const calendarRef = useRef(null);
   
+  // Booking type state
+  const [bookingType, setBookingType] = useState(BOOKING_TYPES.INDIVIDUAL);
+  
   // Booking state
   const [dates, setDates] = useState({
-    checkIn: format(addDays(new Date(), 1), 'yyyy-MM-dd'),
-    checkOut: format(addDays(new Date(), 3), 'yyyy-MM-dd'),
+    checkIn: '',
+    checkOut: '',
     adults: 2,
     children: 0
   });
@@ -1251,19 +1352,18 @@ const GuestBookingApp = () => {
   const [reservation, setReservation] = useState(null);
   const [totalBuyoutStatus, setTotalBuyoutStatus] = useState(null);
 
-  // Handle buyout query parameter - scroll to calendar
+  // Handle URL parameters for booking type
   useEffect(() => {
     const params = new URLSearchParams(location.search);
+    const typeParam = params.get('type');
+    if (typeParam === 'buyout') {
+      setBookingType(BOOKING_TYPES.BUYOUT);
+      setDates(prev => ({ ...prev, adults: 10 })); // Default 10 guests for buyout
+    }
+    // Legacy support for old parameter
     if (params.get('buyout') === 'true') {
-      // Scroll to the calendar section after a brief delay
-      setTimeout(() => {
-        if (calendarRef.current) {
-          calendarRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        } else {
-          // Fallback: scroll to top of page content
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-      }, 100);
+      setBookingType(BOOKING_TYPES.BUYOUT);
+      setDates(prev => ({ ...prev, adults: 10 }));
     }
   }, [location.search]);
 

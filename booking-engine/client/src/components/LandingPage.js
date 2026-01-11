@@ -387,8 +387,8 @@ const LandingPage = () => {
                 <span className="badge-text-full">5/5 Google · 97 Reviews</span>
                 <span className="badge-text-short">97 Reviews</span>
               </a>
-              {/* Historic Badge - links to tasting room section */}
-              <a href="#tasting-room" className="trust-badge">
+              {/* Historic Badge - links to tasting room section (hidden on mobile) */}
+              <a href="#tasting-room" className="trust-badge historic-badge">
                 <span className="badge-icon">🏛️</span>
                 <span className="badge-text-full">Historic Places Registry</span>
                 <span className="badge-text-short">Historic</span>
@@ -397,7 +397,7 @@ const LandingPage = () => {
               <a href="#buyout" className="trust-badge estate-badge">
                 <span className="badge-icon">🏠</span>
                 <span className="badge-text-full">Full Estate Buyouts</span>
-                <span className="badge-text-short">Buyouts</span>
+                <span className="badge-text-short">Full Estate Buyouts</span>
               </a>
             </div>
             <h1>
@@ -632,6 +632,10 @@ const LandingPage = () => {
               <h2>{contentSections?.tastingRoom?.title}</h2>
               <h3>{contentSections?.tastingRoom?.subtitle}</h3>
               <p>{contentSections?.tastingRoom?.paragraphs?.[0]}</p>
+              <p className="historic-note">
+                <span className="historic-badge-inline">🏛️</span>
+                <em>Listed on the National Register of Historic Places</em>
+              </p>
               <p className={expandedSections.tastingRoom ? 'mobile-visible' : 'mobile-hidden'}>
                 {contentSections?.tastingRoom?.paragraphs?.[1]}
               </p>
@@ -640,10 +644,6 @@ const LandingPage = () => {
                   {contentSections?.tastingRoom?.paragraphs?.[2]}
                 </p>
               )}
-              <p className={`historic-note ${expandedSections.tastingRoom ? 'mobile-visible' : 'mobile-hidden'}`}>
-                <span className="historic-badge-inline">🏛️</span>
-                <em>Listed on the National Register of Historic Places</em>
-              </p>
               {!expandedSections.tastingRoom && contentSections?.tastingRoom?.paragraphs?.[1] && (
                 <button className="read-more-toggle" onClick={() => toggleSection('tastingRoom')}>
                   Read more →
