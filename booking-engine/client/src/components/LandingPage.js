@@ -470,7 +470,7 @@ const LandingPage = () => {
               ))}
             </div>
             <p className="buyout-hero-description">{buyout?.description}</p>
-            <a href={bookingUrl} className="buyout-hero-cta">{buyout?.ctaText}</a>
+            <a href="/book/estate-buyout" className="buyout-hero-cta">{buyout?.ctaText}</a>
           </div>
         </section>
       )}

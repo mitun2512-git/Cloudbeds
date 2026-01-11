@@ -17,6 +17,7 @@ import WebsiteEditor from './components/WebsiteEditor';
 import GuestChatDashboard from './components/GuestChatDashboard';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
+import EstateBuyoutBooking from './components/EstateBuyoutBooking';
 import { WebsiteContentProvider } from './context/WebsiteContentContext';
 import { getProperties, getCacheStatus, triggerCacheRefresh } from './services/api';
 
@@ -364,6 +365,9 @@ function App() {
           
           {/* Guest Booking Engine - Public facing */}
           <Route path="/book" element={<GuestBookingApp />} />
+          
+          {/* Full Estate Buyout - Dedicated booking flow */}
+          <Route path="/book/estate-buyout" element={<EstateBuyoutBooking />} />
           
           {/* Website Editor - Wix-inspired visual editor */}
           <Route path="/editor" element={<WebsiteEditor />} />
