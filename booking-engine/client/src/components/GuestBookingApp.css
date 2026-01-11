@@ -421,6 +421,12 @@
   gap: 2rem;
 }
 
+.calendar-months.single {
+  grid-template-columns: 1fr;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
 .calendar-month {
   text-align: center;
 }

@@ -525,288 +525,41 @@
 }
 
 /* ============================================================================
-   OPTION 4: FLOATING ESTATE RIBBON
+   OPTION 2: ESTATE BUYOUT TRUST BADGE
    ============================================================================ */
-.estate-ribbon {
-  position: absolute;
-  top: 120px;
-  right: 20px;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-dark) 100%);
-  color: var(--color-charcoal);
-  padding: 14px 24px;
-  border-radius: 8px;
+.trust-badge.estate-badge {
+  background: linear-gradient(135deg, rgba(184, 151, 106, 0.25) 0%, rgba(184, 151, 106, 0.15) 100%);
+  border-color: rgba(184, 151, 106, 0.4);
   text-decoration: none;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1);
-  transition: all var(--transition-smooth);
-  animation: slideInFromRight 0.8s cubic-bezier(0.4, 0, 0.2, 1) 1s both;
+  cursor: pointer;
+  position: relative;
   overflow: hidden;
 }
 
-.estate-ribbon::before {
+.trust-badge.estate-badge::before {
   content: '';
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  transition: left 0.6s ease;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
 }
 
-.estate-ribbon:hover::before {
+.trust-badge.estate-badge:hover::before {
   left: 100%;
 }
 
-.estate-ribbon:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 12px 40px rgba(184, 151, 106, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.2);
-}
-
-.ribbon-icon {
-  font-size: 1.5rem;
-  flex-shrink: 0;
-}
-
-.ribbon-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.3;
-}
-
-.ribbon-text strong {
-  font-size: 0.9rem;
-  font-weight: var(--weight-semibold);
-  letter-spacing: 0.02em;
-}
-
-.ribbon-text small {
-  font-size: 0.7rem;
-  opacity: 0.85;
-  letter-spacing: 0.01em;
-}
-
-@keyframes slideInFromRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* Ribbon responsive */
-@media (max-width: 900px) {
-  .estate-ribbon {
-    top: auto;
-    bottom: 100px;
-    right: 16px;
-    padding: 10px 16px;
-    gap: 8px;
-  }
-  
-  .ribbon-icon {
-    font-size: 1.2rem;
-  }
-  
-  .ribbon-text strong {
-    font-size: 0.8rem;
-  }
-  
-  .ribbon-text small {
-    font-size: 0.65rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .estate-ribbon {
-    bottom: 90px;
-    right: 12px;
-    left: 12px;
-    justify-content: center;
-  }
-}
-
-/* ============================================================================
-   OPTION 6: SPLIT HERO WITH TWO BOOKING PATHS
-   ============================================================================ */
-.hero-booking-paths {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  gap: 0;
-  margin: 3rem 0 2rem;
-  animation: fadeInUp 1s ease 1s both;
-}
-
-.booking-path-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 2rem 2.5rem;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 12px;
-  text-decoration: none;
-  color: var(--color-white);
-  transition: all var(--transition-smooth);
-  min-width: 240px;
-  max-width: 280px;
-  position: relative;
-  overflow: hidden;
-}
-
-.booking-path-card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.05) 100%);
-  opacity: 0;
-  transition: opacity var(--transition-smooth);
-}
-
-.booking-path-card:hover::before {
-  opacity: 1;
-}
-
-.booking-path-card:hover {
-  transform: translateY(-8px);
-  border-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-}
-
-.booking-path-card.estate-path {
-  background: linear-gradient(135deg, rgba(184, 151, 106, 0.2) 0%, rgba(184, 151, 106, 0.1) 100%);
-  border-color: rgba(184, 151, 106, 0.3);
-}
-
-.booking-path-card.estate-path:hover {
+.trust-badge.estate-badge:hover {
+  background: linear-gradient(135deg, rgba(184, 151, 106, 0.35) 0%, rgba(184, 151, 106, 0.25) 100%);
   border-color: var(--color-gold);
-  box-shadow: 0 20px 50px rgba(184, 151, 106, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(184, 151, 106, 0.3);
 }
 
-.path-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
-}
-
-.booking-path-card h3 {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: var(--weight-medium);
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.01em;
-}
-
-.path-price {
-  color: var(--color-gold);
+.trust-badge.estate-badge .badge-icon {
   font-size: 1.1rem;
-  font-weight: var(--weight-medium);
-  margin-bottom: 0.5rem;
-}
-
-.path-description {
-  font-size: 0.85rem;
-  opacity: 0.75;
-  margin-bottom: 1.25rem;
-  line-height: 1.4;
-}
-
-.path-cta {
-  display: inline-block;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  padding: 0.75rem 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 4px;
-  transition: all var(--transition-fast);
-  font-weight: var(--weight-medium);
-}
-
-.booking-path-card:hover .path-cta {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.6);
-}
-
-.booking-path-card.estate-path .path-cta {
-  border-color: rgba(184, 151, 106, 0.5);
-  color: var(--color-gold-light);
-}
-
-.booking-path-card.estate-path:hover .path-cta {
-  background: rgba(184, 151, 106, 0.2);
-  border-color: var(--color-gold);
-}
-
-.booking-path-divider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 1.5rem;
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 0.9rem;
-  font-style: italic;
-  font-family: var(--font-display);
-}
-
-/* Booking paths responsive */
-@media (max-width: 800px) {
-  .hero-booking-paths {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-  }
-  
-  .booking-path-card {
-    width: 100%;
-    max-width: 320px;
-    padding: 1.5rem 2rem;
-  }
-  
-  .booking-path-divider {
-    padding: 0.5rem 0;
-  }
-  
-  .path-icon {
-    font-size: 2rem;
-  }
-  
-  .booking-path-card h3 {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .booking-path-card {
-    padding: 1.25rem 1.5rem;
-  }
-  
-  .path-icon {
-    font-size: 1.8rem;
-    margin-bottom: 0.75rem;
-  }
-  
-  .booking-path-card h3 {
-    font-size: 1.2rem;
-  }
-  
-  .path-price {
-    font-size: 1rem;
-  }
-  
-  .path-description {
-    font-size: 0.8rem;
-  }
 }
 
 .hero-scroll-indicator {

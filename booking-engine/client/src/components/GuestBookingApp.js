@@ -215,7 +215,6 @@ const DateRangeCalendar = ({ checkIn, checkOut, onDateSelect, selectionMode }) =
     onDateSelect(format(date, 'yyyy-MM-dd'));
   };
   
-  const nextMonth = addMonths(currentMonth, 1);
   const weekDays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
   
   const renderMonth = (monthDate) => {
@@ -277,9 +276,8 @@ const DateRangeCalendar = ({ checkIn, checkOut, onDateSelect, selectionMode }) =
           ›
         </button>
       </div>
-      <div className="calendar-months">
+      <div className="calendar-months single">
         {renderMonth(currentMonth)}
-        {renderMonth(nextMonth)}
       </div>
     </div>
   );
@@ -290,7 +288,7 @@ const DateRangeCalendar = ({ checkIn, checkOut, onDateSelect, selectionMode }) =
 // ============================================================================
 const DateSelection = ({ dates, setDates, onNext }) => {
   const [selectionMode, setSelectionMode] = useState('checkIn');
-  const [calendarVisible, setCalendarVisible] = useState(true);
+  const [calendarVisible, setCalendarVisible] = useState(false);
   
   const handleDateSelect = (dateStr) => {
     if (selectionMode === 'checkIn') {
