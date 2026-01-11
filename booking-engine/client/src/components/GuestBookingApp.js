@@ -412,23 +412,21 @@ const DateSelection = ({ dates, setDates, bookingType, setBookingType, onNext })
 
       {/* Booking Type Selection */}
       <div className="booking-type-selector">
-        <label className="booking-type-label">What type of booking?</label>
+        <span className="booking-type-label">Select Your Experience</span>
         <div className="booking-type-options">
           <div 
             className={`booking-type-option ${bookingType === BOOKING_TYPES.INDIVIDUAL ? 'selected' : ''}`}
             onClick={() => setBookingType(BOOKING_TYPES.INDIVIDUAL)}
           >
-            <span className="option-icon">🛏️</span>
             <span className="option-title">Individual Room</span>
-            <span className="option-desc">Book 1 or more rooms</span>
+            <span className="option-desc">Reserve one or more rooms for your stay</span>
           </div>
           <div 
             className={`booking-type-option ${bookingType === BOOKING_TYPES.BUYOUT ? 'selected' : ''}`}
             onClick={() => setBookingType(BOOKING_TYPES.BUYOUT)}
           >
-            <span className="option-icon">🏠</span>
-            <span className="option-title">Full Estate</span>
-            <span className="option-desc">All {ESTATE_CONFIG.totalRooms} rooms · Up to {ESTATE_CONFIG.maxGuests} guests</span>
+            <span className="option-title">Full Estate Buyout</span>
+            <span className="option-desc">Exclusive access · {ESTATE_CONFIG.totalRooms} rooms · Up to {ESTATE_CONFIG.maxGuests} guests</span>
           </div>
         </div>
       </div>
