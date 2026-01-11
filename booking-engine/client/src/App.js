@@ -17,6 +17,13 @@ import WebsiteEditor from './components/WebsiteEditor';
 import GuestChatDashboard from './components/GuestChatDashboard';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
+// SEO-optimized pages
+import LocationPage from './components/LocationPage';
+import FAQPage from './components/FAQPage';
+import AboutPage from './components/AboutPage';
+import AmenitiesPage from './components/AmenitiesPage';
+import { BlogList, BlogPost } from './components/Blog';
+import SEODashboard from './components/SEODashboard';
 import { WebsiteContentProvider } from './context/WebsiteContentContext';
 import { getProperties, getCacheStatus, triggerCacheRefresh } from './services/api';
 
@@ -374,6 +381,19 @@ function App() {
           {/* Legal Pages */}
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<TermsOfService />} />
+          
+          {/* SEO-Optimized Content Pages */}
+          <Route path="/location" element={<LocationPage />} />
+          <Route path="/faq" element={<FAQPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/amenities" element={<AmenitiesPage />} />
+          
+          {/* Blog */}
+          <Route path="/blog" element={<BlogList />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+          
+          {/* SEO Dashboard (Staff) */}
+          <Route path="/seo" element={<SEODashboard />} />
           
           {/* Staff Dashboard */}
           <Route path="/dashboard/*" element={<StaffDashboard />} />

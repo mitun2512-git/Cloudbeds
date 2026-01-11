@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useLocation } from 'react-router-dom';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements, CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
@@ -323,7 +323,16 @@ const DateRangeCalendar = ({ checkIn, checkOut, onDateSelect, selectionMode }) =
 // ============================================================================
 // STEP 1: Date Selection + Booking Type
 // ============================================================================
-const DateSelection = ({ dates, setDates, bookingType, setBookingType, onNext }) => {
+const DateSelection = ({ 
+  dates, 
+  setDates, 
+  bookingType, 
+  setBookingType, 
+  onNext,
+  buyoutPricing,
+  loadingBuyoutPricing,
+  fetchBuyoutPricing
+}) => {
   const [selectionMode, setSelectionMode] = useState('checkIn');
   const [calendarVisible, setCalendarVisible] = useState(false);
   
@@ -363,6 +372,18 @@ const DateSelection = ({ dates, setDates, bookingType, setBookingType, onNext })
 
   const isValid = dates.checkIn && dates.checkOut && dates.checkIn < dates.checkOut;
   const nights = isValid ? differenceInDays(parseISO(dates.checkOut), parseISO(dates.checkIn)) : 0;
+  
+  // Fetch buyout pricing when dates change and buyout is selected
+  useEffect(() => {
+    if (bookingType === BOOKING_TYPES.BUYOUT && dates.checkIn && dates.checkOut && isValid) {
+      fetchBuyoutPricing(dates.checkIn, dates.checkOut);
+    }
+  }, [dates.checkIn, dates.checkOut, bookingType, isValid, fetchBuyoutPricing]);
+  
+  // Get the nightly rate - use API pricing if available, fallback to config
+  const nightlyRate = buyoutPricing?.nightlyRate || ESTATE_CONFIG.baseNightlyRate;
+  const estateTotal = nightlyRate * nights;
+  const estimatedTotal = Math.round(estateTotal * (1 + ESTATE_CONFIG.taxRate));
 
   return (
     <div className="booking-step date-selection">
@@ -476,14 +497,25 @@ const DateSelection = ({ dates, setDates, bookingType, setBookingType, onNext })
       {/* Buyout Pricing Preview */}
       {bookingType === BOOKING_TYPES.BUYOUT && nights >= ESTATE_CONFIG.minNights && (
         <div className="buyout-pricing-preview">
-          <div className="pricing-row">
-            <span>Estate ({nights} nights × ${ESTATE_CONFIG.baseNightlyRate.toLocaleString()})</span>
-            <span>${(ESTATE_CONFIG.baseNightlyRate * nights).toLocaleString()}</span>
-          </div>
-          <div className="pricing-row total">
-            <span>Estimated Total (incl. 15% tax)</span>
-            <span>${Math.round(ESTATE_CONFIG.baseNightlyRate * nights * 1.15).toLocaleString()}</span>
-          </div>
+          {loadingBuyoutPricing ? (
+            <div className="pricing-row loading">
+              <span>Loading pricing...</span>
+            </div>
+          ) : (
+            <>
+              <div className="pricing-row">
+                <span>Estate ({nights} night{nights !== 1 ? 's' : ''} x ${nightlyRate.toLocaleString()})</span>
+                <span>${estateTotal.toLocaleString()}</span>
+              </div>
+              <div className="pricing-row total">
+                <span>Estimated Total (incl. {Math.round(ESTATE_CONFIG.taxRate * 100)}% tax)</span>
+                <span>${estimatedTotal.toLocaleString()}</span>
+              </div>
+              {buyoutPricing?.isFallback && (
+                <div className="pricing-note">Estimated pricing - final rate confirmed at checkout</div>
+              )}
+            </>
+          )}
         </div>
       )}
 
@@ -1021,6 +1053,7 @@ const PaymentFormInner = ({
   addons, 
   guest, 
   bookingType,
+  buyoutPricing,
   onSuccess, 
   onBack,
   setIsProcessing 
@@ -1050,9 +1083,10 @@ const PaymentFormInner = ({
   const selectedAddons = isBuyout ? [] : AVAILABLE_ADDONS.filter(a => addons[a.id]);
   const addonsTotal = selectedAddons.reduce((sum, a) => sum + calculateAddonPrice(a), 0);
   
-  // Calculate room total based on booking type
+  // Calculate room total based on booking type - use API pricing for buyout
+  const buyoutNightlyRate = buyoutPricing?.nightlyRate || ESTATE_CONFIG.baseNightlyRate;
   const roomTotal = isBuyout 
-    ? ESTATE_CONFIG.baseNightlyRate * nights 
+    ? buyoutNightlyRate * nights 
     : (selectedRoom?.roomRate || 0);
   
   const subtotal = roomTotal + addonsTotal;
@@ -1400,6 +1434,10 @@ const GuestBookingApp = () => {
   const [guest, setGuest] = useState({});
   const [reservation, setReservation] = useState(null);
   const [totalBuyoutStatus, setTotalBuyoutStatus] = useState(null);
+  
+  // Buyout pricing state - fetched from Cloudbeds API
+  const [buyoutPricing, setBuyoutPricing] = useState(null);
+  const [loadingBuyoutPricing, setLoadingBuyoutPricing] = useState(false);
 
   // Handle URL parameters for booking type
   useEffect(() => {
@@ -1424,6 +1462,58 @@ const GuestBookingApp = () => {
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', 'Book your luxury stay at Hennessey Estate in downtown Napa Valley. Choose from 10 ensuite rooms with pool, spa, sauna access and chef-prepared breakfast included.');
+    }
+  }, []);
+
+  // Fetch buyout pricing from Cloudbeds API
+  const fetchBuyoutPricing = useCallback(async (checkIn, checkOut) => {
+    if (!checkIn || !checkOut) return;
+    
+    setLoadingBuyoutPricing(true);
+    try {
+      const result = await getAvailability(checkIn, checkOut);
+      
+      // Find the Total Buyout room type in the availability response
+      const buyoutRoom = (result.availability || []).find(room => 
+        room.roomTypeName?.toLowerCase().includes('total buyout') ||
+        room.roomTypeName?.toLowerCase().includes('buyout') ||
+        room.roomTypeId === '88798581989504'
+      );
+      
+      if (buyoutRoom && buyoutRoom.roomRate) {
+        const nights = differenceInDays(parseISO(checkOut), parseISO(checkIn));
+        setBuyoutPricing({
+          nightlyRate: buyoutRoom.roomRate / nights, // API returns total rate, divide by nights
+          totalRate: buyoutRoom.roomRate,
+          roomTypeId: buyoutRoom.roomTypeId,
+          roomTypeName: buyoutRoom.roomTypeName,
+          available: buyoutRoom.roomsAvailable > 0,
+          blockedReason: buyoutRoom.blockedReason
+        });
+      } else {
+        // Fallback to config if API doesn't return Total Buyout
+        console.warn('Total Buyout not found in API response, using fallback pricing');
+        setBuyoutPricing({
+          nightlyRate: ESTATE_CONFIG.baseNightlyRate,
+          totalRate: null,
+          roomTypeId: null,
+          available: true,
+          isFallback: true
+        });
+      }
+    } catch (err) {
+      console.error('Error fetching buyout pricing:', err);
+      // Use fallback pricing on error
+      setBuyoutPricing({
+        nightlyRate: ESTATE_CONFIG.baseNightlyRate,
+        totalRate: null,
+        roomTypeId: null,
+        available: true,
+        isFallback: true,
+        error: err.message
+      });
+    } finally {
+      setLoadingBuyoutPricing(false);
     }
   }, []);
 
@@ -1550,6 +1640,9 @@ const GuestBookingApp = () => {
               setDates={setDates}
               bookingType={bookingType}
               setBookingType={setBookingType}
+              buyoutPricing={buyoutPricing}
+              loadingBuyoutPricing={loadingBuyoutPricing}
+              fetchBuyoutPricing={fetchBuyoutPricing}
               onNext={() => goToStep(getNextStep(STEPS.DATES))} 
             />
           </div>
@@ -1596,6 +1689,7 @@ const GuestBookingApp = () => {
             addons={addons}
             guest={guest}
             bookingType={bookingType}
+            buyoutPricing={buyoutPricing}
             onSuccess={(res) => {
               setReservation(res);
               goToStep(STEPS.CONFIRMATION);

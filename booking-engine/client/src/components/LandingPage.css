@@ -2491,6 +2491,12 @@
     font-size: 0.8rem;
     gap: 0.4rem;
     border-radius: 6px;
+    /* Light transparent background - no blur for consistent rendering */
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   }
   
   .trust-badge .stars {

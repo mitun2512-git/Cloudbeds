@@ -1,0 +1,502 @@
+/**
+ * Location Page Styles
+ * SEO-optimized downtown Napa location guide
+ */
+
+.location-page {
+  font-family: 'Lora', 'Georgia', serif;
+  color: #2A382A;
+  background: #FDFBF7;
+}
+
+/* Hero Section */
+.location-hero {
+  position: relative;
+  height: 50vh;
+  min-height: 400px;
+  background: url('https://static.wixstatic.com/media/ebc938_f9c53f8bfbf7444081335859e527f5be~mv2.jpg/v1/fill/w_1920,h_1080,al_c,q_90,enc_avif,quality_auto/ebc938_f9c53f8bfbf7444081335859e527f5be~mv2.jpg') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(42, 56, 42, 0.7), rgba(42, 56, 42, 0.5));
+}
+
+.location-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.location-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.breadcrumbs a {
+  color: white;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs .separator {
+  margin: 0 0.5rem;
+}
+
+.breadcrumbs .current {
+  font-weight: 600;
+}
+
+/* Main Content */
+.location-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+/* Introduction */
+.location-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+  align-items: start;
+}
+
+.intro-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2A382A;
+}
+
+.intro-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #4a4a4a;
+}
+
+.intro-text .highlight {
+  background: linear-gradient(to right, rgba(197, 163, 106, 0.2), transparent);
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #C5A36A;
+  margin: 2rem 0;
+}
+
+.location-map {
+  position: relative;
+}
+
+.location-map iframe {
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.address-card {
+  position: absolute;
+  bottom: -30px;
+  left: 20px;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.address-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.address-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.directions-btn {
+  display: inline-block;
+  background: #2A382A;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: background 0.3s;
+}
+
+.directions-btn:hover {
+  background: #3d4f3d;
+}
+
+/* Stats Section */
+.location-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 3rem;
+  background: #2A382A;
+  border-radius: 12px;
+  margin-bottom: 4rem;
+}
+
+.stat {
+  text-align: center;
+  color: white;
+}
+
+.stat-number {
+  display: block;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #C5A36A;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Nearby Section */
+.nearby-section {
+  margin-bottom: 4rem;
+}
+
+.nearby-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section-intro {
+  text-align: center;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.attractions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.attraction-category {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.attraction-category h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.category-icon {
+  font-size: 1.5rem;
+}
+
+.attraction-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.attraction-category li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.attraction-category li:last-child {
+  border-bottom: none;
+}
+
+.place-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.place-header strong {
+  color: #2A382A;
+}
+
+.distance {
+  font-size: 0.8rem;
+  color: #C5A36A;
+  font-weight: 500;
+}
+
+.attraction-category li p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Getting Here */
+.getting-here {
+  margin-bottom: 4rem;
+}
+
+.getting-here h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.transport-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.transport-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.transport-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.transport-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.transport-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.parking-note {
+  background: linear-gradient(135deg, #f8f6f0, #fff);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #C5A36A;
+}
+
+.parking-note h3 {
+  margin-bottom: 0.75rem;
+}
+
+.parking-note p {
+  margin: 0;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Insider Tips */
+.insider-tips {
+  margin-bottom: 4rem;
+}
+
+.insider-tips h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.tip-card {
+  background: #2A382A;
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.tip-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #C5A36A;
+}
+
+.tip-card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* CTA Section */
+.location-cta {
+  text-align: center;
+  background: linear-gradient(135deg, #f8f6f0, #fff);
+  padding: 4rem;
+  border-radius: 12px;
+}
+
+.location-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.location-cta p {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.cta-primary {
+  background: #2A382A;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.cta-primary:hover {
+  background: #3d4f3d;
+}
+
+.cta-secondary {
+  background: transparent;
+  color: #2A382A;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  border: 2px solid #2A382A;
+  transition: all 0.3s;
+}
+
+.cta-secondary:hover {
+  background: #2A382A;
+  color: white;
+}
+
+/* Footer */
+.location-footer {
+  background: #2A382A;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.footer-nav a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-nav a:hover {
+  color: #C5A36A;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .location-intro {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .location-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .attractions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .transport-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .location-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .location-stats {
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 1rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .transport-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .address-card {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 1rem;
+  }
+}
