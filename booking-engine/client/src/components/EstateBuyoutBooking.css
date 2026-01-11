@@ -71,11 +71,20 @@
   margin: 0 0 1rem;
 }
 
+/* Estate Note */
+.estate-note {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  margin: 1rem 0 1.5rem;
+}
+
 /* Pricing Preview */
 .buyout-pricing-preview {
   background: rgba(201, 169, 89, 0.1);
   border-radius: 8px;
   padding: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .pricing-row {

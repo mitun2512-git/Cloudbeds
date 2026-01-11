@@ -378,6 +378,16 @@ const LandingPage = () => {
             )}
           </div>
           <div className="hero-overlay"></div>
+          
+          {/* Option 4: Floating Ribbon/Badge */}
+          <a href="/book/estate-buyout" className="estate-ribbon">
+            <span className="ribbon-icon">🏛️</span>
+            <span className="ribbon-text">
+              <strong>Book the Entire Estate</strong>
+              <small>Perfect for groups & celebrations</small>
+            </span>
+          </a>
+          
           <div className="hero-content">
             {hero?.trustBadges?.length > 0 && (
               <div className="hero-trust-badges">
@@ -399,6 +409,28 @@ const LandingPage = () => {
                 {hero?.subtitle?.split('. ').slice(0, 2).join('. ')}.
               </span>
             </p>
+            
+            {/* Option 6: Split Hero with Two Booking Paths */}
+            <div className="hero-booking-paths">
+              <a href={bookingUrl} className="booking-path-card">
+                <div className="path-icon">🛏️</div>
+                <h3>Book a Room</h3>
+                <p className="path-price">From $233/night</p>
+                <p className="path-description">Perfect for couples & solo travelers</p>
+                <span className="path-cta">Reserve Your Room →</span>
+              </a>
+              <div className="booking-path-divider">
+                <span>or</span>
+              </div>
+              <a href="/book/estate-buyout" className="booking-path-card estate-path">
+                <div className="path-icon">🏠</div>
+                <h3>Book the Estate</h3>
+                <p className="path-price">All 10 Rooms</p>
+                <p className="path-description">Perfect for groups, weddings & retreats</p>
+                <span className="path-cta">Plan Your Event →</span>
+              </a>
+            </div>
+            
             {hero?.quickFacts?.length > 0 && (
               <div className="hero-quick-facts">
                 {hero.quickFacts.map((fact, i) => (
@@ -409,9 +441,6 @@ const LandingPage = () => {
                 ))}
               </div>
             )}
-            <a href={bookingUrl} className="hero-cta primary">
-              {hero?.ctaText || 'Book Your Escape →'}
-            </a>
           </div>
           <div className="hero-scroll-indicator">
             <span>Scroll to explore</span>

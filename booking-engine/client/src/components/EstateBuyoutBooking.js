@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { format, addDays, differenceInDays, parseISO } from 'date-fns';
+import { format, addMonths, differenceInDays, parseISO } from 'date-fns';
 import './GuestBookingApp.css';
 import './EstateBuyoutBooking.css';
 
@@ -20,19 +20,163 @@ const STEPS = { DATES: 0, GUEST: 1, PAYMENT: 2, CONFIRMATION: 3 };
 const STEP_LABELS = ['Dates', 'Details', 'Payment', 'Confirmed'];
 
 // ============================================================================
+// DATE RANGE CALENDAR COMPONENT
+// ============================================================================
+const DateRangeCalendar = ({ checkIn, checkOut, onDateSelect, selectionMode }) => {
+  const [currentMonth, setCurrentMonth] = useState(new Date());
+  const [hoverDate, setHoverDate] = useState(null);
+  
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  
+  // Generate calendar days for a month
+  const generateCalendarDays = (monthDate) => {
+    const year = monthDate.getFullYear();
+    const month = monthDate.getMonth();
+    const firstDay = new Date(year, month, 1);
+    const lastDay = new Date(year, month + 1, 0);
+    const startPadding = firstDay.getDay();
+    const days = [];
+    
+    // Add empty cells for padding
+    for (let i = 0; i < startPadding; i++) {
+      days.push(null);
+    }
+    
+    // Add days of the month
+    for (let day = 1; day <= lastDay.getDate(); day++) {
+      days.push(new Date(year, month, day));
+    }
+    
+    return days;
+  };
+  
+  const checkInDate = checkIn ? parseISO(checkIn) : null;
+  const checkOutDate = checkOut ? parseISO(checkOut) : null;
+  
+  const isDateInRange = (date) => {
+    if (!date || !checkInDate) return false;
+    
+    if (checkOutDate) {
+      return date > checkInDate && date < checkOutDate;
+    }
+    
+    // Show hover range when selecting check-out
+    if (selectionMode === 'checkOut' && hoverDate && date > checkInDate && date <= hoverDate) {
+      return true;
+    }
+    
+    return false;
+  };
+  
+  const isDateDisabled = (date) => {
+    if (!date) return true;
+    if (date < today) return true;
+    if (selectionMode === 'checkOut' && checkInDate && date <= checkInDate) return true;
+    return false;
+  };
+  
+  const isCheckIn = (date) => {
+    if (!date || !checkInDate) return false;
+    return date.toDateString() === checkInDate.toDateString();
+  };
+  
+  const isCheckOut = (date) => {
+    if (!date || !checkOutDate) return false;
+    return date.toDateString() === checkOutDate.toDateString();
+  };
+  
+  const handleDateClick = (date) => {
+    if (isDateDisabled(date)) return;
+    onDateSelect(format(date, 'yyyy-MM-dd'));
+  };
+  
+  const nextMonth = addMonths(currentMonth, 1);
+  const weekDays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
+  
+  const renderMonth = (monthDate) => {
+    const days = generateCalendarDays(monthDate);
+    
+    return (
+      <div className="calendar-month">
+        <div className="calendar-month-header">
+          {format(monthDate, 'MMMM yyyy')}
+        </div>
+        <div className="calendar-weekdays">
+          {weekDays.map(day => (
+            <div key={day} className="weekday">{day}</div>
+          ))}
+        </div>
+        <div className="calendar-days">
+          {days.map((date, index) => {
+            if (!date) {
+              return <div key={`empty-${index}`} className="calendar-day empty" />;
+            }
+            
+            const disabled = isDateDisabled(date);
+            const isStart = isCheckIn(date);
+            const isEnd = isCheckOut(date);
+            const inRange = isDateInRange(date);
+            const isToday = date.toDateString() === today.toDateString();
+            
+            return (
+              <div
+                key={date.toISOString()}
+                className={`calendar-day ${disabled ? 'disabled' : ''} ${isStart ? 'check-in' : ''} ${isEnd ? 'check-out' : ''} ${inRange ? 'in-range' : ''} ${isToday ? 'today' : ''}`}
+                onClick={() => !disabled && handleDateClick(date)}
+                onMouseEnter={() => !disabled && selectionMode === 'checkOut' && setHoverDate(date)}
+                onMouseLeave={() => setHoverDate(null)}
+              >
+                <span>{date.getDate()}</span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  };
+  
+  return (
+    <div className="date-range-calendar">
+      <div className="calendar-navigation">
+        <button 
+          className="nav-btn prev" 
+          onClick={() => setCurrentMonth(addMonths(currentMonth, -1))}
+          disabled={currentMonth <= today}
+        >
+          ‹
+        </button>
+        <button 
+          className="nav-btn next" 
+          onClick={() => setCurrentMonth(addMonths(currentMonth, 1))}
+        >
+          ›
+        </button>
+      </div>
+      <div className="calendar-months">
+        {renderMonth(currentMonth)}
+        {renderMonth(nextMonth)}
+      </div>
+    </div>
+  );
+};
+
+// ============================================================================
 // MAIN COMPONENT
 // ============================================================================
 const EstateBuyoutBooking = () => {
   const [step, setStep] = useState(STEPS.DATES);
   const [dates, setDates] = useState({
-    checkIn: format(addDays(new Date(), 30), 'yyyy-MM-dd'),
-    checkOut: format(addDays(new Date(), 32), 'yyyy-MM-dd'),
+    checkIn: '',
+    checkOut: '',
   });
   const [guests, setGuests] = useState(10);
   const [guest, setGuest] = useState({});
   const [confirmation, setConfirmation] = useState(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const [errors, setErrors] = useState({});
+  const [selectionMode, setSelectionMode] = useState('checkIn');
+  const [calendarVisible, setCalendarVisible] = useState(true);
 
   useEffect(() => {
     document.title = 'Full Estate Buyout | Hennessey Estate';
@@ -58,6 +202,35 @@ const EstateBuyoutBooking = () => {
   const goToStep = (newStep) => {
     setStep(newStep);
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleDateSelect = (dateStr) => {
+    if (selectionMode === 'checkIn') {
+      setDates(prev => ({
+        ...prev,
+        checkIn: dateStr,
+        checkOut: prev.checkOut <= dateStr ? '' : prev.checkOut
+      }));
+      setSelectionMode('checkOut');
+    } else {
+      setDates(prev => ({
+        ...prev,
+        checkOut: dateStr
+      }));
+      setSelectionMode('checkIn');
+      setCalendarVisible(false);
+    }
+  };
+
+  const handleDateBoxClick = (mode) => {
+    setSelectionMode(mode);
+    setCalendarVisible(true);
+  };
+
+  const clearDates = () => {
+    setDates({ checkIn: '', checkOut: '' });
+    setSelectionMode('checkIn');
+    setCalendarVisible(true);
   };
 
   const validateGuest = () => {
@@ -116,76 +289,91 @@ const EstateBuyoutBooking = () => {
         {step === STEPS.DATES && (
           <div className="booking-step date-selection">
             <div className="step-header">
-              <h2>Select Your Dates</h2>
-              <p>Choose your check-in and check-out dates ({ESTATE_CONFIG.minNights} night minimum)</p>
+              <h2>When would you like to stay?</h2>
+              <p>Select your dates for a full estate buyout ({ESTATE_CONFIG.minNights} night minimum)</p>
             </div>
 
-            <div className="date-inputs-simple">
-              <div className="date-field">
-                <label>Check-in</label>
-                <input
-                  type="date"
-                  value={dates.checkIn}
-                  min={format(addDays(new Date(), 1), 'yyyy-MM-dd')}
-                  onChange={(e) => setDates({ ...dates, checkIn: e.target.value })}
-                />
-              </div>
-              <div className="date-field">
-                <label>Check-out</label>
-                <input
-                  type="date"
-                  value={dates.checkOut}
-                  min={dates.checkIn ? format(addDays(parseISO(dates.checkIn), ESTATE_CONFIG.minNights), 'yyyy-MM-dd') : ''}
-                  onChange={(e) => setDates({ ...dates, checkOut: e.target.value })}
-                />
-              </div>
-            </div>
-
-            {nights > 0 && (
-              <div className="stay-summary">
-                <span className="nights-count">{nights} nights</span>
-                <span className="date-range">
-                  {format(parseISO(dates.checkIn), 'MMM d')} – {format(parseISO(dates.checkOut), 'MMM d, yyyy')}
+            {/* Date Display Boxes */}
+            <div className="date-display-row">
+              <div 
+                className={`date-display-box ${selectionMode === 'checkIn' ? 'active' : ''} ${dates.checkIn ? 'has-date' : ''}`}
+                onClick={() => handleDateBoxClick('checkIn')}
+              >
+                <span className="date-label">Check-in</span>
+                <span className="date-value">
+                  {dates.checkIn ? format(parseISO(dates.checkIn), 'EEE, MMM d') : 'Select date'}
                 </span>
+              </div>
+              <div className="date-display-arrow">
+                {nights > 0 && <span className="nights-badge">{nights} night{nights !== 1 ? 's' : ''}</span>}
+                <span className="arrow">→</span>
+              </div>
+              <div 
+                className={`date-display-box ${selectionMode === 'checkOut' ? 'active' : ''} ${dates.checkOut ? 'has-date' : ''}`}
+                onClick={() => handleDateBoxClick('checkOut')}
+              >
+                <span className="date-label">Check-out</span>
+                <span className="date-value">
+                  {dates.checkOut ? format(parseISO(dates.checkOut), 'EEE, MMM d') : 'Select date'}
+                </span>
+              </div>
+              {(dates.checkIn || dates.checkOut) && (
+                <button className="clear-dates-btn" onClick={clearDates} title="Clear dates">×</button>
+              )}
+            </div>
+
+            {/* Calendar */}
+            {calendarVisible ? (
+              <DateRangeCalendar
+                checkIn={dates.checkIn}
+                checkOut={dates.checkOut}
+                onDateSelect={handleDateSelect}
+                selectionMode={selectionMode}
+              />
+            ) : (
+              <button 
+                className="btn-edit-dates"
+                onClick={() => setCalendarVisible(true)}
+              >
+                Edit dates
+              </button>
+            )}
+
+            <div className="guest-count">
+              <div className="count-field">
+                <label>Guests</label>
+                <select value={guests} onChange={(e) => setGuests(Number(e.target.value))}>
+                  {Array.from({ length: ESTATE_CONFIG.maxGuests - 1 }, (_, i) => i + 2).map(n => (
+                    <option key={n} value={n}>{n}</option>
+                  ))}
+                </select>
+              </div>
+            </div>
+
+            <p className="estate-note">
+              All {ESTATE_CONFIG.totalRooms} rooms included · Up to {ESTATE_CONFIG.maxGuests} guests
+            </p>
+
+            {nights >= ESTATE_CONFIG.minNights && (
+              <div className="buyout-pricing-preview">
+                <div className="pricing-row">
+                  <span>Estate Buyout ({nights} nights × ${ESTATE_CONFIG.baseNightlyRate.toLocaleString()})</span>
+                  <span>${pricing.roomTotal.toLocaleString()}</span>
+                </div>
+                <div className="pricing-row total">
+                  <span>Estimated Total (incl. taxes)</span>
+                  <span>${pricing.total.toLocaleString()}</span>
+                </div>
               </div>
             )}
 
-            <div className="guest-selector-simple">
-              <label>Number of Guests</label>
-              <p className="hint">The estate accommodates up to {ESTATE_CONFIG.maxGuests} guests in {ESTATE_CONFIG.totalRooms} rooms</p>
-              <div className="guest-count">
-                <div className="count-field">
-                  <select value={guests} onChange={(e) => setGuests(Number(e.target.value))}>
-                    {Array.from({ length: ESTATE_CONFIG.maxGuests - 1 }, (_, i) => i + 2).map(n => (
-                      <option key={n} value={n}>{n} guests</option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div className="buyout-pricing-preview">
-              <div className="pricing-row">
-                <span>Estate Buyout ({nights} nights × ${ESTATE_CONFIG.baseNightlyRate.toLocaleString()})</span>
-                <span>${pricing.roomTotal.toLocaleString()}</span>
-              </div>
-              <div className="pricing-row total">
-                <span>Estimated Total (before tax)</span>
-                <span>${pricing.roomTotal.toLocaleString()}</span>
-              </div>
-            </div>
-
-            <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
-              <Link to="/" className="btn-secondary">← Back to Home</Link>
-              <button 
-                className="btn-next" 
-                onClick={() => goToStep(STEPS.GUEST)}
-                disabled={nights < ESTATE_CONFIG.minNights}
-                style={{ flex: 1 }}
-              >
-                Continue
-              </button>
-            </div>
+            <button 
+              className="btn-next" 
+              onClick={() => goToStep(STEPS.GUEST)}
+              disabled={nights < ESTATE_CONFIG.minNights}
+            >
+              Continue
+            </button>
           </div>
         )}
 
