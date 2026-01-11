@@ -553,6 +553,119 @@
   padding-top: 1.5rem;
 }
 
+/* Booking Type Selector */
+.booking-type-selector {
+  margin: 2rem 0;
+}
+
+.booking-type-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.booking-type-options {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.booking-type-option {
+  flex: 1;
+  max-width: 200px;
+  padding: 1.25rem 1rem;
+  border: 2px solid #e5e5e5;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease;
+  background: white;
+}
+
+.booking-type-option:hover {
+  border-color: var(--color-gold);
+  background: rgba(201, 169, 89, 0.05);
+}
+
+.booking-type-option.selected {
+  border-color: var(--color-gold);
+  background: rgba(201, 169, 89, 0.1);
+}
+
+.booking-type-option .option-icon {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.booking-type-option .option-title {
+  display: block;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d2d2d;
+  margin-bottom: 0.25rem;
+}
+
+.booking-type-option .option-desc {
+  display: block;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+/* Buyout pricing preview */
+.buyout-pricing-preview {
+  background: rgba(201, 169, 89, 0.1);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.buyout-pricing-preview .pricing-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.35rem 0;
+  font-size: 0.9rem;
+}
+
+.buyout-pricing-preview .pricing-row.total {
+  font-weight: 600;
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+  border-top: 1px solid rgba(201, 169, 89, 0.3);
+}
+
+.buyout-warning {
+  background: rgba(194, 61, 75, 0.1);
+  color: var(--color-wine);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.buyout-guests {
+  justify-content: center;
+}
+
+/* Payment deposit styles */
+.breakdown-line.deposit {
+  color: var(--color-forest);
+  font-weight: 600;
+  padding-top: 0.75rem;
+  margin-top: 0.5rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.breakdown-line.balance {
+  color: #888;
+  font-size: 0.9rem;
+}
+
 .guest-count {
   display: flex;
   justify-content: center;

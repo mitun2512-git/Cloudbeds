@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements, CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
-import { format, addDays, addMonths, differenceInDays, parseISO } from 'date-fns';
+import { format, addMonths, differenceInDays, parseISO } from 'date-fns';
 import { getAvailability, createReservation } from '../services/api';
 import './GuestBookingApp.css';
 
@@ -873,7 +873,7 @@ const AddonsSelection = ({ dates, selectedRoom, addons, setAddons, onNext, onBac
 // ============================================================================
 // STEP 4: Guest Details
 // ============================================================================
-const GuestDetails = ({ guest, setGuest, onNext, onBack }) => {
+const GuestDetails = ({ guest, setGuest, onNext, onBack, bookingType }) => {
   const [errors, setErrors] = useState({});
 
   const handleChange = (field, value) => {
@@ -906,7 +906,9 @@ const GuestDetails = ({ guest, setGuest, onNext, onBack }) => {
       <div className="step-header">
         <h2>Guest Information</h2>
         <p>Please provide your contact details</p>
-        <button className="btn-link" onClick={onBack}>← Back to add-ons</button>
+        <button className="btn-link" onClick={onBack}>
+          ← {bookingType === BOOKING_TYPES.BUYOUT ? 'Back to dates' : 'Back to add-ons'}
+        </button>
       </div>
 
       <form className="guest-form" onSubmit={(e) => { e.preventDefault(); handleNext(); }}>
@@ -1020,6 +1022,7 @@ const PaymentFormInner = ({
   selectedRoom, 
   addons, 
   guest, 
+  bookingType,
   onSuccess, 
   onBack,
   setIsProcessing 
@@ -1031,6 +1034,7 @@ const PaymentFormInner = ({
 
   const nights = differenceInDays(parseISO(dates.checkOut), parseISO(dates.checkIn));
   const totalGuests = dates.adults + dates.children;
+  const isBuyout = bookingType === BOOKING_TYPES.BUYOUT;
 
   const calculateAddonPrice = (addon) => {
     switch (addon.priceType) {
@@ -1045,12 +1049,18 @@ const PaymentFormInner = ({
     }
   };
 
-  const selectedAddons = AVAILABLE_ADDONS.filter(a => addons[a.id]);
+  const selectedAddons = isBuyout ? [] : AVAILABLE_ADDONS.filter(a => addons[a.id]);
   const addonsTotal = selectedAddons.reduce((sum, a) => sum + calculateAddonPrice(a), 0);
-  const roomTotal = selectedRoom.roomRate; // roomRate from Cloudbeds is already total for the stay
+  
+  // Calculate room total based on booking type
+  const roomTotal = isBuyout 
+    ? ESTATE_CONFIG.baseNightlyRate * nights 
+    : (selectedRoom?.roomRate || 0);
+  
   const subtotal = roomTotal + addonsTotal;
-  const taxes = subtotal * 0.15; // 15% TOT in Napa
+  const taxes = subtotal * (isBuyout ? ESTATE_CONFIG.taxRate : 0.15);
   const total = subtotal + taxes;
+  const deposit = isBuyout ? total * (ESTATE_CONFIG.depositPercent / 100) : 0;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -1078,7 +1088,7 @@ const PaymentFormInner = ({
       // Send reservation with card token to backend
       const reservationData = {
         property_id: process.env.REACT_APP_PROPERTY_ID || '49705993547975',
-        room_type_id: selectedRoom.roomTypeId,
+        room_type_id: isBuyout ? 'ESTATE_BUYOUT' : selectedRoom.roomTypeId,
         check_in: dates.checkIn,
         check_out: dates.checkOut,
         guest: {
@@ -1093,8 +1103,10 @@ const PaymentFormInner = ({
           country: guest.country || 'US'
         },
         adults: dates.adults,
-        children: dates.children,
-        notes: guest.specialRequests || '',
+        children: isBuyout ? 0 : dates.children,
+        notes: isBuyout 
+          ? `Full Estate Buyout for ${dates.adults} guests. ${guest.specialRequests || ''}`
+          : (guest.specialRequests || ''),
         // Stripe token for Cloudbeds vault
         cardToken: token.id,
         // Add-ons for custom fields
@@ -1103,6 +1115,8 @@ const PaymentFormInner = ({
           name: a.name,
           price: calculateAddonPrice(a)
         })),
+        // Booking type
+        bookingType: bookingType,
         // Totals for reference
         totals: {
           room: roomTotal,
@@ -1148,7 +1162,11 @@ const PaymentFormInner = ({
     <div className="booking-step payment-step">
       <div className="step-header">
         <h2>Secure Payment</h2>
-        <p>Your card will be saved for check-in. You won't be charged now.</p>
+        <p>
+          {isBuyout 
+            ? `${ESTATE_CONFIG.depositPercent}% deposit required. Balance due 14 days before arrival.`
+            : 'Your card will be saved for check-in. You won\'t be charged now.'}
+        </p>
         <button className="btn-link" onClick={onBack} disabled={processing}>← Back to guest details</button>
       </div>
 
@@ -1173,8 +1191,17 @@ const PaymentFormInner = ({
             )}
 
             <div className="payment-note">
-              <strong>Note:</strong> Your card will be securely saved for your reservation. 
-              Payment will be processed at check-in by our staff.
+              {isBuyout ? (
+                <>
+                  <strong>Estate Buyout Deposit:</strong> You will be charged ${deposit.toLocaleString()} ({ESTATE_CONFIG.depositPercent}%) today. 
+                  The remaining balance of ${(total - deposit).toLocaleString()} is due 14 days before arrival.
+                </>
+              ) : (
+                <>
+                  <strong>Note:</strong> Your card will be securely saved for your reservation. 
+                  Payment will be processed at check-in by our staff.
+                </>
+              )}
             </div>
 
             <button 
@@ -1188,7 +1215,7 @@ const PaymentFormInner = ({
                   Processing...
                 </>
               ) : (
-                `Complete Booking`
+                isBuyout ? `Pay $${deposit.toLocaleString()} Deposit` : 'Complete Booking'
               )}
                     </button>
           </form>
@@ -1199,21 +1226,23 @@ const PaymentFormInner = ({
           
           <div className="summary-section">
             <div className="summary-room">
-              <strong>{selectedRoom.roomTypeName}</strong>
+              <strong>{isBuyout ? 'Full Estate Buyout' : selectedRoom?.roomTypeName}</strong>
               <span>{nights} night{nights !== 1 ? 's' : ''}</span>
             </div>
             <div className="summary-dates">
               {format(parseISO(dates.checkIn), 'MMM d')} - {format(parseISO(dates.checkOut), 'MMM d, yyyy')}
             </div>
             <div className="summary-guests">
-              {dates.adults} adult{dates.adults !== 1 ? 's' : ''}
-              {dates.children > 0 && `, ${dates.children} child${dates.children !== 1 ? 'ren' : ''}`}
+              {isBuyout 
+                ? `${dates.adults} guests · All ${ESTATE_CONFIG.totalRooms} rooms`
+                : `${dates.adults} adult${dates.adults !== 1 ? 's' : ''}${dates.children > 0 ? `, ${dates.children} child${dates.children !== 1 ? 'ren' : ''}` : ''}`
+              }
             </div>
           </div>
 
           <div className="summary-breakdown">
             <div className="breakdown-line">
-              <span>Room</span>
+              <span>{isBuyout ? `Estate (${nights} nights)` : 'Room'}</span>
               <span>${roomTotal.toLocaleString()}</span>
             </div>
             {selectedAddons.map(addon => (
@@ -1223,13 +1252,25 @@ const PaymentFormInner = ({
               </div>
             ))}
             <div className="breakdown-line">
-              <span>Taxes & Fees</span>
-              <span>${taxes.toFixed(2)}</span>
+              <span>Taxes & Fees ({isBuyout ? '15%' : '15%'})</span>
+              <span>${Math.round(taxes).toLocaleString()}</span>
             </div>
             <div className="breakdown-line total">
               <span>Total</span>
-              <span>${total.toLocaleString()}</span>
+              <span>${Math.round(total).toLocaleString()}</span>
             </div>
+            {isBuyout && (
+              <>
+                <div className="breakdown-line deposit">
+                  <span>Due Today ({ESTATE_CONFIG.depositPercent}%)</span>
+                  <span>${deposit.toLocaleString()}</span>
+                </div>
+                <div className="breakdown-line balance">
+                  <span>Balance Due Later</span>
+                  <span>${(total - deposit).toLocaleString()}</span>
+                </div>
+              </>
+            )}
           </div>
 
           <div className="guest-summary">
@@ -1252,8 +1293,9 @@ const PaymentForm = (props) => (
 // ============================================================================
 // STEP 6: Confirmation
 // ============================================================================
-const Confirmation = ({ reservation, dates, selectedRoom, guest, onNewBooking }) => {
+const Confirmation = ({ reservation, dates, selectedRoom, guest, bookingType, onNewBooking }) => {
   const nights = differenceInDays(parseISO(dates.checkOut), parseISO(dates.checkIn));
+  const isBuyout = bookingType === BOOKING_TYPES.BUYOUT;
 
         return (
     <div className="booking-step confirmation">
@@ -1264,7 +1306,7 @@ const Confirmation = ({ reservation, dates, selectedRoom, guest, onNewBooking })
           className="confirmation-logo"
         />
         <div className="success-icon">✓</div>
-        <h2>Booking Confirmed!</h2>
+        <h2>{isBuyout ? 'Estate Buyout Confirmed!' : 'Booking Confirmed!'}</h2>
         <p>Thank you for choosing Hennessey Estate</p>
       </div>
 
@@ -1280,9 +1322,15 @@ const Confirmation = ({ reservation, dates, selectedRoom, guest, onNewBooking })
             <span className="value">{guest.firstName} {guest.lastName}</span>
           </div>
           <div className="detail-row">
-            <span className="label">Room</span>
-            <span className="value">{selectedRoom.roomTypeName}</span>
+            <span className="label">{isBuyout ? 'Booking' : 'Room'}</span>
+            <span className="value">{isBuyout ? `Full Estate (${ESTATE_CONFIG.totalRooms} rooms)` : selectedRoom?.roomTypeName}</span>
           </div>
+          {isBuyout && (
+            <div className="detail-row">
+              <span className="label">Guests</span>
+              <span className="value">{dates.adults} guests</span>
+            </div>
+          )}
           <div className="detail-row">
             <span className="label">Check-in</span>
             <span className="value">{format(parseISO(dates.checkIn), 'EEEE, MMMM d, yyyy')} after {PROPERTY_INFO.policies.checkIn}</span>
@@ -1302,7 +1350,10 @@ const Confirmation = ({ reservation, dates, selectedRoom, guest, onNewBooking })
             A confirmation email has been sent to <strong>{guest.email}</strong>.
           </p>
           <p>
-            Your credit card has been securely saved. Payment will be processed at check-in.
+            {isBuyout 
+              ? 'Your deposit has been processed. Our estate coordinator will contact you within 24 hours to discuss your event details.'
+              : 'Your credit card has been securely saved. Payment will be processed at check-in.'
+            }
           </p>
         </div>
 
@@ -1413,12 +1464,36 @@ const GuestBookingApp = () => {
     window.scrollTo(0, 0);
   };
 
+  // Get next step based on booking type
+  const getNextStep = (currentStep) => {
+    if (bookingType === BOOKING_TYPES.BUYOUT) {
+      // Buyout flow: DATES -> GUEST -> PAYMENT -> CONFIRMATION
+      if (currentStep === STEPS.DATES) return STEPS.GUEST;
+      if (currentStep === STEPS.GUEST) return STEPS.PAYMENT;
+      if (currentStep === STEPS.PAYMENT) return STEPS.CONFIRMATION;
+    }
+    // Individual flow: normal progression
+    return currentStep + 1;
+  };
+
+  // Get previous step based on booking type
+  const getPrevStep = (currentStep) => {
+    if (bookingType === BOOKING_TYPES.BUYOUT) {
+      // Buyout flow: DATES <- GUEST <- PAYMENT
+      if (currentStep === STEPS.GUEST) return STEPS.DATES;
+      if (currentStep === STEPS.PAYMENT) return STEPS.GUEST;
+    }
+    // Individual flow: normal progression
+    return currentStep - 1;
+  };
+
   // Reset booking
   const resetBooking = () => {
     setStep(STEPS.DATES);
+    setBookingType(BOOKING_TYPES.INDIVIDUAL);
     setDates({
-      checkIn: format(addDays(new Date(), 1), 'yyyy-MM-dd'),
-      checkOut: format(addDays(new Date(), 3), 'yyyy-MM-dd'),
+      checkIn: '',
+      checkOut: '',
       adults: 2,
       children: 0
     });
@@ -1429,8 +1504,9 @@ const GuestBookingApp = () => {
     setReservation(null);
   };
 
-  // Progress indicator
-  const steps = ['Dates', 'Room', 'Extras', 'Details', 'Payment', 'Confirmed'];
+  // Get steps for current booking type
+  const visibleSteps = getStepsForType(bookingType);
+  const displayStepIndex = getDisplayStepIndex(step, bookingType);
 
   return (
     <div className="guest-booking-app">
@@ -1453,13 +1529,13 @@ const GuestBookingApp = () => {
       {/* Progress Bar */}
       {step < STEPS.CONFIRMATION && (
         <div className="progress-bar">
-          {steps.slice(0, -1).map((label, idx) => (
+          {visibleSteps.slice(0, -1).map((label, idx) => (
             <div 
               key={label}
-              className={`progress-step ${idx === step ? 'active' : ''} ${idx < step ? 'completed' : ''}`}
+              className={`progress-step ${idx === displayStepIndex ? 'active' : ''} ${idx < displayStepIndex ? 'completed' : ''}`}
             >
             <div className="step-indicator">
-                {idx < step ? '✓' : idx + 1}
+                {idx < displayStepIndex ? '✓' : idx + 1}
               </div>
               <span className="step-label">{label}</span>
             </div>
@@ -1473,13 +1549,15 @@ const GuestBookingApp = () => {
           <div ref={calendarRef}>
             <DateSelection 
               dates={dates} 
-              setDates={setDates} 
-              onNext={() => goToStep(STEPS.ROOMS)} 
+              setDates={setDates}
+              bookingType={bookingType}
+              setBookingType={setBookingType}
+              onNext={() => goToStep(getNextStep(STEPS.DATES))} 
             />
           </div>
         )}
 
-        {step === STEPS.ROOMS && (
+        {step === STEPS.ROOMS && bookingType === BOOKING_TYPES.INDIVIDUAL && (
           <RoomSelection
             dates={dates}
             rooms={rooms}
@@ -1492,7 +1570,7 @@ const GuestBookingApp = () => {
           />
         )}
 
-        {step === STEPS.ADDONS && (
+        {step === STEPS.ADDONS && bookingType === BOOKING_TYPES.INDIVIDUAL && (
           <AddonsSelection
             dates={dates}
             selectedRoom={selectedRoom}
@@ -1508,7 +1586,8 @@ const GuestBookingApp = () => {
             guest={guest}
             setGuest={setGuest}
             onNext={() => goToStep(STEPS.PAYMENT)}
-            onBack={() => goToStep(STEPS.ADDONS)}
+            onBack={() => goToStep(getPrevStep(STEPS.GUEST))}
+            bookingType={bookingType}
           />
         )}
 
@@ -1518,11 +1597,12 @@ const GuestBookingApp = () => {
             selectedRoom={selectedRoom}
             addons={addons}
             guest={guest}
+            bookingType={bookingType}
             onSuccess={(res) => {
               setReservation(res);
               goToStep(STEPS.CONFIRMATION);
             }}
-            onBack={() => goToStep(STEPS.GUEST)}
+            onBack={() => goToStep(getPrevStep(STEPS.PAYMENT))}
             setIsProcessing={setIsProcessing}
           />
         )}
@@ -1533,6 +1613,7 @@ const GuestBookingApp = () => {
             dates={dates}
             selectedRoom={selectedRoom}
             guest={guest}
+            bookingType={bookingType}
             onNewBooking={resetBooking}
           />
         )}
