@@ -321,20 +321,13 @@ const EstateBuyoutBooking = () => {
             </div>
 
             {/* Calendar */}
-            {calendarVisible ? (
+            {calendarVisible && (
               <DateRangeCalendar
                 checkIn={dates.checkIn}
                 checkOut={dates.checkOut}
                 onDateSelect={handleDateSelect}
                 selectionMode={selectionMode}
               />
-            ) : (
-              <button 
-                className="btn-edit-dates"
-                onClick={() => setCalendarVisible(true)}
-              >
-                Edit dates
-              </button>
             )}
 
             <div className="guest-count">

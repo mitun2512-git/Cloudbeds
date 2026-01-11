@@ -381,16 +381,23 @@ const LandingPage = () => {
           <div className="hero-content">
             {/* Option 2: Trust Badges with Estate Buyout */}
             <div className="hero-trust-badges">
-              {hero?.trustBadges?.map((badge, i) => (
-                <div key={i} className="trust-badge">
-                  <span className={badge.icon.includes('★') ? 'stars' : 'badge-icon'}>{badge.icon}</span>
-                  <span>{badge.text}</span>
-                </div>
-              ))}
+              {/* Reviews Badge - links to reviews section */}
+              <a href="#reviews" className="trust-badge">
+                <span className="stars">★★★★★</span>
+                <span className="badge-text-full">5/5 Google · 97 Reviews</span>
+                <span className="badge-text-short">97 Reviews</span>
+              </a>
+              {/* Historic Badge - links to tasting room section */}
+              <a href="#tasting-room" className="trust-badge">
+                <span className="badge-icon">🏛️</span>
+                <span className="badge-text-full">Historic Places Registry</span>
+                <span className="badge-text-short">Historic</span>
+              </a>
               {/* Estate Buyout Trust Badge */}
-              <a href="/book/estate-buyout" className="trust-badge estate-badge">
+              <a href="#buyout" className="trust-badge estate-badge">
                 <span className="badge-icon">🏠</span>
-                <span>Full Estate Buyouts</span>
+                <span className="badge-text-full">Full Estate Buyouts</span>
+                <span className="badge-text-short">Buyouts</span>
               </a>
             </div>
             <h1>
@@ -619,7 +626,7 @@ const LandingPage = () => {
 
       {/* Tasting Room Section */}
       {contentSections?.tastingRoom?.visible !== false && (
-        <section className="content-section cream-section reverse">
+        <section id="tasting-room" className="content-section cream-section reverse">
           <div className="section-container">
             <div className="section-content">
               <h2>{contentSections?.tastingRoom?.title}</h2>
@@ -633,6 +640,10 @@ const LandingPage = () => {
                   {contentSections?.tastingRoom?.paragraphs?.[2]}
                 </p>
               )}
+              <p className={`historic-note ${expandedSections.tastingRoom ? 'mobile-visible' : 'mobile-hidden'}`}>
+                <span className="historic-badge-inline">🏛️</span>
+                <em>Listed on the National Register of Historic Places</em>
+              </p>
               {!expandedSections.tastingRoom && contentSections?.tastingRoom?.paragraphs?.[1] && (
                 <button className="read-more-toggle" onClick={() => toggleSection('tastingRoom')}>
                   Read more →
